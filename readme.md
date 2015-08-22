@@ -8,5 +8,4 @@
 - icoomoon: http://icomoon.io/
 - Susy
 - Gulp
-Bien
-Bien
+- Conver font: http://www.fontsquirrel.com/tools/webfont-generator
