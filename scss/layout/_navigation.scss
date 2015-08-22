@@ -1,0 +1,28 @@
+// system style.
+.system-messages {
+  background: $white;
+
+  .pane-pane-messages {
+    margin-bottom: rem(25px);
+    margin-top: rem(25px);
+  }
+
+  .tabs {
+    @extend %clearfix;
+
+    li {
+      margin-right: rem(20px);
+      padding: rem(10px 0);
+      display: inline-block;
+      float: left;
+    }
+
+    a {
+      color: $natural-red;
+    }
+  }
+
+  .panel-pane {
+    font-size: rem(14px);
+  }
+}

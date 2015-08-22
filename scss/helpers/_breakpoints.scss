@@ -1,0 +1,15 @@
+//Breakpoints definition
+
+// Mobile first.
+$tablet: 768px;
+$desktop-small: 960px;
+$desktop-wide: 1170px;
+
+// Pick specific breakpoint.
+$mobile-only: 'screen' 'max-width' $tablet - 1;
+$mobile-and-tablet: 'screen' 'max-width' $desktop-small - 1;
+$tablet-only: $tablet $desktop-small - 1;
+
+
+// Grid variables
+$container-margin: 20px;

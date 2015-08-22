@@ -1,0 +1,134 @@
+form {
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: rem(5px);
+  }
+
+  .label-hidden {
+    left: -999em;
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .webform-component-textarea .grippie {
+    display: none;
+  }
+}
+
+.grippie {
+  display: none;
+}
+
+fieldset {
+  .fieldset-legend{
+    display: block;
+    font-weight: bold;
+    margin-bottom: rem(5px);
+  }
+
+  label {
+    font-weight: normal;
+  }
+
+  > div {
+    margin-bottom: rem(10px);
+  }
+}
+
+.button,
+.btn,
+%btn {
+  @include border-radius(5px);
+  background-color: $color-links;
+  border: none;
+  color: $white;
+  display: inline-block;
+  padding: rem(10px 40px);
+  font-size: rem(20px);
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-links,5%);
+    color: $white;
+  }
+
+  &.yellow {
+    background-color: $yellow-ea;
+
+    &:hover {
+      background-color: darken($yellow-ea,5%);
+      color: $white;
+    }
+  }
+}
+
+input {
+  @include box-sizing(border-box);
+  max-width: 100%;
+
+  &[type='submit'] {
+    @extend %btn;
+  }
+}
+
+input:not([type="submit"]), textarea {
+  @include source-sans-pro-regular;
+  @include border-radius(5px);
+  @include box-shadow(none);
+  border: 1px solid $grey-c1;
+  color: $grey-5f;
+  font-size: rem(16px);
+  margin-bottom: rem(5px);
+  outline: none;
+  padding: rem(10px 15px);
+
+  &.error {
+    border: 1px solid $red;
+  }
+}
+
+input[disabled] {
+  @include opacity(0.7);
+  cursor: not-allowed;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+textarea,
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    @include appearance(none);
+    @include box-shadow(none);
+}
+
+textarea,
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer; /* 3 */
+}
+
+.form-wrapper {
+  margin: rem(20px 0);
+}
+
+.form-managed-file {
+  input.form-file {
+    margin-bottom: rem(10px);
+    margin-right: rem(15px);
+    width: 100%;
+
+    @include breakpoint($tablet) {
+      width: auto;
+    }
+  }
+}

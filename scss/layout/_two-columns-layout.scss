@@ -1,0 +1,8 @@
+// Two columns layout.
+.left-side {
+  @extend %six-column;
+}
+
+.right-side {
+  @extend %six-column-last;
+}

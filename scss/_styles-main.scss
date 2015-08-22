@@ -1,0 +1,24 @@
+/*
+  WARNING++++++++++++++++++++++++++++++++++++++++++++
+  DO NOT EDIT styles.css file, this should be generated only by compiler
+  Propeople INC 
+*/
+
+//Required imports
+@import 'compass';
+@import 'susy';
+@import 'breakpoint';
+
+//IMPORT main partials, DO NOT CHANGE
+@import 'helpers/**';
+@import 'base/**';
+@import 'components/**';
+@import 'vendors/**';
+
+//IMPORT other partials
+@import 'layout/**';
+@import 'pages/**';
+
+
+//Enable this when you have styleguide module enabled
+//@import 'stylequide';

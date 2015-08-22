@@ -1,0 +1,7 @@
+//FONTS
+
+// Icon library.
+@include font-face('icomoon', font-files('icomoon.woff', 'woff', 'icomoon.ttf', 'truetype', 'icomoon.svg', 'svg'), 'icomoon.eot', normal, normal);
+
+// Fonts.
+@include font-face('source_sans_proregular', font-files('sourcesanspro-regular-webfont.woff2', 'woff2', 'sourcesanspro-regular-webfont.woff', 'woff', 'sourcesanspro-regular-webfont.ttf', 'truetype', 'sourcesanspro-regular-webfont.svg', 'svg'), 'sourcesanspro-regular-webfont.eot', normal, normal);

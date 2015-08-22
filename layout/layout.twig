@@ -1,0 +1,35 @@
+{# layout.twig #}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="A demo of how to use gulp-twig" />
+  <meta name="author" content="Simon de Turck" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Styleguide</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+  <script type="text/javascript" src='js/script.js'></script>
+</head>
+
+<body class="node-type-section-page">
+  <div class="page">
+    <section>
+      {% include "header.twig" %}
+    </section>
+    <section id="main-content" class="sec sec-content">
+      <div class="reg-inner-regions">
+        {% block index %}{% endblock %}
+      </div>
+    </section>
+    <section>
+      {% include "footer.twig" %}
+    </section>
+  </div>
+  <script type="text/javascript">
+     SyntaxHighlighter.all()
+  </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+// Styles for deafault template.
+
+.header-content {
+  @include breakpoint($tablet) {
+    @include clearfix;
+  }
+}
+
+.pane-page-title {
+  .container {
+    margin: 0;
+  }
+}
+
+h1.page-title {
+  color: $grey-5f;
+  font-size: rem(30px);
+  font-weight: 400;
+  line-height: rem(35px);
+  margin-bottom: rem(25px);
+  text-transform: capitalize;
+
+  @include breakpoint($desktop-small) {
+    font-size: rem(40px);
+    margin-bottom: rem(40px);
+  }
+}
+
+
+.node-title {
+  color: $black;
+
+  a {
+    color: $black;
+
+    &:hover {
+      text-decoration: none;
+      color: $hover-links;
+    }
+  }
+}
+
+h2.node-title {
+  font-size: rem(40px);
+  @include source-sans-pro-regular;
+}
+
+
+.section-title,
+%section-title {
+  @include source-sans-pro-regular;
+  font-size: rem(22px);
+  line-height: 1.4;
+  margin-bottom: rem(25px);
+
+  @include breakpoint($desktop-small) {
+    font-size: rem(48px);
+    margin-bottom: rem(30px);
+    margin-top: rem(50px);
+    line-height: inherit;
+  }
+}
+
+.pane-title {
+  @extend .section-title;
+  font-weight: 400;
+}
+
+// Use for title small.
+.title-small,
+%title-small {
+  color: $black;
+  font-size: rem(16px);
+  margin-bottom: rem(10px);
+  text-transform: uppercase;
+
+  @include breakpoint($desktop-small) {
+    color: $grey-5f;
+    font-size: rem(13px);
+    letter-spacing: 1px;
+  }
+}
+
+// Use for link more.
+.read-more,
+%read-more {
+  color: $grey-5f;
+  font-size: rem(18px);
+
+  &:hover {
+    color: $hover-links;
+    text-decoration: none;
+  }
+}
+
+// Align helper classes - Use for content align.
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+// Float helper classes.
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+
+// Background helper classes - use in panel panes or wherever you want.
+.bg-light-grey {
+  background-color: $grey-fc;
+}
+
+.bg-medium-grey{
+  background-color: $grey-f6;
+}
+
+.bg-dark-grey {
+  background-color: $grey-f4;
+}
+
+.bg-dark-green {
+  background-color: $green;
+}

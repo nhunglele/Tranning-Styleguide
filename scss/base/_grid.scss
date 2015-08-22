@@ -1,0 +1,104 @@
+// Default Susy configuration
+// http://susydocs.oddbird.net/en/latest/shorthand/#layout
+$debug: false; // Set true to show the grid.
+$show-image: 'hide';
+
+@if $debug == false {
+  $show-image: 'hide';
+} @else {
+  $show-image: 'show';
+}
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  container-position: $container-margin,
+  container: auto,
+  columns: 4,
+  gutters: 30px/70px,
+  column-width: false,
+  debug: (
+    image: $show-image,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  )
+);
+
+// Tablet.
+$susy_tablet: (
+  columns: 12,
+  gutters: 30px/70px,
+  container-position: center,
+);
+
+// Small desktop.
+$susy_small_desktop: (
+  columns: 12,
+  gutters: 30px/70px,
+  container-position: $container-margin,
+  container: auto,
+  column-width: false,
+  debug: (
+    image: $show-image,
+    color: rgba(#999, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+// Wide desktop.
+$susy_wide_desktop: (
+  columns: 12,
+  gutters: 30px/70px,
+  container-position: center,
+  container: $desktop-wide,
+  debug: (
+    image: $show-image,
+    color: rgba(#222, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+// Apply ^^^ configuration to the container.
+
+.container {
+  @include container($susy);
+
+  // @include breakpoint($tablet) {
+  //   @include layout($susy_tablet);
+  // }
+
+  @include breakpoint($desktop-small) {
+    @include container($susy_small_desktop);
+  }
+
+  @include susy-media($desktop-wide) {
+    @include container($susy_wide_desktop);
+  }
+}
+
+// Fix > ie 10.
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .container {
+    @include susy-media($desktop-wide) {
+      max-width: 1170px;;
+    }
+  }
+}
+
+
+// Extendable placehoders.
+
+%six-column {
+  @include breakpoint($tablet) {
+    @include span(6 of 12);
+  }
+}
+
+%six-column-last {
+  @include breakpoint($tablet) {
+    @include span(last 6 of 12);
+  }
+}
