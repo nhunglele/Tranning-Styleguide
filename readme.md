@@ -1,6 +1,6 @@
 # Build styleguide page
 
-1. cd styleguide
+1. cd Traning-Styleguide
 2. npm install
 3. gulp
 
@@ -8,4 +8,5 @@
 - icoomoon: http://icomoon.io/
 - Susy
 - Gulp
+Bien
 Bien
