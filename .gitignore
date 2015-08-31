@@ -1,2 +1,11 @@
-# Custom styleguide
-styleguide/node_modules
+# SASS #
+##########
+.sass-cache
+
+# Gulp #
+##########
+node_modules
+
+# Bundler #
+##########
+Gemfile.lock

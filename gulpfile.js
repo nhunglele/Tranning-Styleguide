@@ -1,51 +1,69 @@
+//Gulp files.
+"use strict";
+
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
+	reload = browserSync.reload,
+	uglify = require('gulp-uglify'),
+	twig = require('gulp-twig'),
 	compass = require('gulp-compass'),
-	twig = require('gulp-twig');
+	plumber = require('gulp-plumber'),
+	rename = require('gulp-rename');
 
-var reload = browserSync.reload;
-
-gulp.task('server', function(){
-	browserSync({
-		notify: false,
-		server: {
-			baseDir: '.'
-		}
+	// BrowserSync.
+	gulp.task('browsersync', function () {
+		browserSync({
+			notify: false,
+			server:{
+				baseDir: '.'
+			}
+		});
 	});
-});
 
-// gulp.task('sass', function () {
-// 	gulp.src('scss/styles.scss')
-// 		.pipe(sass())
-// 		.pipe(gulp.dest('css'))
-// 		.on('end', reload);
-// });
+	// Scripts Tasks.
+	gulp.task('scripts', function() {
+		gulp.src(['js/**/*.js'])
+		.pipe(uglify())
+		.pipe(gulp.dest('js'));
+	});
 
-gulp.task('twig', function () {
-    gulp.src('index.twig')
-	    .pipe(twig())
-	    .pipe(gulp.dest('.'))
-	    .on('end', reload);
-});
+	// Compass Tasks.
+	gulp.task('compass', function() {
+		gulp.src('scss/styles.scss')
+			.pipe(plumber())
+			.pipe(compass({
+				config_file: './config.rb',
+				css: 'css',
+				sass: 'scss',
+				require: ['susy']
+			}))
 
-gulp.task('compass', function() {
-  gulp.src('scss/styles.scss')
-    .pipe(compass({
-      config_file: './config.rb',
-      css: 'css',
-      sass: 'scss',
-      require: ['susy']
-    }))
-    .pipe(gulp.dest('css'))
-    .on('end', reload);
-});
+			.pipe(gulp.dest('css/'))
+			.pipe(reload({stream:true}));
+	});
 
-gulp.task('watch', function () {
-	// gulp.watch('scss/styles.scss', ['compass']);
-    gulp.watch('index.twig', ['twig']);
-	gulp.watch(['index.html'], reload);
-	gulp.watch(['scss/**/*.scss'], ['compass']);
-	gulp.watch(['js/*.js'], reload);
-});
+	// Twig Tasks.
+	gulp.task('twig', function() {
+		gulp.src('template/*.twig')
+		.pipe(twig())
+		.pipe(gulp.dest('./'))
+		.pipe(reload({stream:true}));
+	});
 
-gulp.task('default', ['server', 'compass', 'twig', 'watch']);
+	// Twig Components Tasks.
+	gulp.task('twig_components', function() {
+		gulp.src('components/**/*.twig')
+		.pipe(twig())
+		.pipe(gulp.dest('components/'))
+		.pipe(reload({stream:true}));
+	});
+
+	gulp.task('watch', function(){
+		gulp.watch('js/**/*.js', ['scripts'],reload);
+		gulp.watch('scss/**/*.scss', ['compass'],reload);
+		gulp.watch(['template/index.twig','template/layout/**/*.twig'], ['twig'],reload);
+		gulp.watch('components/**/*.twig', ['twig_components'],reload);
+	});
+
+// Default Tasks
+gulp.task('default', ['scripts','compass','browsersync','twig_components','twig','watch']);
