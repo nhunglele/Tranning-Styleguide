@@ -1,6 +1,7 @@
-"use strict";
-
+// Script file
 $(document).ready(function () {
+  "use strict";
+
   // Menu responsive.
   var processMenuMobile = function () {
     $(this).toggleClass("active");

@@ -12,7 +12,7 @@
         </div>
         <div class="navigation">
           <ul class="main-menu">
-              {% set navigation = [
+            {% set navigation = [
               {
                 'link_list': '',
                 'link': '#',
@@ -63,16 +63,16 @@
             ] %}
 
             {% for item in navigation %}
-                  <li class="{{item.link_list}} {% if link_active == item.text_link %}active{% endif %}"><a href="{{item.link}}"> {{item.text_link}}</a>
-                    {% if item.link_list == 'sub-item' %}
-                    <ul class="sub-menu">
-                      {% for sub_item in sub_menu %}
-                    <li class="{% if link_active == sub_item.sub_text_link %}active{% endif %}"><a href="{{sub_item.sub_link}}"> {{sub_item.sub_text_link}}</a></li>
-                      {% endfor %}
-                </ul>
-                {% endif %}
-                  </li>
-              {% endfor %}
+              <li class="{{item.link_list}} {% if link_active == item.text_link %}active{% endif %}"><a href="{{item.link}}"> {{item.text_link}}</a>
+                {% if item.link_list == 'sub-item' %}
+                <ul class="sub-menu">
+                  {% for sub_item in sub_menu %}
+                <li class="{% if link_active == sub_item.sub_text_link %}active{% endif %}"><a href="{{sub_item.sub_link}}"> {{sub_item.sub_text_link}}</a></li>
+                  {% endfor %}
+              </ul>
+              {% endif %}
+                </li>
+            {% endfor %}
           </ul>
         </div>
       </div>

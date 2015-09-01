@@ -588,10 +588,12 @@ h2.node-title {
 }
 
 .footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #5f574f;
-  padding: 63px 0 36px;
   font-size: 14px;
+  padding: 63px 0 36px;
 }
 @media (max-width: 500px) {
   .footer {
@@ -613,8 +615,8 @@ h2.node-title {
 .menu-footer {
   float: right;
   margin-right: 0;
-  width: 48.7179%;
   text-align: right;
+  width: 48.7179%;
 }
 @media (max-width: 500px) {
   .menu-footer {
@@ -652,11 +654,13 @@ h2.node-title {
   padding: 37px 0 42px;
 }
 
+.branding {
+  float: left;
+  width: 18.5%;
+}
 @media (max-width: 500px) {
   .branding {
-    float: left;
     width: 110px;
-    width: 18.5%;
   }
 }
 
@@ -806,7 +810,7 @@ h2.node-title {
   list-style: none;
   padding: 10px 0;
   position: absolute;
-  top: 50px;
+  top: 49px;
   width: 300px;
 }
 .navigation .main-menu li.sub-item .sub-menu.active {
@@ -835,11 +839,13 @@ h2.node-title {
 .navigation .main-menu li.sub-item .sub-menu li a:hover {
   background: #149077;
 }
+.navigation .main-menu > li {
+  display: inline;
+}
 @media (max-width: 500px) {
   .navigation .main-menu > li {
     border-top: 1px solid #ffffff;
     display: block;
-    display: inline;
   }
   .navigation .main-menu > li:last-child {
     border-bottom: 1px solid #ffffff;
@@ -882,6 +888,8 @@ h2.node-title {
 }
 @media (max-width: 500px) {
   .link-header a {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0;
     margin-left: 0;
     width: 49.8%;
