@@ -2,6 +2,7 @@
 # require:
 - Install node js
 - Install Ruby and rails.
+- Install bundler: sudo apt-get install bundler
 
 1. cd Traning-Styleguide
 2. npm install
