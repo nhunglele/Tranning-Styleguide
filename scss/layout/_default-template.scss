@@ -52,7 +52,6 @@ h2.node-title {
   font-size: rem(22px);
   line-height: 1.4;
   margin-bottom: rem(25px);
-
   @include breakpoint($desktop-small) {
     font-size: rem(48px);
     margin-bottom: rem(30px);
