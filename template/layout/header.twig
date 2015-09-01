@@ -1,25 +1,81 @@
 {% block header %}
-	<div class="region-header">
-		<div class="navigation">
-			<ul class="main-menu">
-				<li><a href="#">About</a></li>
-				<li class="sub-item">
-					<a href="#">Explore Resources</a>
-					<ul class="sub-menu">
-						<li><a href="#">Performance Tasks</a></li>
-						<li><a href="#">Portfolio Frameworks</a></li>
-						<li><a href="#">Learning Progressions &amp; Frameworks</a></li>
-						<li><a href="#">Assessment Literacy</a></li>
-						<li><a href="#">Curriculum, Instruction, &amp; Assessment</a></li>
-						<li><a href="#">Policy &amp; Research</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Service</a></li>
-				<li><a href="#">Submit a Resource</a></li>
-			</ul>
-		</div>
-		<div class="link-header">
-			<a href="#">Sign In</a><span>or</span><a href="#">Sign up</a>
-		</div>
-	</div>
+  <div id="header">
+    <div class="container">
+      <div class="branding">
+        <img alt="logo" src="http://stanfordilnhd4dalk5nb.devcloud.acquia-sites.com/sites/all/themes/custom/iln_theme/img/logo.svg">
+      </div>
+
+      <a href="#" class="toggleMenu">Menu</a>
+      <div class="region-header">
+        <div class="link-header">
+          <a href="#">Sign In</a><span>or</span><a href="#">Sign up</a>
+        </div>
+        <div class="navigation">
+          <ul class="main-menu">
+              {% set navigation = [
+              {
+                'link_list': '',
+                'link': '#',
+                'text_link': 'About',
+              },
+              {
+                'link_list': 'sub-item',
+                'link': '#',
+                'text_link': 'Explore Resources',
+              },
+              {
+                'link_list': '',
+                'link': '#',
+                'text_link': 'Service',
+              },
+              {
+                'link_list': '',
+                'link': '#',
+                'text_link': 'Submit a Resource',
+              }
+            ] %}
+
+            {% set sub_menu = [
+              {
+                'sub_link': '#',
+                'sub_text_link': 'Performance Tasks',
+              },
+              {
+                'sub_link': '#',
+                'sub_text_link': 'Portfolio Frameworks',
+              },
+              {
+                'sub_link': '#',
+                'sub_text_link': 'Learning Progressions &amp; Frameworks',
+              },
+              {
+                'sub_link': '#',
+                'sub_text_link': 'Assessment Literacy',
+              },
+              {
+                'sub_link': '#',
+                'sub_text_link': 'Curriculum, Instruction, &amp; Assessment',
+              },
+              {
+                'sub_link': '#',
+                'sub_text_link': 'Policy &amp; Research',
+              }
+            ] %}
+
+            {% for item in navigation %}
+                  <li class="{{item.link_list}} {% if link_active == item.text_link %}active{% endif %}"><a href="{{item.link}}"> {{item.text_link}}</a>
+                    {% if item.link_list == 'sub-item' %}
+                    <ul class="sub-menu">
+                      {% for sub_item in sub_menu %}
+                    <li class="{% if link_active == sub_item.sub_text_link %}active{% endif %}"><a href="{{sub_item.sub_link}}"> {{sub_item.sub_text_link}}</a></li>
+                      {% endfor %}
+                </ul>
+                {% endif %}
+                  </li>
+              {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}

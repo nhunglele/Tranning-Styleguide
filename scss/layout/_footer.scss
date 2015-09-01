@@ -1,1 +1,54 @@
 // Styles for footer.
+.footer {
+  box-sizing: border-box;
+  color: #5f574f;
+  padding: 63px 0 36px;
+  font-size: 14px;
+  @media (max-width: 500px) {
+      padding: 63px 20px 36px;
+  }
+}
+
+.copyright {
+    float: left;
+    margin: -3px 0 0;
+    width: 48.7179%;
+    @media (max-width: 500px) {
+      width: 100%;
+  }
+}
+
+.menu-footer {
+    float: right;
+    margin-right: 0;
+    width: 48.7179%;
+    text-align: right;
+    @media (max-width: 500px) {
+      float: none;
+    text-align: left;
+    width: 100%;
+  }
+    .menu {
+    list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+      display: inline-block;
+      margin-left: 40px;
+      @media (max-width: 500px) {
+        margin-left: 0;
+      }
+      a {
+        color: #5f574f;
+        text-decoration: none;
+        &:hover {
+          color: #16a085;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

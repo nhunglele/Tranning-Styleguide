@@ -4,7 +4,7 @@
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload,
-	uglify = require('gulp-uglify'),
+	//uglify = require('gulp-uglify'),
 	twig = require('gulp-twig'),
 	compass = require('gulp-compass'),
 	plumber = require('gulp-plumber'),
@@ -18,13 +18,6 @@ var gulp = require('gulp'),
 				baseDir: '.'
 			}
 		});
-	});
-
-	// Scripts Tasks.
-	gulp.task('scripts', function() {
-		gulp.src(['js/**/*.js'])
-		.pipe(uglify())
-		.pipe(gulp.dest('js'));
 	});
 
 	// Compass Tasks.
@@ -66,4 +59,4 @@ var gulp = require('gulp'),
 	});
 
 // Default Tasks
-gulp.task('default', ['scripts','compass','browsersync','twig_components','twig','watch']);
+gulp.task('default', ['compass','browsersync','twig_components','twig','watch']);
