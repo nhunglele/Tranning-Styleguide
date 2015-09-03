@@ -6,28 +6,31 @@
 
 .branding {
   float: left;
-  width: 18.5%;
+  width: 110px;
 
-  @media (max-width: 500px) {
-    width: 110px;
+  @include breakpoint(min-width $desktop-wide){
+    width: 18.5%;
   }
 }
 
 .region-header {
   @include box-sizing(border-box);
+  @include transition(left,0.5s);
+  background: #f2f2f2;
   display: inline-block;
-  padding: 3px 0 3px 23px;
-  width: 81.5%;
+  float: right;
+  left: -300px;
+  padding: 3px 0;
+  position: fixed;
+  top: 90px;
+  width: 300px;
 
-  @media (max-width: 500px) {
-    @include transition(left,0.5s);
-    background: #f2f2f2;
-    float: right;
-    left: -300px;
-    padding: 3px 0;
-    position: fixed;
-    top: 90px;
-    width: 300px;
+  @include breakpoint(min-width $desktop-wide){ 
+    background: none;
+    float: none;
+    padding: 3px 0 3px 23px;
+    position: inherit;
+    width: 81.5%;
   }
 
   &.active {
@@ -39,15 +42,15 @@
 
 .toggleMenu {
   border-bottom: 2px solid #afaba7;
-  display: none;
+  display: block;
   float: right;
   font-size: 0;
   height: 20px;
   position: relative;
   width: 25px;
 
-  @media (max-width: 500px) {
-    display: block;
+  @include breakpoint(min-width $desktop-wide){
+    display: none;
   }
 
   &:before {
@@ -68,13 +71,13 @@
 }
 
 .navigation {
-  float: left;
+  float: right;
   font-family: 'SourceSansProBold',Helvetica,Arial,sans-serif;
-  width: 62%;
+  width: 100%;
 
-  @media (max-width: 500px) {
-    float: right;
-    width: 100%;
+  @include breakpoint(min-width $desktop-wide){
+    float: left;
+    width: 62%;
   }
 
   .main-menu {
@@ -91,12 +94,12 @@
 
     li {
       a {
-        color: #333333;
-        font-size: 18px;
+        color: #000000;
+        font-size: 24px;
 
-        @media (max-width: 500px) {
-          color: #000000;
-          font-size: 24px;
+        @include breakpoint(min-width $desktop-wide){
+          color: #333333;
+          font-size: 18px;
         }
 
         &:hover {
@@ -109,32 +112,33 @@
           position: relative;
 
           &:before {
-            border-bottom: 6px solid #16a085;
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
-            bottom: 8px;
+            border-top: 6px solid #16a085;
+            bottom: 50%;
             content: '';
-            left: 50%;
+            left: auto;
+            margin-bottom: -4px;
             margin-left: -5px;
             position: absolute;
+            right: 10px;
 
-            @media (max-width: 500px) {
-              border-bottom: medium none;
-              border-top: 6px solid #16a085;
-              bottom: 50%;
-              left: auto;
-              margin-bottom: -4px;
-              right: 10px;
+            @include breakpoint(min-width $desktop-wide){
+              border-bottom: 6px solid #16a085;
+              border-top: medium none;
+              bottom: 8px;
+              left: 50%;
+              right: 50%;
             }
           }
         }
 
         &:hover {
           .sub-menu {
-            display: block;
+            display: none;
 
-            @media (max-width: 500px) {
-              display: none;
+            @include breakpoint(min-width $desktop-wide){
+              display: block;
             }
           }
         }
@@ -157,8 +161,9 @@
           list-style: none;
           padding: 10px 0;
           position: absolute;
-          top: 49px;
+          top: 53px;
           width: 300px;
+          z-index: 99;
 
           &.active {
             background: none;
@@ -199,12 +204,14 @@
     > li {
       display: inline;
 
-      @media (max-width: 500px) {
+      @include breakpoint(min-width $desktop-wide){
         border-top: 1px solid #ffffff;
-        display: block;
+      }
 
-        &:last-child {
-          border-bottom: 1px solid #ffffff;
+      &:last-child {
+        border-bottom: 1px solid #ffffff;
+        @include breakpoint(min-width $desktop-wide){
+          border-bottom: none;
         }
       }
 
@@ -222,30 +229,31 @@
 
 .link-header {
   float: right;
-  padding: 2px 0;
-  width: 38%;
+  width: 100%;
+  padding-top: 0;
 
-  @media (max-width: 500px) {
-    width: 100%;
-    padding-top: 0;
+  @include breakpoint(min-width $desktop-wide){
+    padding: 2px 0;
+    width: 38%;
   }
 
   a {
-    @include border-radius(5px);
+    @include border-radius(0);
     background: #16a085;
     border: medium none;
     color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
-    margin-left: 16px;
+    margin-left: 0;
     padding: 12px 40px;
     text-decoration: none;
+    width: 49.8%;
     
-    @media (max-width: 500px) {
-      @include border-radius(0);
-      margin-left: 0;
-      width: 49.8%;
+    @include breakpoint(min-width $desktop-wide){
+      @include border-radius(5px);
+      margin-left: 16px;
+      width: auto;
     }
 
     &:hover {
@@ -255,10 +263,10 @@
     &:first-child {
       background: #eaab02;
       margin-left: 0;
-      margin-right: 16px;
+      margin-right: 1px;
 
-      @media (max-width: 500px) {
-        margin-right: 1px;
+      @include breakpoint(min-width $desktop-wide){
+        margin-right: 16px;
       }
 
       &:hover {
@@ -269,9 +277,10 @@
   
   span {
     color: #a3a3a3;
+    display: none;
 
-    @media (max-width: 500px) {
-      display: none;
+    @include breakpoint(min-width $desktop-wide){
+      display: inline-block;
     }
   }
 }
