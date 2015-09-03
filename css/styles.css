@@ -322,12 +322,6 @@ iframe {
   max-width: 100%;
 }
 
-.box-img {
-  float: left;
-  padding: 0 10px;
-  width: 30%;
-}
-
 .container:before, .system-messages .tabs:before, .container:after, .system-messages .tabs:after {
   content: '';
   display: table;
@@ -873,6 +867,7 @@ h2.node-title {
 @media (min-width: 73.125em) {
   .navigation .main-menu > li > a {
     padding: 16px 13px;
+    display: inline;
   }
 }
 

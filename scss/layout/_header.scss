@@ -221,6 +221,7 @@
 
         @include breakpoint($desktop-wide) {
           padding: 16px 13px;
+          display: inline;
         }
       }
     }
