@@ -1,6 +1,5 @@
 //Gulp files.
 var gulp = require('gulp'),
-
   browserSync = require('browser-sync'),
   reload = browserSync.reload,
   twig = require('gulp-twig'),
