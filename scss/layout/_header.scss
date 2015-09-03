@@ -8,7 +8,7 @@
   float: left;
   width: 110px;
 
-  @include breakpoint($desktop-wide){
+  @include breakpoint($desktop-wide) {
     width: 18.5%;
   }
 }
@@ -25,7 +25,7 @@
   top: 90px;
   width: 300px;
 
-  @include breakpoint($desktop-wide){ 
+  @include breakpoint($desktop-wide) { 
     background: none;
     float: none;
     padding: 3px 0 3px 23px;
@@ -49,7 +49,7 @@
   position: relative;
   width: 25px;
 
-  @include breakpoint($desktop-wide){
+  @include breakpoint($desktop-wide) {
     display: none;
   }
 
@@ -75,7 +75,7 @@
   font-family: 'SourceSansProBold',Helvetica,Arial,sans-serif;
   width: 100%;
 
-  @include breakpoint($desktop-wide){
+  @include breakpoint($desktop-wide) {
     float: left;
     width: 62%;
   }
@@ -97,7 +97,7 @@
         color: #000000;
         font-size: 24px;
 
-        @include breakpoint($desktop-wide){
+        @include breakpoint($desktop-wide) {
           color: #333333;
           font-size: 18px;
         }
@@ -123,7 +123,7 @@
             position: absolute;
             right: 10px;
 
-            @include breakpoint($desktop-wide){
+            @include breakpoint($desktop-wide) {
               border-bottom: 6px solid #16a085;
               border-top: medium none;
               bottom: 8px;
@@ -137,7 +137,7 @@
           .sub-menu {
             display: none;
 
-            @include breakpoint($desktop-wide){
+            @include breakpoint($desktop-wide) {
               display: block;
             }
           }
@@ -204,23 +204,23 @@
     > li {
       display: inline;
 
-      @include breakpoint($desktop-wide){
+      @include breakpoint($desktop-wide) {
         border-top: 1px solid #ffffff;
       }
 
       &:last-child {
         border-bottom: 1px solid #ffffff;
-        @include breakpoint($desktop-wide){
+        @include breakpoint($desktop-wide) {
           border-bottom: none;
         }
       }
 
       > a {
-        padding: 16px 13px;
+        padding: 12px 27px;
+        display: block;
 
-        @media (max-width: 500px) {
-          display: block;
-          padding: 12px 27px;
+        @include breakpoint($desktop-wide) {
+          padding: 16px 13px;
         }
       }
     }
@@ -232,7 +232,7 @@
   width: 100%;
   padding-top: 0;
 
-  @include breakpoint($desktop-wide){
+  @include breakpoint($desktop-wide) {
     padding: 2px 0;
     width: 38%;
   }
@@ -250,7 +250,7 @@
     text-decoration: none;
     width: 49.8%;
     
-    @include breakpoint($desktop-wide){
+    @include breakpoint($desktop-wide) {
       @include border-radius(5px);
       margin-left: 16px;
       width: auto;
@@ -265,7 +265,7 @@
       margin-left: 0;
       margin-right: 1px;
 
-      @include breakpoint($desktop-wide){
+      @include breakpoint($desktop-wide) {
         margin-right: 16px;
       }
 
@@ -279,7 +279,7 @@
     color: #a3a3a3;
     display: none;
 
-    @include breakpoint($desktop-wide){
+    @include breakpoint($desktop-wide) {
       display: inline-block;
     }
   }
