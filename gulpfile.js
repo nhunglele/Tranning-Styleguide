@@ -1,6 +1,6 @@
 //Gulp files.
 var gulp = require('gulp'),
-<<<<<<< HEAD
+
   browserSync = require('browser-sync'),
   reload = browserSync.reload,
   twig = require('gulp-twig'),
@@ -31,36 +31,6 @@ var gulp = require('gulp'),
         sass: 'scss',
         require: ['susy']
       }))
-=======
-	browserSync = require('browser-sync'),
-	reload = browserSync.reload,
-	//uglify = require('gulp-uglify'),
-	twig = require('gulp-twig'),
-	compass = require('gulp-compass'),
-	plumber = require('gulp-plumber'),
-	rename = require('gulp-rename');
-
-	// BrowserSync.
-	gulp.task('browsersync', function () {
-		browserSync({
-			notify: false,
-			server:{
-				baseDir: '.'
-			}
-		});
-	});
-
-	// Compass Tasks.
-	gulp.task('compass', function() {
-		gulp.src('scss/styles.scss')
-			.pipe(plumber())
-			.pipe(compass({
-				config_file: './config.rb',
-				css: 'css',
-				sass: 'scss',
-				require: ['susy']
-			}))
->>>>>>> 01-header-footer
 
       .pipe(gulp.dest('css/'))
       .pipe(reload({stream:true}));
@@ -96,8 +66,4 @@ var gulp = require('gulp'),
   });
 
 // Default Tasks
-<<<<<<< HEAD
 gulp.task('default', ['compass','browsersync','twig_components','twig','watch']);
-=======
-gulp.task('default', ['compass','browsersync','twig_components','twig','watch']);
->>>>>>> 01-header-footer
