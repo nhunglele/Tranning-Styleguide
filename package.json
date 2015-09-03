@@ -15,8 +15,8 @@
     "gulp-compass": "^2.1.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.2.0",
-    "gulp-twig": ""
+    "gulp-twig": "^0.3.0",
+    "gulp-html-prettify": "^0.0.1"
   },
   "description": ""
 }
