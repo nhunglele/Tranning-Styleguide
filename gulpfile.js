@@ -1,17 +1,17 @@
 //Gulp files.
-"use strict";
 
 var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload,
-	uglify = require('gulp-uglify'),
 	twig = require('gulp-twig'),
 	compass = require('gulp-compass'),
+	prettify = require('gulp-html-prettify'),
 	plumber = require('gulp-plumber'),
 	rename = require('gulp-rename');
 
 	// BrowserSync.
 	gulp.task('browsersync', function () {
+		"use strict";
 		browserSync({
 			notify: false,
 			server:{
@@ -20,15 +20,9 @@ var gulp = require('gulp'),
 		});
 	});
 
-	// Scripts Tasks.
-	gulp.task('scripts', function() {
-		gulp.src(['js/**/*.js'])
-		.pipe(uglify())
-		.pipe(gulp.dest('js'));
-	});
-
 	// Compass Tasks.
 	gulp.task('compass', function() {
+		"use strict";
 		gulp.src('scss/styles.scss')
 			.pipe(plumber())
 			.pipe(compass({
@@ -44,26 +38,32 @@ var gulp = require('gulp'),
 
 	// Twig Tasks.
 	gulp.task('twig', function() {
+		"use strict";
 		gulp.src('template/*.twig')
-		.pipe(twig())
-		.pipe(gulp.dest('./'))
-		.pipe(reload({stream:true}));
+			.pipe(twig())
+			.pipe(prettify({indent_char: ' ', indent_size: 2}))
+			.pipe(gulp.dest('.'))
+			.pipe(reload({stream:true}));
 	});
 
 	// Twig Components Tasks.
 	gulp.task('twig_components', function() {
+		"use strict";
 		gulp.src('components/**/*.twig')
-		.pipe(twig())
-		.pipe(gulp.dest('components/'))
-		.pipe(reload({stream:true}));
+			.pipe(twig())
+			.pipe(prettify({indent_char: ' ', indent_size: 2}))
+			.pipe(gulp.dest('components/'))
+			.pipe(reload({stream:true}));
 	});
 
+	// Auto run when change.
 	gulp.task('watch', function(){
-		gulp.watch('js/**/*.js', ['scripts'],reload);
+		"use strict";
+		gulp.watch('js/**/*.js', reload);
 		gulp.watch('scss/**/*.scss', ['compass'],reload);
-		gulp.watch(['template/index.twig','template/layout/**/*.twig'], ['twig'],reload);
 		gulp.watch('components/**/*.twig', ['twig_components'],reload);
+		gulp.watch(['template/index.twig','template/layout/**/*.twig','components/**/*.html'], ['twig'],reload);
 	});
 
 // Default Tasks
-gulp.task('default', ['scripts','compass','browsersync','twig_components','twig','watch']);
+gulp.task('default', ['compass','browsersync','twig_components','twig','watch']);

@@ -1,41 +1,39 @@
 {# index.twig #}
 {% extends "layout/layout.twig" %}
 {% block index %}
-	<div class="container">
-		{% block title %}ILN Styleguide{% endblock %}
+  <div class="container">
+    {% block title %}ILN Styleguide{% endblock %}
 
-		{% block desc %}
-			Show all component with design.
-			<div>Require component:</div>
-			<ul>
-				<li>- Code standards.</li>
-			  <li>- Naming standards.</li>
-			</ul>
-		{% endblock %}
-	</div>
-	{% block body %}
-		{% set list_components = [
-			{
-	      'id':'demo',
-	      'name': 'Demo'
-	    }
-		] %} 
-		{% for component in list_components %}
-			<div class="component--item" id="{{component.id}}">
-	      <h2 class="component--title">{{ loop.index }}. {{ component.name }}</h2>
-	      <div class="component--demo">
-	      {% include "../components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}
-	      </div>
-	      <button class="show-code">Show/Hide Code</button>
-	      <div class="component--source element-invisible">
-	        <div class="component--html">
-	          <h2 class="component--source--title">Markup</h2>
-	          <pre  class="brush: php">{% include "../components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}</pre>
-	        </div>
-	        <button class="hide-code">Hide Code</button>
-	      </div>
-	    </div>
-		{% endfor %}
-	{% endblock %}
+    {% block desc %}
+      <div> Show all component with design.</div>
+      <div>Require component:</div>
+      <ul>
+        <li>- Code standards.</li>
+        <li>- Naming standards.</li>
+      </ul>
+    {% endblock %}
+  </div>
 
+  {% block body %}
+    {% set list_components = [
+      {
+        'id':'demo',
+        'name': 'Demo'
+      }
+    ] %} 
+    {% for component in list_components %}
+      <div class="component--item" id="{{component.id}}">
+        <h2 class="component--title">{{ loop.index }}. {{ component.name }}</h2>
+        <div class="component--demo">{% include "../components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}</div>
+        <button class="show-code">Show/Hide Code</button>
+        <div class="component--source element-invisible">
+          <div class="component--html">
+            <h2 class="component--source--title">Markup</h2>
+            <pre  class="brush: php">{% include "../components/" ~ component.id ~ "/" ~ component.id ~ ".html" %}</pre>
+          </div>
+          <button class="hide-code">Hide Code</button>
+        </div>
+      </div>
+    {% endfor %}
+  {% endblock %}
 {% endblock %}
