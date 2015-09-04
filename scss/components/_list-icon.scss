@@ -1,0 +1,11 @@
+.list-icon{
+	li{
+		margin-bottom: 15px;
+	}
+	[class^="icon-"], [class*=" icon-"] {
+		&:before {
+			padding-right: 7px;
+			color: $blue-14;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.list-number{
+	column-count:2;
+	column-gap:40px;
+	-moz-column-count: 2;
+	-moz-column-gap: 40px;
+	-o-column-count: 2;
+	-o-column-gap: 40px;
+	-ms-column-count: 2;
+	-ms-column-gap: 40px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 40px;
+	li{
+	    padding: 0 0 12px 0;
+	    position: relative;
+	    @for $i from 1 through 20 {
+			&:nth-child(#{$i}) {
+				&:before {
+				content: '#{$i}. ';
+				}
+			}
+	    }
+	    &:before{
+	    	color: $blue-14;
+	    }
+	}
+}

@@ -1,0 +1,25 @@
+.list{
+	@include clearfix;
+	&.list-has-border{
+		li{
+			padding-left: 18px;
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 1px;
+				background-color: $default-color;
+				top: 10px;
+				left: 0;
+				line-height: 18px;
+			}
+		}
+	}
+	&.list-grid{
+		li{
+			@include gallery(6 of 12);
+		}
+		
+	}
+}

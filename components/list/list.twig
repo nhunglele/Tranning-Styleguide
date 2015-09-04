@@ -1,0 +1,25 @@
+{% block list %}
+  <ul class="list {{type_list}}">
+  	{% for item in list %}
+	    <li>{% if item.href_link is not empty %} <a href="{{item.href_link}}"> {% endif %}{{item.text}}{% if item.href_link is not empty %} </a> {% endif %}
+	    </li>
+  	{% endfor %}
+  </ul>
+{% endblock %}
+
+{% block list_ol %}
+  <ol class="list-number">
+  	{% for item in list_ol %}
+	    <li>{{item.text}}</li>
+  	{% endfor %}
+  </ol>
+{% endblock %}
+
+{% block list_icon %}
+	{% block pane_title %}<h2 class="pane-title">How It Works</h2>{% endblock %}
+  <ul class="list-icon">
+  	{% for item in list_icon %}
+	    <li class="{{item.class_icon}}">{{item.text}}</li>
+  	{% endfor %}
+  </ul>
+{% endblock %}

@@ -1290,6 +1290,131 @@ iframe {
   content: "\e602";
 }
 
+.list-icon li {
+  margin-bottom: 15px;
+}
+.list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before {
+  padding-right: 7px;
+  color: #149077;
+}
+
+.list-number {
+  column-count: 2;
+  column-gap: 40px;
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  -o-column-count: 2;
+  -o-column-gap: 40px;
+  -ms-column-count: 2;
+  -ms-column-gap: 40px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+}
+.list-number li {
+  padding: 0 0 12px 0;
+  position: relative;
+}
+.list-number li:nth-child(1):before {
+  content: "1. ";
+}
+.list-number li:nth-child(2):before {
+  content: "2. ";
+}
+.list-number li:nth-child(3):before {
+  content: "3. ";
+}
+.list-number li:nth-child(4):before {
+  content: "4. ";
+}
+.list-number li:nth-child(5):before {
+  content: "5. ";
+}
+.list-number li:nth-child(6):before {
+  content: "6. ";
+}
+.list-number li:nth-child(7):before {
+  content: "7. ";
+}
+.list-number li:nth-child(8):before {
+  content: "8. ";
+}
+.list-number li:nth-child(9):before {
+  content: "9. ";
+}
+.list-number li:nth-child(10):before {
+  content: "10. ";
+}
+.list-number li:nth-child(11):before {
+  content: "11. ";
+}
+.list-number li:nth-child(12):before {
+  content: "12. ";
+}
+.list-number li:nth-child(13):before {
+  content: "13. ";
+}
+.list-number li:nth-child(14):before {
+  content: "14. ";
+}
+.list-number li:nth-child(15):before {
+  content: "15. ";
+}
+.list-number li:nth-child(16):before {
+  content: "16. ";
+}
+.list-number li:nth-child(17):before {
+  content: "17. ";
+}
+.list-number li:nth-child(18):before {
+  content: "18. ";
+}
+.list-number li:nth-child(19):before {
+  content: "19. ";
+}
+.list-number li:nth-child(20):before {
+  content: "20. ";
+}
+.list-number li:before {
+  color: #149077;
+}
+
+.list:before, .list:after {
+  content: '';
+  display: table;
+}
+.list:after {
+  clear: both;
+}
+.list.list-has-border li {
+  padding-left: 18px;
+  position: relative;
+}
+.list.list-has-border li:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background-color: #5f574f;
+  top: 10px;
+  left: 0;
+  line-height: 18px;
+}
+.list.list-grid li {
+  width: 48.71795%;
+  float: left;
+}
+.list.list-grid li:nth-child(2n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+.list.list-grid li:nth-child(2n + 2) {
+  margin-left: 51.28205%;
+  margin-right: -100%;
+  clear: none;
+}
+
 .modal-content-agree-sign-up .popups-container,
 .modal-content-sign-up .popups-container,
 .modal-content-sign-in .popups-container {
