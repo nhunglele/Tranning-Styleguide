@@ -8,6 +8,35 @@
   font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
 }
 
+@mixin source-sans-problack {
+  font-family: 'source_sans_problack', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-probold {
+  font-family: 'source_sans_probold', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-proextralight {
+  font-family: 'source_sans_proextralight', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-proit {
+  font-family: 'source_sans_proit', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-prolight {
+  font-family: 'source_sans_prolight', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-prolight-italic {
+  font-family: 'source_sans_prolight_italic', Helvetica, Arial, sans-serif;
+}
+
+@mixin source-sans-prosemibold {
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+}
+
+
 //Automated sprite creator
 //USAGE: @include sprite-background(down_open_mobile);
 

@@ -19,7 +19,6 @@ h1.page-title {
   line-height: rem(35px);
   margin-bottom: rem(25px);
   text-transform: capitalize;
-
   @include breakpoint($desktop-small) {
     font-size: rem(40px);
     margin-bottom: rem(40px);
@@ -29,7 +28,6 @@ h1.page-title {
 
 .node-title {
   color: $black;
-
   a {
     color: $black;
 
@@ -48,11 +46,10 @@ h2.node-title {
 
 .section-title,
 %section-title {
-  @include source-sans-pro-regular;
+  @include source-sans-prolight;
   font-size: rem(22px);
   line-height: 1.4;
   margin-bottom: rem(25px);
-
   @include breakpoint($desktop-small) {
     font-size: rem(48px);
     margin-bottom: rem(30px);
