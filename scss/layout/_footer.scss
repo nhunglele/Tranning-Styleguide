@@ -1,1 +1,60 @@
 // Styles for footer.
+.footer {
+  @include box-sizing(border-box);
+  color: #5f574f;
+  font-size: 14px;
+  padding: 63px 20px 36px;
+
+  @include breakpoint($desktop-wide) {
+    padding: 63px 0 36px;
+  }
+}
+
+.copyright {
+  float: left;
+  margin: -3px 0 0;
+  width: 100%;
+
+  @include breakpoint($desktop-wide) {
+    width: 48.7179%;
+  }
+}
+
+.menu-footer {
+  float: none;
+  margin-right: 0;
+  text-align: left;
+  width: 100%;
+
+  @include breakpoint($desktop-wide) {
+    float: right;
+    text-align: right;
+    width: 48.7179%;
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-left: 0;
+
+      @include breakpoint($desktop-wide) {
+        margin-left: 40px;
+      }
+      a {
+        color: #5f574f;
+        text-decoration: none;
+        
+        &:hover {
+          color: #16a085;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
