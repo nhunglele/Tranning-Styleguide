@@ -1,4 +1,7 @@
 // Style Box Img
+#box_img .component--demo {
+  display: inline-block;
+}
 
 .box-img {
   float: left;
@@ -56,7 +59,7 @@
 }
 
 .box-img--wide {
-	.box-img__image {
-		background: #ffffff;
-	}
+  .box-img__image {
+    background: #ffffff;
+  }
 }
