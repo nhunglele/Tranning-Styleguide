@@ -1,0 +1,62 @@
+// Style Box Img
+
+.box-img {
+  float: left;
+  margin-bottom: 44px;
+  margin-right: 2.5641%;
+  padding: 0 45px;
+  text-align: center;
+  width: 31.6239%;
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
+
+  &:nth-child(6) {
+    margin-right: 0;
+  }
+
+  .box-img__image {
+    @include border-radius(100%);
+    background: #f4f3ef;
+    display: inline-block;
+    height: 85px;
+    margin-bottom: 16px;
+    position: relative;
+    width: 85px;
+
+    .field-img {
+      @include transform(translateY(-50%));
+      left: 0;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 100%;
+
+      img {
+        display: inline-block;
+      }
+    }
+  }
+
+  .box-img__title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .box-img__content {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .box-hero__link {
+    font-size: 19px;
+    font-weight: bold;
+  }
+}
+
+.box-img--wide {
+	.box-img__image {
+		background: #ffffff;
+	}
+}
