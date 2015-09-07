@@ -1083,5 +1083,11 @@ body:after {
 }
 
 /* No files to import found in pages/** */
+.component--source {
+  display: none;
+}
+.component--source.active {
+  display: block;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,3 +5,11 @@ $rhythm-unit: 'rem';
 $rem-with-px-fallback: false;
 $breakpoint-to-ems: true;
 @import 'styles-main';
+
+.component--source {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
