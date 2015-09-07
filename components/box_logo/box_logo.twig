@@ -1,0 +1,7 @@
+{% block boxlogo %}
+	{% for box in logo %}
+		<div class="box-logo">
+			{% if box.link_img is not empty %}<div class="box-logo__image"><img src="{{ box.link_img }}" typeof="foaf:Image"></div>{% endif %}
+		</div>
+	{% endfor %}
+{% endblock %}
