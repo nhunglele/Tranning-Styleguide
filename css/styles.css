@@ -1083,8 +1083,13 @@ body:after {
 }
 
 /* No files to import found in pages/** */
+.show-code {
+  margin-bottom: 20px;
+}
+
 .component--source {
   display: none;
+  margin-bottom: 20px;
 }
 .component--source.active {
   display: block;

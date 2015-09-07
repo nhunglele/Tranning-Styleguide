@@ -6,10 +6,15 @@ $rem-with-px-fallback: false;
 $breakpoint-to-ems: true;
 @import 'styles-main';
 
-.component--source {
-	display: none;
+.show-code {
+  margin-bottom: 20px;
+}
 
-	&.active {
-		display: block;
-	}
+.component--source {
+  display: none;
+  margin-bottom: 20px;
+
+  &.active {
+    display: block;
+  }
 }
