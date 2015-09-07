@@ -429,6 +429,10 @@ iframe {
   padding: 15px;
 }
 
+#box_img .component--demo {
+  display: inline-block;
+}
+
 .box-img {
   float: left;
   margin-bottom: 44px;
