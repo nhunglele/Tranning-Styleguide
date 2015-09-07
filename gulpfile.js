@@ -61,7 +61,7 @@ var gulp = require('gulp'),
     gulp.watch('js/**/*.js', reload);
     gulp.watch('scss/**/*.scss', ['compass'],reload);
     gulp.watch('components/**/*.twig', ['twig_components'],reload);
-    gulp.watch(['template/index.twig','template/layout/**/*.twig','components/**/*.html'], ['twig'],reload);
+    gulp.watch(['template/*.twig','template/layout/**/*.twig','components/**/*.html'], ['twig'],reload);
   });
 
 // Default Tasks

@@ -192,6 +192,12 @@ input[type="submit"] {
   margin: 1.25rem 0;
 }
 
+.form-text,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .form-managed-file input.form-file {
   margin-bottom: 0.625rem;
   margin-right: 0.9375rem;
@@ -258,6 +264,44 @@ input[type="submit"] {
     float: right;
     margin-right: 0;
   }
+}
+
+.pager {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+.pager li {
+  float: left;
+  width: 30px;
+  margin: 5px;
+}
+.pager li span,
+.pager li a {
+  border-radius: 100%;
+  display: inline-block;
+  height: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+}
+.pager li span:hover,
+.pager li a:hover {
+  background-color: #16a085;
+  color: white;
+}
+.pager .pager-next a:hover,
+.pager .pager-next span:hover,
+.pager .pager-previous a:hover,
+.pager .pager-previous span:hover,
+.pager .pager-last a:hover,
+.pager .pager-last span:hover {
+  background-color: transparent;
+  color: #333;
+}
+.pager .pager-current span {
+  background-color: #16a085;
+  color: white;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -369,6 +413,20 @@ p {
 img,
 iframe {
   max-width: 100%;
+}
+
+.component--item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.component--item .component--title {
+  background-color: #dfdfdf;
+  text-align: center;
+  padding: 10px 15px;
+}
+.component--item .component--demo {
+  padding: 15px;
 }
 
 .container:before, .system-messages .tabs:before, .container:after, .system-messages .tabs:after {
