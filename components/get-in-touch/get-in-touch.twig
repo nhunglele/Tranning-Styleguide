@@ -1,0 +1,32 @@
+{% set intouch = [
+    {
+      'name': 'Name',
+      'email': 'Email',
+      'message': 'Surename',
+      'submit': 'Submit'
+    }
+  ] 
+%}
+
+{% block getintouch %}
+  <div class="get-in-touch">
+    {% for get in intouch %}
+      <div id="webform-component-name" class="form-item webform-component webform-component-textfield">
+        <label for="edit-submitted-name" style="display: none;">Name <span title="This field is required." class="form-required">*</span></label>
+         <input type="text" class="form-text required" maxlength="128" size="32" value="" name="submitted[name]" id="edit-submitted-name" placeholder="{{ get.name }}">
+      </div>
+
+      <div id="webform-component-email" class="form-item webform-component webform-component-email">
+        <label for="edit-submitted-email" style="display: none;">Email <span title="This field is required." class="form-required">*</span></label>
+       <input type="email" size="32" name="submitted[email]" id="edit-submitted-email" class="email form-text form-email required" placeholder="{{ get.email }}">
+      </div>
+
+      <div id="webform-component-message" class="form-item webform-component webform-component-textarea">
+        <label for="edit-submitted-message" style="display: none;">Message <span title="This field is required." class="form-required">*</span></label>
+         <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea"><textarea class="form-textarea required" rows="5" cols="60" name="submitted[message]" id="edit-submitted-message" placeholder="{{ get.message }} *"></textarea><div class="grippie"></div></div>
+      </div>
+
+      <input type="submit" value="{{ get.submit }}" name="op" id="edit-submit" class="button radius button form-submit">
+    {% endfor %}
+  </div>
+{% endblock %}

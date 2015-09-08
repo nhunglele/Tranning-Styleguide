@@ -1,0 +1,27 @@
+.get-in-touch {
+	padding: 0 12.3125rem;
+
+	.webform-component-textfield,
+	.webform-component-email {
+    float: left;
+    margin-bottom: 2.375rem;
+    width: 50%;
+	}
+
+	.webform-component-textfield {
+		padding-right: 0.9375rem;
+	}
+
+	.webform-component-email {
+		padding-left: 0.9375rem;
+	}
+
+	.webform-component-textarea {
+		clear: both;
+		margin-bottom: 2.5rem;
+	}
+
+	.form-submit {
+		padding: 0.825rem 5.5rem;
+	}
+}

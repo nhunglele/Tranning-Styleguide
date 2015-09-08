@@ -800,6 +800,29 @@ iframe {
   clear: both;
 }
 
+.get-in-touch {
+  padding: 0 12.3125rem;
+}
+.get-in-touch .webform-component-textfield,
+.get-in-touch .webform-component-email {
+  float: left;
+  margin-bottom: 2.375rem;
+  width: 50%;
+}
+.get-in-touch .webform-component-textfield {
+  padding-right: 0.9375rem;
+}
+.get-in-touch .webform-component-email {
+  padding-left: 0.9375rem;
+}
+.get-in-touch .webform-component-textarea {
+  clear: both;
+  margin-bottom: 2.5rem;
+}
+.get-in-touch .form-submit {
+  padding: 0.825rem 5.5rem;
+}
+
 .go-to-top {
   font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
