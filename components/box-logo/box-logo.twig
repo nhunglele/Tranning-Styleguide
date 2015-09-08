@@ -1,0 +1,24 @@
+{% set logo = [
+    {
+      'link_img': 'http://stanfordilnhd4dalk5nb.devcloud.acquia-sites.com/sites/default/files/partnerlogos/box-logo1.png'
+    },
+    {
+      'link_img': 'http://stanfordilnhd4dalk5nb.devcloud.acquia-sites.com/sites/default/files/partnerlogos/box-logo2.png'
+    },
+    {
+      'link_img': 'http://stanfordilnhd4dalk5nb.devcloud.acquia-sites.com/sites/default/files/partnerlogos/box-logo3.png'
+    }
+  ] 
+%}
+
+{% block boxlogo %}
+  <div class="container">
+    <div class="box-logo">
+      {% for box in logo %}
+        <div class="box-logo__item">
+          {% if box.link_img is not empty %}<div class="box-logo__image"><img src="{{ box.link_img }}" typeof="foaf:Image"></div>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
