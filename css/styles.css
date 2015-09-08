@@ -429,6 +429,31 @@ iframe {
   padding: 15px;
 }
 
+.box-logo {
+  display: inline-block;
+  margin-bottom: 72px;
+  padding: 0 120px;
+  width: 100%;
+}
+.box-logo .box-logo__item {
+  width: 31.62393%;
+  float: left;
+  margin-right: 2.5641%;
+}
+.box-logo .box-logo__item:nth-child(1) {
+  padding-left: 0;
+}
+.box-logo .box-logo__item:nth-child(2) {
+  text-align: center;
+}
+.box-logo .box-logo__item:nth-child(3) {
+  margin-right: 0;
+  text-align: right;
+}
+.box-logo .box-logo__item img {
+  display: inline;
+}
+
 .container:before, .system-messages .tabs:before, .container:after, .system-messages .tabs:after {
   content: '';
   display: table;
