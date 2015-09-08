@@ -23,4 +23,16 @@ $(document).ready(function () {
   $('.toggleMenu').on('click', processMenuMobile);
   $('.mainmenu li a').on('click', processSubMenuMobile);
   $('.navigation .mainmenu li.subitem > a').on('click', processSubSubMenuMobile);
+
+  var processShowCode = function () {
+    $(this).toggleClass("active");
+    $(this).next().toggleClass("active");
+  };
+
+  var processHideCode = function () {
+    $(this).parents('.component--source').removeClass("active");
+  };
+
+  $('.show-code').on('click', processShowCode);
+  $('.hide-code').on('click', processHideCode);
 });
