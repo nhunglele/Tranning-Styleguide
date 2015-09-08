@@ -1,5 +1,27 @@
 {% block list %}
-  <ul class="list {{type_list}}">
+	<!-- List has border -->
+	{% set type_list = 'list-has-border' %}
+	{% set list = [
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+	] %}
+	<ul class="list {{type_list}}">
   	{% for item in list %}
 	    <li>{% if item.href_link is not empty %} <a href="{{item.href_link}}"> {% endif %}{{item.text}}{% if item.href_link is not empty %} </a> {% endif %}
 	    </li>
@@ -7,19 +29,66 @@
   </ul>
 {% endblock %}
 
-{% block list_ol %}
+<!-- List number -->
+{% block list_number %}
+	{% set list_number = [
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		},
+		{
+			'text': 'Test'
+		}
+	] %}
   <ol class="list-number">
-  	{% for item in list_ol %}
-	    <li>{{item.text}}</li>
+  	{% for item in list_number %}
+  	  <li>{{item.text}}</li>
   	{% endfor %}
   </ol>
 {% endblock %}
 
+<!-- List icon -->
 {% block list_icon %}
-	{% block pane_title %}<h2 class="pane-title">How It Works</h2>{% endblock %}
+	{% set list_icon = [
+		{
+			'class_icon': 'icon-checkmark',
+			'text': 'Test'
+		},
+		{
+			'class_icon': 'icon-checkmark',
+			'text': 'Test'
+		},
+		{
+			'class_icon': 'icon-checkmark',
+			'text': 'Test'
+		},
+		{
+			'class_icon': 'icon-checkmark',
+			'text': 'Test'
+		},
+		{
+			'class_icon': 'icon-checkmark',
+			'text': 'Test'
+		},
+		{
+			'class_icon': 'icon-checkmark',
+			'text': 'Test'
+		}
+	] %}
   <ul class="list-icon">
   	{% for item in list_icon %}
-	    <li class="{{item.class_icon}}">{{item.text}}</li>
+  	  <li class="{{item.class_icon}}">{{item.text}}</li>
   	{% endfor %}
   </ul>
 {% endblock %}

@@ -2,6 +2,7 @@
 $(document).ready(function () {
   "use strict";
 
+<<<<<<< HEAD
   $(".testimonial-inner").owlCarousel({
     autoPlay : 4000,
     stopOnHover : true,
@@ -10,6 +11,17 @@ $(document).ready(function () {
     pagination : false,
     navigation : true
   });
+=======
+  /*$(".owl-example").owlCarousel({
+    autoPlay : 2000,
+    stopOnHover : true,
+    paginationSpeed : 1000,
+    goToFirstSpeed : 2000,
+    singleItem : true,
+    autoHeight : true,
+    transitionStyle:"fade"
+  });*/
+>>>>>>> 08-component-list
 
   // Menu responsive.
   var processMenuMobile = function () {
