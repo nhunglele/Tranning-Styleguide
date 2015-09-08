@@ -66,7 +66,6 @@ fieldset {
 input {
   @include box-sizing(border-box);
   max-width: 100%;
-
   &[type='submit'] {
     @extend %btn;
   }
@@ -82,7 +81,6 @@ input:not([type="submit"]), textarea {
   margin-bottom: rem(5px);
   outline: none;
   padding: rem(10px 15px);
-
   &.error {
     border: 1px solid $red;
   }
@@ -119,6 +117,11 @@ input[type="submit"] {
 
 .form-wrapper {
   margin: rem(20px 0);
+}
+.form-text,
+textarea{
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-managed-file {
