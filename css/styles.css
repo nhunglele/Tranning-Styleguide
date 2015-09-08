@@ -434,12 +434,20 @@ iframe {
 }
 
 .box-img {
+  width: 45.94595%;
+  float: left;
+  margin-right: 8.10811%;
   float: left;
   margin-bottom: 44px;
-  margin-right: 2.5641%;
   padding: 0 45px;
   text-align: center;
-  width: 31.6239%;
+}
+@media (min-width: 73.125em) {
+  .box-img {
+    width: 31.62393%;
+    float: left;
+    margin-right: 2.5641%;
+  }
 }
 .box-img:nth-child(3) {
   margin-right: 0;
