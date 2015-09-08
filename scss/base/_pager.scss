@@ -1,40 +1,45 @@
 .pager  {
-  display: inline-block;
-  height: auto;
-  width: 100%;
-  li{
-    float: left;
-    width: 30px;
-    margin:5px;
-    span,
-    a{
-      border-radius: 100%;
-      display: inline-block;
-      height: 100%;
-      padding: 5px 10px;
-      text-align: center;
-      width: 100%;
-      &:hover{
-        background-color: $color-links;
-        color: white;
-      }
-    }
-  }
-  .pager-next,
-  .pager-previous,
-  .pager-last{
-    a,
-    span{
-      &:hover{
-        background-color: transparent;
-        color: $base-color;
-      }
-    }
-  }
-  .pager-current{
-    span{
-      background-color: $color-links;
-      color: white;
-    }
-  }
+	display: inline-block;
+	height: auto;
+	width: 100%;
+
+	li{
+		float: left;
+		width: 30px;
+		margin:5px;
+
+		span,
+		a{
+			border-radius: 100%;
+			display: inline-block;
+			height: 100%;
+			padding: 5px 10px;
+			text-align: center;
+			width: 100%;
+
+			&:hover{
+				background-color: $color-links;
+				color: white;
+			}
+		}
+	}
+
+	.pager-next,
+	.pager-previous,
+	.pager-last{
+		a,
+		span{
+			&:hover{
+				background-color: transparent;
+				color: $base-color;
+			}
+		}
+	}
+  
+	.pager-current{
+		span{
+			background-color: $color-links;
+			color: white;
+		}
+	}
 }

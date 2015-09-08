@@ -51,11 +51,13 @@ iframe {
   border: 1px solid $grey-d;
   border-radius: 5px;
   margin-bottom: 30px;
+
   .component--title{
     background-color: $grey-df;
     text-align: center;
     padding: 10px 15px;
   }
+  
   .component--demo{
     padding: 15px;
   }
