@@ -3,6 +3,7 @@ $(document).ready(function () {
   "use strict";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $(".testimonial-inner").owlCarousel({
     autoPlay : 4000,
     stopOnHover : true,
@@ -14,13 +15,21 @@ $(document).ready(function () {
 =======
   /*$(".owl-example").owlCarousel({
     autoPlay : 2000,
+=======
+  $(".testimonial-inner").owlCarousel({
+    autoPlay : 4000,
+>>>>>>> 08-component-list
     stopOnHover : true,
-    paginationSpeed : 1000,
-    goToFirstSpeed : 2000,
     singleItem : true,
     autoHeight : true,
+<<<<<<< HEAD
     transitionStyle:"fade"
   });*/
+>>>>>>> 08-component-list
+=======
+    pagination : false,
+    navigation : true
+  });
 >>>>>>> 08-component-list
 
   // Menu responsive.

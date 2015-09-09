@@ -1,16 +1,17 @@
 //FONTS
 
 // Icon library.
-@font-face {
+font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?mnqyr1');
-  src:url('../fonts/icomoon.eot?#iefixmnqyr1') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?mnqyr1') format('truetype'),
-    url('../fonts/icomoon.woff?mnqyr1') format('woff'),
-    url('../fonts/icomoon.svg?mnqyr1#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?ksijsz');
+  src:url('../fonts/icomoon.eot?#iefixksijsz') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ksijsz') format('truetype'),
+    url('../fonts/icomoon.woff?ksijsz') format('woff'),
+    url('../fonts/icomoon.svg?ksijsz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 // Fonts.
 @include font-face('source_sans_proregular', font-files('sourcesanspro-regular-webfont.woff2', 'woff2', 'sourcesanspro-regular-webfont.woff', 'woff', 'sourcesanspro-regular-webfont.ttf', 'truetype', 'sourcesanspro-regular-webfont.svg', 'svg'), 'sourcesanspro-regular-webfont.eot', normal, normal);
 

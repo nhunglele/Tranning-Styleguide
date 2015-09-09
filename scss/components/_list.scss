@@ -4,6 +4,7 @@
 		li{
 			padding-left: 18px;
 			position: relative;
+			margin-bottom: 17px;
 			&:before{
 				content: '';
 				position: absolute;
@@ -18,49 +19,57 @@
 	}
 	&.list-grid{
 		li{
-			@include gallery(6 of 12);
+			@include breakpoint($tablet){
+				@include gallery(6 of 12);
+			}
 		}
-		
 	}
 }
 
 //Style list-number.
 .list-number{
-	column-count:2;
-	column-gap:40px;
-	-moz-column-count: 2;
-	-moz-column-gap: 40px;
-	-o-column-count: 2;
-	-o-column-gap: 40px;
-	-ms-column-count: 2;
-	-ms-column-gap: 40px;
-	-webkit-column-count: 2;
-	-webkit-column-gap: 40px;
+	@include breakpoint($tablet){
+		column-count:2;
+		column-gap:40px;
+		-moz-column-count: 2;
+		-moz-column-gap: 40px;
+		-o-column-count: 2;
+		-o-column-gap: 40px;
+		-ms-column-count: 2;
+		-ms-column-gap: 40px;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 40px;
+	}
 	li{
-	    padding: 0 0 12px 0;
-	    position: relative;
-	    @for $i from 1 through 20 {
+		padding: 0 0 13px 0;
+		position: relative;
+		font-size: $base-font-size + 2px;
+		@for $i from 1 through 20 {
 			&:nth-child(#{$i}) {
 				&:before {
-				content: '#{$i}. ';
+					content: '#{$i}. ';
 				}
 			}
-	    }
-	    &:before{
-	    	color: $blue-14;
-	    }
+		}
+		&:before{
+			color: $blue-14;
+			@include source-sans-prosemibold;
+		}
 	}
 }
 
 //Style list-icon.
 .list-icon{
 	li{
-		margin-bottom: 15px;
+		margin-bottom: 27px;
+		@include source-sans-pro-regular;
+		font-size: $base-font-size + 2px;
 	}
 	[class^="icon-"], [class*=" icon-"] {
 		&:before {
 			padding-right: 7px;
 			color: $blue-14;
+			@extend %icons;
 		}
 	}
 }

@@ -17,20 +17,32 @@
 }
 
 // IMPORTANT. For updating the icon lib, replace the icons code below:
-.icon-envelope-o:before {
+.icon-angle-down:before {
   content: "\e607";
 }
-.icon-twitter:before {
+.icon-angle-up:before {
   content: "\e608";
 }
-.icon-google-plus:before {
+.icon-mail:before {
   content: "\e609";
 }
-.icon-facebook:before {
+.icon-chevron-thin-right:before {
+  content: "\e603";
+}
+.icon-chevron-thin-left:before {
+  content: "\e604";
+}
+.icon-locked:before {
   content: "\e60a";
 }
-.icon-arrow-right:before {
-  content: "\e606";
+.icon-user:before {
+  content: "\e60c";
+}
+.icon-location:before {
+  content: "\e60d";
+}
+.icon-facebook:before {
+  content: "\e60e";
 }
 .icon-checkmark:before {
   content: "\e605";
@@ -41,11 +53,8 @@
 .icon-star-full:before {
   content: "\e601";
 }
-.icon-chevron-thin-right:before {
-  content: "\e603";
-}
-.icon-chevron-thin-left:before {
-  content: "\e604";
+.icon-arrow-right:before {
+  content: "\e606";
 }
 .icon-star:before {
   content: "\e602";
