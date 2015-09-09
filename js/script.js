@@ -45,7 +45,6 @@ $(document).ready(function () {
   $('.show-code').on('click', processShowCode);
   $('.hide-code').on('click', processHideCode);
 
-<<<<<<< HEAD
   // Js for Rating
   $('.box-teaser__rating-select').barrating();
 
@@ -150,5 +149,37 @@ $(document).ready(function () {
     speed: 75,
     lessLink: '<a href="#">Read less</a>'
   });
+
+  var lesstext = "Show less",
+      moretext = "Show more",
+      ellipsestext = ".",
+      showChar = 450,
+      boxIntrocontent = $('.box-intro_content'),
+      boxIntrocontentmarkup =function(){
+        boxIntrocontent.each(function() {
+          content = boxIntrocontent.html();
+          if(content.length > showChar) {
+            var c = content.substr(0, showChar),
+                h = content.substr(showChar, content.length - showChar),
+                html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+                $(this).html(html);
+          }
+        });
+      },
+      clickReadmore = function(){
+        if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+        } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+      };
+
+  boxIntrocontentmarkup();
+  $('.morelink').on('click', clickReadmore);
 
 });

@@ -2889,12 +2889,16 @@ iframe {
 
 .box-intro {
   margin-bottom: 50px;
-}
-.box-intro .box-intro_title {
   text-align: center;
 }
 .box-intro .box-intro_content {
   line-height: 1.9;
+}
+.box-intro .box-intro_content .morecontent span {
+  display: none;
+}
+.box-intro .box-intro_content .morelink {
+  display: block;
 }
 
 /* No files to import found in vendors/** */
