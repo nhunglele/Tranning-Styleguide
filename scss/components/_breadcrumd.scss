@@ -1,11 +1,11 @@
 .breadcrumd {
-	display: inline-block;
-	width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 .breadcrumd-left {
   @include breakpoint($desktop-wide) {
-  	float: left;
+    float: left;
   }
 
   li {
@@ -41,7 +41,7 @@
     }
 
     &.current {
-    	float: right;
+      float: right;
     }
   }
 }
