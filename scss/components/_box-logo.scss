@@ -1,0 +1,38 @@
+.box-logo {
+  display: inline-block;
+  margin-bottom: 45px;
+  width: 100%;
+
+  @include breakpoint($desktop-wide) {
+    margin-bottom: 72px;
+    padding: 0 120px;
+  }
+
+  .box-logo__item {
+    @include span(2);
+
+    @include breakpoint($desktop-wide) {
+      @include span(4 of $susy_wide_desktop at 3);
+    }
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    &:nth-child(3) {
+      text-align: right;
+
+      @include breakpoint($desktop-wide) {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      display: inline;
+    }
+  }
+}
