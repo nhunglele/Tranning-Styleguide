@@ -668,6 +668,23 @@ iframe {
   clear: both;
 }
 
+.go-to-top {
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  bottom: 1.25rem;
+  color: #000;
+  font-size: 0.8125rem;
+  left: 1.25rem;
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.go-to-top.cd-is-visible {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: 'icomoon';
   speak: none;
