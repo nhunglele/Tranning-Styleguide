@@ -1,0 +1,59 @@
+{% set boxteaserfull =[{'title':'QPA tool Calibration protocol','status':'free','category':'Ensuring the Quality of Performance Tasks','grade':'grade1','subject':'subject1','course':'course1','rating':'rating1','tags' : 'tags1','content':'content1'}]
+%}
+
+{% set boxteasertwocol =[{'title':'QPA tool Calibration protocol','status':'free','category':'Ensuring the Quality of Performance Tasks','grade':'grade1','subject':'subject1','course':'course1','rating':'rating1','tags' : 'tags1','content':'content2'}]
+%}
+
+{% block boxteaserfull %}
+  <div class="box-teaser box-teaser--full">
+    <div class="box-teaser__grid">
+      {% for itemteaser in boxteaserfull %}
+        <div class="box-teaser__item">
+          <div class="box-teaser__line-task">
+            <h2 class="box-teaser__title">{{ itemteaser.title }}</h2>
+            <span class="box-teaser__status">{{ itemteaser.status }}</span>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__category"><label class="box-teaser__label">Category</label>{{ itemteaser.category }}</div>
+            <div class="box-teaser__grade-lever"><label class="box-teaser__label">Grade Lever</label>{{ itemteaser.grade }}</div>
+            <div class="box-teaser__subject"><label class="box-teaser__label">Subject</label>{{ itemteaser.subject }}</div>
+            <div class="box-teaser__course"><label class="box-teaser__label">Course</label>{{ itemteaser.course }}</div>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__rating"><label class="box-teaser__label">Rating</label>{{ itemteaser.rating }}</div>
+            <div class="box-teaser__tags"><label class="box-teaser__label">Tags</label>{{ itemteaser.tags }}</div>
+          </div>
+          <div class="box-teaser__content">{{ itemteaser.content }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block boxteasertwocol %}
+  <div class="box-teaser box-teaser--full">
+    <div class="box-teaser__grid">
+      {% for itemteaser in boxteasertwocol %}
+        <div class="box-teaser__item">
+          <div class="box-teaser__line-task">
+            <h2 class="box-teaser__title">{{ itemteaser.title }}</h2>
+            <span class="box-teaser__status">{{ itemteaser.status }}</span>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__category"><label class="box-teaser__label">Category</label>{{ itemteaser.category }}</div>
+            <div class="box-teaser__grade-lever"><label class="box-teaser__label">Grade Lever</label>{{ itemteaser.grade }}</div>
+            <div class="box-teaser__subject"><label class="box-teaser__label">Subject</label>{{ itemteaser.subject }}</div>
+            <div class="box-teaser__course"><label class="box-teaser__label">Course</label>{{ itemteaser.course }}</div>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__rating"><label class="box-teaser__label">Rating</label>{{ itemteaser.rating }}</div>
+            <div class="box-teaser__tags"><label class="box-teaser__label">Tags</label>{{ itemteaser.tags }}</div>
+          </div>
+          <div class="box-teaser__content">{{ itemteaser.content }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+
+
