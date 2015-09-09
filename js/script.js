@@ -41,10 +41,11 @@ $(document).ready(function () {
   var processHideCode = function () {
     $(this).parents('.component--source').removeClass("active");
   };
-
+  
   $('.show-code').on('click', processShowCode);
   $('.hide-code').on('click', processHideCode);
 
+<<<<<<< HEAD
   // Js for Rating
   $('.box-teaser__rating-select').barrating();
 
@@ -143,4 +144,11 @@ $(document).ready(function () {
   $('.quicktabs-wrapper .item-list .tab-mobile').on('click', processTabVerticalMobile);
 
   $(".chosen-enable").chosen();
+
+  // Js readmore for Box Intro 
+  $('.box-intro_content').readmore({
+    speed: 75,
+    lessLink: '<a href="#">Read less</a>'
+  });
+
 });
