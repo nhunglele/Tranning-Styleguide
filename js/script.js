@@ -2,6 +2,15 @@
 $(document).ready(function () {
   "use strict";
 
+  $(".testimonial-inner").owlCarousel({
+    autoPlay : 4000,
+    stopOnHover : true,
+    singleItem : true,
+    autoHeight : true,
+    pagination : false,
+    navigation : true
+  });
+
   // Menu responsive.
   var processMenuMobile = function () {
     $(this).toggleClass("active");
