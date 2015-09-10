@@ -1,225 +1,225 @@
 .quicktabs-wrapper {
-	display: inline-block;
+  display: inline-block;
 
-	.item-list {
+  .item-list {
 
-		@include breakpoint($desktop-wide) {
-			@include span(3 of $susy_wide_desktop at 12);
-		}
+    @include breakpoint($desktop-wide) {
+      @include span(3 of $susy_wide_desktop at 12);
+    }
 
-		.tab-mobile {
-			font-family: source_sans_prosemibold;
-			font-size: rem(18px);
-			padding: rem(15px) rem(30px) rem(14px) rem(20px);
-			background: linear-gradient(#f5f4f0, #e8e7e3);
-			border: 1px solid #ccc;
-			@include border-radius(5px);
-			margin-bottom: 3px;
+    .tab-mobile {
+      font-family: source_sans_prosemibold;
+      font-size: rem(18px);
+      padding: rem(15px) rem(30px) rem(14px) rem(20px);
+      background: linear-gradient(#f5f4f0, #e8e7e3);
+      border: 1px solid #ccc;
+      @include border-radius(5px);
+      margin-bottom: 3px;
 
-			@include breakpoint($desktop-wide) {
-				display: none;
-			}
-		}
+      @include breakpoint($desktop-wide) {
+        display: none;
+      }
+    }
 
-		.quicktabs-tabs {
-			display: none;
-			border: 1px solid #ccc;
-			@include border-radius(5px);
+    .quicktabs-tabs {
+      display: none;
+      border: 1px solid #ccc;
+      @include border-radius(5px);
 
-			&.active {
-				display: block;
-			}
+      &.active {
+        display: block;
+      }
 
-			@include breakpoint($desktop-wide) {
-				display: block;
-				border: none;
-				@include border-radius(0);
-			}
+      @include breakpoint($desktop-wide) {
+        display: block;
+        border: none;
+        @include border-radius(0);
+      }
 
-			li {
-				@include breakpoint($desktop-wide) {
-					border-bottom: 3px solid #dfdfdf;
+      li {
+        @include breakpoint($desktop-wide) {
+          border-bottom: 3px solid #dfdfdf;
 
-					&.last {
-						border-bottom: none;
-					}
+          &.last {
+            border-bottom: none;
+          }
 
-					&:nth-child(1) {
-						a {
-							color: $pink-d8;
+          &:nth-child(1) {
+            a {
+              color: $pink-d8;
 
-							&:hover:before {
-								color: $pink-d8;
-							}
+              &:hover:before {
+                color: $pink-d8;
+              }
 
-							&.active:before {
-								color: $pink-d8;
-							}
-						}
-					}
+              &.active:before {
+                color: $pink-d8;
+              }
+            }
+          }
 
-					&:nth-child(2) {
-						a {
-							color: $blue-1b;
+          &:nth-child(2) {
+            a {
+              color: $blue-1b;
 
-							&:hover:before {
-								color: $blue-1b;
-							}
+              &:hover:before {
+                color: $blue-1b;
+              }
 
-							&.active:before {
-								color: $blue-1b;
-							}
-						}
-					}
+              &.active:before {
+                color: $blue-1b;
+              }
+            }
+          }
 
-					&:nth-child(3) {
-						a {
-							color: $dark-orchid3;
+          &:nth-child(3) {
+            a {
+              color: $dark-orchid3;
 
-							&:hover:before {
-								color: $dark-orchid3;
-							}
-							
-							&.active:before {
-								color: $dark-orchid3;
-							}
-						}
-					}
+              &:hover:before {
+                color: $dark-orchid3;
+              }
+              
+              &.active:before {
+                color: $dark-orchid3;
+              }
+            }
+          }
 
-					&:nth-child(4) {
-						a {
-							color: $dark-orange;
+          &:nth-child(4) {
+            a {
+              color: $dark-orange;
 
-							&:hover:before {
-								color: $dark-orange;
-							}
-							
-							&.active:before {
-								color: $dark-orange;
-							}
-						}
-					}
+              &:hover:before {
+                color: $dark-orange;
+              }
+              
+              &.active:before {
+                color: $dark-orange;
+              }
+            }
+          }
 
-					&:nth-child(5) {
-						a {
-							color: $green;
+          &:nth-child(5) {
+            a {
+              color: $green;
 
-							&:hover:before {
-								color: $green;
-							}
-							
-							&.active:before {
-								color: $green;
-							}
-						}
-					}
+              &:hover:before {
+                color: $green;
+              }
+              
+              &.active:before {
+                color: $green;
+              }
+            }
+          }
 
-					&:nth-child(6) {
-						a {
-							color: $red-e7;
+          &:nth-child(6) {
+            a {
+              color: $red-e7;
 
-							&:hover:before {
-								color: $red-e7;
-							}
-							
-							&.active:before {
-								color: $red-e7;
-							}
-						}
-					}
-				}
+              &:hover:before {
+                color: $red-e7;
+              }
+              
+              &.active:before {
+                color: $red-e7;
+              }
+            }
+          }
+        }
 
-				.quicktabs-loaded {
-					font-family: source_sans_prosemibold;
-					font-size: rem(18px);
-					padding: rem(15px) rem(30px) rem(14px) rem(20px);
-					display: block;
+        .quicktabs-loaded {
+          font-family: source_sans_prosemibold;
+          font-size: rem(18px);
+          padding: rem(15px) rem(30px) rem(14px) rem(20px);
+          display: block;
 
-					@include breakpoint($desktop-wide) {
-						padding: rem(15px) 0;
-						border: none;
-						&:before {
-							content: "\e60a";
-							float: right;
-							font-weight: bold;
-							text-indent: 0;
-							color: #000000;
-							font-family: 'icomoon';
-						}
-					}
+          @include breakpoint($desktop-wide) {
+            padding: rem(15px) 0;
+            border: none;
+            &:before {
+              content: "\e60a";
+              float: right;
+              font-weight: bold;
+              text-indent: 0;
+              color: #000000;
+              font-family: 'icomoon';
+            }
+          }
 
-					&.active {
-						display: block;
-					}
-				}
-			}
-		}
-	}
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 
-	.quicktabs_main {
-		padding-top: 34px;
-		@include breakpoint($desktop-wide) {
-			@include span(last 9 of 12);
-			padding-left: 55px;
-			padding-top: 10px;
-		}
+  .quicktabs_main {
+    padding-top: 34px;
+    @include breakpoint($desktop-wide) {
+      @include span(last 9 of 12);
+      padding-left: 55px;
+      padding-top: 10px;
+    }
 
-		.quicktabs-tabpage {
-			display: block;
+    .quicktabs-tabpage {
+      display: block;
 
-			&.quicktabs-hide {
-				display: none;
-			}
+      &.quicktabs-hide {
+        display: none;
+      }
 
-			.tab-vertical__title h2 {
-				font-size: rem(36px);
-				font-weight: 400;
-		    line-height: rem(36px);
-		    margin-bottom: rem(24px);
-			}
+      .tab-vertical__title h2 {
+        font-size: rem(36px);
+        font-weight: 400;
+        line-height: rem(36px);
+        margin-bottom: rem(24px);
+      }
 
-			.tab-vertical__content {
-				color: $default-color;
-				font-size: rem(18px); 
-				line-height: rem(34px);
-			}
+      .tab-vertical__content {
+        color: $default-color;
+        font-size: rem(18px); 
+        line-height: rem(34px);
+      }
 
 
-			&:nth-child(1) {
-				.btn {
-					background: $pink-d8;
-				}
-			}
+      &:nth-child(1) {
+        .btn {
+          background: $pink-d8;
+        }
+      }
 
-			&:nth-child(2) {
-				.btn {
-					background: $blue-1b;
-				}
-			}
+      &:nth-child(2) {
+        .btn {
+          background: $blue-1b;
+        }
+      }
 
-			&:nth-child(3) {
-				.btn {
-					background: $dark-orchid3;
-				}
-			}
+      &:nth-child(3) {
+        .btn {
+          background: $dark-orchid3;
+        }
+      }
 
-			&:nth-child(4) {
-				.btn {
-					background: $dark-orange;
-				}
-			}
+      &:nth-child(4) {
+        .btn {
+          background: $dark-orange;
+        }
+      }
 
-			&:nth-child(5) {
-				.btn {
-					background: $green;
-				}
-			}
+      &:nth-child(5) {
+        .btn {
+          background: $green;
+        }
+      }
 
-			&:nth-child(6) {
-				.btn {
-					background: $pink-d8;
-				}
-			}
-		}
-	}
+      &:nth-child(6) {
+        .btn {
+          background: $pink-d8;
+        }
+      }
+    }
+  }
 }

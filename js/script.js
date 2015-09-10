@@ -136,7 +136,7 @@ $(document).ready(function () {
   $('.horizontal-tabs .tab-horizontal-mobile').on('click', processTabHorizontalMobile);
   $('.quicktabs-wrapper .quicktabs-tabs li .quicktabs-loaded').on('click', processTabVertical);
 
-  
+
   var processTabVerticalMobile = function () {
     $('.quicktabs-wrapper .item-list .quicktabs-tabs').toggleClass('active');
   }
