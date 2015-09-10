@@ -1,4 +1,13 @@
-// ICONS.
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot?q9270p');
+  src:url('../fonts/icomoon.eot?#iefixq9270p') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?q9270p') format('truetype'),
+    url('../fonts/icomoon.woff?q9270p') format('woff'),
+    url('../fonts/icomoon.svg?q9270p#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 %icons {
   font-family: 'icomoon';
   speak: none;
@@ -14,12 +23,11 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  &:before {
-    @extend %icons;
-  }
+  @extend %icons;
 }
 
 // IMPORTANT. For updating the icon lib, replace the icons code below:
+<<<<<<< HEAD
 .icon-checkmark:before {
   content: "\e605";
 }
@@ -37,4 +45,39 @@
 }
 .icon-star:before {
   content: "\e602";
+=======
+
+.icon-arrow-right:before {
+  content: "\e60a";
+}
+.icon-chevron-thin-right:before {
+  content: "\e608";
+}
+.icon-chevron-thin-left:before {
+  content: "\e609";
+}
+.icon-chevron-right2:before {
+  content: "\e606";
+}
+.icon-chevron-left2:before {
+  content: "\e607";
+}
+.icon-chevron-right:before {
+  content: "\e604";
+}
+.icon-chevron-left:before {
+  content: "\e605";
+}
+.icon-envelop:before {
+  content: "\e600";
+}
+.icon-checkmark:before {
+  content: "\e601";
+}
+.icon-google-plus:before {
+  content: "\e602";
+}
+.icon-facebook:before {
+  content: "\e603";
+>>>>>>> 15-tab-vertical
 }
