@@ -1291,19 +1291,18 @@ iframe {
   clear: both;
 }
 .list.list-has-border li {
-  padding-left: 18px;
   position: relative;
-  margin-bottom: 17px;
+  padding: 0 0 1.0625rem 1.125rem;
 }
 .list.list-has-border li:before {
   content: '';
   position: absolute;
-  width: 10px;
-  height: 1px;
+  width: 0.625rem;
+  height: 0.0625rem;
   background-color: #5f574f;
-  top: 10px;
+  top: 0.625rem;
   left: 0;
-  line-height: 18px;
+  line-height: 1.125rem;
 }
 @media (min-width: 48em) {
   .list.list-grid li {
@@ -1338,9 +1337,9 @@ iframe {
   }
 }
 .list-number li {
-  padding: 0 0 13px 0;
+  padding: 0 0 0.8125rem 0;
   position: relative;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .list-number li:nth-child(1):before {
   content: "1. ";
@@ -1408,12 +1407,12 @@ iframe {
 }
 
 .list-icon li {
-  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
   font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before {
-  padding-right: 7px;
+  padding-right: 0.4375rem;
   color: #149077;
 }
 
