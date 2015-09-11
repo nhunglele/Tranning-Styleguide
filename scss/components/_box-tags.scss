@@ -1,12 +1,12 @@
 .box-tag{
   display: inline-block;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 
   .box-tag_item{
     display: inline-block;
     float: left;
-    margin: 0 5px;
+    margin: rem(0 5px);
     font-size: rem(14px);
     text-transform: uppercase;
 
