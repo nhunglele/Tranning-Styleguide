@@ -1,128 +1,128 @@
 {% set boxteaserfull =[
-	{'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
-	'status':'free',
-	'category':'Curriculum, Instruction, & Assessment',
-	'grade':'9 - 12',
-	'subject':'Mathematics',
-	'course':'Literacy Design Collaborative ',
-	'tags' : 'tags1',
-	'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
+  {'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
+  'status':'free',
+  'category':'Curriculum, Instruction, & Assessment',
+  'grade':'9 - 12',
+  'subject':'Mathematics',
+  'course':'Literacy Design Collaborative ',
+  'tags' : 'tags1',
+  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
 
-	{'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
-	'status':'paid',
-	'category':'Curriculum, Instruction, & Assessment',
-	'grade':'9 - 12',
-	'subject':'Mathematics',
-	'course':'Literacy Design Collaborative ',
-	'tags' : 'tags1',
-	'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
+  {'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
+  'status':'paid',
+  'category':'Curriculum, Instruction, & Assessment',
+  'grade':'9 - 12',
+  'subject':'Mathematics',
+  'course':'Literacy Design Collaborative ',
+  'tags' : 'tags1',
+  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
 
-	{'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
-	'status':'free',
-	'category':'Curriculum, Instruction, & Assessment',
-	'grade':'9 - 12',
-	'subject':'Mathematics',
-	'course':'Literacy Design Collaborative ',
-	'tags' : 'tags1',
-	'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
-	]
+  {'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
+  'status':'free',
+  'category':'Curriculum, Instruction, & Assessment',
+  'grade':'9 - 12',
+  'subject':'Mathematics',
+  'course':'Literacy Design Collaborative ',
+  'tags' : 'tags1',
+  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
+  ]
 %}
 
 {% set boxteasertwocol =[
-	{'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
-	'status':'free',
-	'category':'Curriculum, Instruction, & Assessment',
-	'grade':'9 - 12',
-	'subject':'Mathematics',
-	'course':'Literacy Design Collaborative ',
-	'tags' : 'tags1',
-	'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
+  {'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
+  'status':'free',
+  'category':'Curriculum, Instruction, & Assessment',
+  'grade':'9 - 12',
+  'subject':'Mathematics',
+  'course':'Literacy Design Collaborative ',
+  'tags' : 'tags1',
+  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
 
-	{'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
-	'status':'paid',
-	'category':'Curriculum, Instruction, & Assessment',
-	'grade':'9 - 12',
-	'subject':'Mathematics',
-	'course':'Literacy Design Collaborative ',
-	'tags' : 'tags1',
-	'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
+  {'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
+  'status':'paid',
+  'category':'Curriculum, Instruction, & Assessment',
+  'grade':'9 - 12',
+  'subject':'Mathematics',
+  'course':'Literacy Design Collaborative ',
+  'tags' : 'tags1',
+  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
 
-	{'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
-	'status':'free',
-	'category':'Curriculum, Instruction, & Assessment',
-	'grade':'9 - 12',
-	'subject':'Mathematics',
-	'course':'Literacy Design Collaborative ',
-	'tags' : 'tags1',
-	'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
-	]
+  {'title':'Cube It- Patterns, Polynomials, and Modeling Development Programs',
+  'status':'free',
+  'category':'Curriculum, Instruction, & Assessment',
+  'grade':'9 - 12',
+  'subject':'Mathematics',
+  'course':'Literacy Design Collaborative ',
+  'tags' : 'tags1',
+  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'},
+  ]
 %}
 
 {% block boxteaserfull %}
-	<div class="box-teaser box-teaser--full">
-		<div class="box-teaser__grid">
-			{% for itemteaser in boxteaserfull %}
-				<div class="box-teaser__item">
-					<div class="box-teaser__line-task">
-						<h2 class="box-teaser__title">{{ itemteaser.title }}</h2>
-						<span class="box-teaser__status">{{ itemteaser.status }}</span>
-					</div>
-					<div class="box-teaser__line-task">
-						<div class="box-teaser__category box-teaser__line-item"><label class="box-teaser__label">Category</label>{{ itemteaser.category }}</div>
-						<div class="box-teaser__grade-lever box-teaser__line-item"><label class="box-teaser__label">Grade Lever</label>{{ itemteaser.grade }}</div>
-						<div class="box-teaser__subject box-teaser__line-item"><label class="box-teaser__label">Subject</label>{{ itemteaser.subject }}</div>
-						<div class="box-teaser__course box-teaser__line-item"><label class="box-teaser__label">Course</label>{{ itemteaser.course }}</div>
-					</div>
-					<div class="box-teaser__line-task">
-						<div class="box-teaser__rating box-teaser__line-item"><label class="box-teaser__label">Rating</label><select class="box-teaser__rating-select">
-							  <option value="1">1</option>
-							  <option value="2">2</option>
-							  <option value="3">3</option>
-							  <option value="4">4</option>
-							  <option value="5">5</option>
-							</select>
-						</div>
-						<div class="box-teaser__tags box-teaser__line-item"><label class="box-teaser__label">Tags</label>{% include "../box-tags/box-tags.twig" %}</div>
-					</div>
-					<div class="box-teaser__content">{{ itemteaser.content }}</div>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
+  <div class="box-teaser box-teaser--full">
+    <div class="box-teaser__grid">
+      {% for itemteaser in boxteaserfull %}
+        <div class="box-teaser__item">
+          <div class="box-teaser__line-task">
+            <h2 class="box-teaser__title">{{ itemteaser.title }}</h2>
+            <span class="box-teaser__status">{{ itemteaser.status }}</span>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__category box-teaser__line-item"><label class="box-teaser__label">Category</label>{{ itemteaser.category }}</div>
+            <div class="box-teaser__grade-lever box-teaser__line-item"><label class="box-teaser__label">Grade Lever</label>{{ itemteaser.grade }}</div>
+            <div class="box-teaser__subject box-teaser__line-item"><label class="box-teaser__label">Subject</label>{{ itemteaser.subject }}</div>
+            <div class="box-teaser__course box-teaser__line-item"><label class="box-teaser__label">Course</label>{{ itemteaser.course }}</div>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__rating box-teaser__line-item"><label class="box-teaser__label">Rating</label><select class="box-teaser__rating-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="box-teaser__tags box-teaser__line-item"><label class="box-teaser__label">Tags</label>{% include "../box-tags/box-tags.twig" %}</div>
+          </div>
+          <div class="box-teaser__content">{{ itemteaser.content }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 {% endblock %}
 
 
 {% block boxteasertwocol %}
-	<div class="box-teaser box-teaser--twocol">
-		<div class="box-teaser__grid">
-			{% for itemteaser in boxteasertwocol %}
-				<div class="box-teaser__item">
-					<div class="box-teaser__line-task">
-						<h2 class="box-teaser__title">{{ itemteaser.title }}</h2>
-						<span class="box-teaser__status">{{ itemteaser.status }}</span>
-					</div>
-					<div class="box-teaser__line-task">
-						<div class="box-teaser__category box-teaser__line-item"><label class="box-teaser__label">Category</label>{{ itemteaser.category }}</div>
-						<div class="box-teaser__rating box-teaser__line-item"><label class="box-teaser__label">Rating</label><select class="box-teaser__rating-select">
-							  <option value="1">1</option>
-							  <option value="2">2</option>
-							  <option value="3">3</option>
-							  <option value="4">4</option>
-							  <option value="5">5</option>
-							</select>
-						</div>
-					</div>
-					<div class="box-teaser__line-task">
-						<div class="box-teaser__course box-teaser__line-item"><label class="box-teaser__label">Course</label>{{ itemteaser.course }}</div>
-						<div class="box-teaser__subject box-teaser__line-item"><label class="box-teaser__label">Subject</label>{{ itemteaser.subject }}</div>
-						<div class="box-teaser__grade-lever box-teaser__line-item"><label class="box-teaser__label">Grade Lever</label>{{ itemteaser.grade }}</div>
-					</div>
-					<div class="box-teaser__content">{{ itemteaser.content }}</div>
-					<div class="box-teaser__tags box-teaser__line-item"><label class="box-teaser__label">Tags</label>{% include "../box-tags/box-tags.twig" %}</div>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
+  <div class="box-teaser box-teaser--twocol">
+    <div class="box-teaser__grid">
+      {% for itemteaser in boxteasertwocol %}
+        <div class="box-teaser__item">
+          <div class="box-teaser__line-task">
+            <h2 class="box-teaser__title">{{ itemteaser.title }}</h2>
+            <span class="box-teaser__status">{{ itemteaser.status }}</span>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__category box-teaser__line-item"><label class="box-teaser__label">Category</label>{{ itemteaser.category }}</div>
+            <div class="box-teaser__rating box-teaser__line-item"><label class="box-teaser__label">Rating</label><select class="box-teaser__rating-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <div class="box-teaser__line-task">
+            <div class="box-teaser__course box-teaser__line-item"><label class="box-teaser__label">Course</label>{{ itemteaser.course }}</div>
+            <div class="box-teaser__subject box-teaser__line-item"><label class="box-teaser__label">Subject</label>{{ itemteaser.subject }}</div>
+            <div class="box-teaser__grade-lever box-teaser__line-item"><label class="box-teaser__label">Grade Lever</label>{{ itemteaser.grade }}</div>
+          </div>
+          <div class="box-teaser__content">{{ itemteaser.content }}</div>
+          <div class="box-teaser__tags box-teaser__line-item"><label class="box-teaser__label">Tags</label>{% include "../box-tags/box-tags.twig" %}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 {% endblock %}
 
 
