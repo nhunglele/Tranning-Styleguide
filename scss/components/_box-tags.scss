@@ -1,17 +1,18 @@
 .box-tag{
   display: inline-block;
-  width: 100%;
   margin-bottom: rem(30px);
+  width: 100%;
 
   .box-tag_item{
     display: inline-block;
     float: left;
-    margin: rem(0 5px);
     font-size: rem(14px);
+    margin: rem(0 5px);
     text-transform: uppercase;
 
     a{
       color: $grey-ba;
+      
       &:hover{
         color: $color-links;
       }
