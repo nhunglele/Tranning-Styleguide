@@ -40,19 +40,24 @@ $(document).ready(function () {
   $('.box-teaser__rating-select').barrating();
 
   // Js for color Category
-  
-  $('.box-teaser .box-teaser__item').each(function(){
-    var text_status = $(this).find('.box-teaser__status').text();
-    if(text_status == "free"){
-      $(this).find('.box-teaser__status').css({
-        'background-color': 'red'
-      });
-    }
-    else{
-      $(this).find('.box-teaser__status').css({
-        'background-color': 'blue'
-      });
-    }
-  });
-  
+  var boxTeaserItem = $('.box-teaser .box-teaser__item'),
+      boxTeaserStatus = boxTeaserItem.find('.box-teaser__status'),
+      textstatus = boxTeaserStatus.text(),
+      statusChange = function(){
+        boxTeaserItem.each(function(){
+          if(textstatus == "free"){
+            boxTeaserStatus.css({
+              'background-color': 'red'
+            });
+          }
+          else{
+            boxTeaserStatus.css({
+              'background-color': 'blue'
+            });
+          }
+        });
+      };
+
+  statusChange();
+
 });
