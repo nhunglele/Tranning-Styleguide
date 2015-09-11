@@ -4,6 +4,10 @@
 // user-select - http://compass-style.org/reference/compass/css3/user_interface/#mixin-user-select
 
 // Fonts Mixins.
+@mixin icomoon {
+  font-family: 'icomoon';
+}
+
 @mixin source-sans-pro-regular {
   font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
 }

@@ -35,4 +35,24 @@ $(document).ready(function () {
 
   $('.show-code').on('click', processShowCode);
   $('.hide-code').on('click', processHideCode);
+
+  // Js for Rating 
+  $('.box-teaser__rating-select').barrating();
+
+  // Js for color Category
+  
+  $('.box-teaser .box-teaser__item').each(function(){
+    var text_status = $(this).find('.box-teaser__status').text();
+    if(text_status == "free"){
+      $(this).find('.box-teaser__status').css({
+        'background-color': 'red'
+      });
+    }
+    else{
+      $(this).find('.box-teaser__status').css({
+        'background-color': 'blue'
+      });
+    }
+  });
+  
 });
