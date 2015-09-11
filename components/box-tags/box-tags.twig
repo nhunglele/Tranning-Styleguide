@@ -1,0 +1,14 @@
+{% set boxtags = [
+  {'href':'#','link':'tag1'},
+  {'href':'#','link':'tag2'}]
+%}
+
+{% block boxtags %}
+  <ul class="box-tag">
+    {% for item in boxtags %}
+      <li class="box-tag_item">
+        <a href="{{item.href}}">#{{item.link}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

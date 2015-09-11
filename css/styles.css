@@ -538,6 +538,25 @@ iframe {
   display: inline;
 }
 
+.box-tag {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.box-tag .box-tag_item {
+  display: inline-block;
+  float: left;
+  margin: 0 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.box-tag .box-tag_item a {
+  color: #bab2aa;
+}
+.box-tag .box-tag_item a:hover {
+  color: #16a085;
+}
+
 .container:before, .system-messages .tabs:before, .container:after, .system-messages .tabs:after {
   content: '';
   display: table;
