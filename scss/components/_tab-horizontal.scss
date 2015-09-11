@@ -1,0 +1,70 @@
+.horizontal-tabs {
+	.tab-horizontal-mobile {
+    font-family: source_sans_prosemibold;
+    font-size: rem(18px);
+    padding: rem(15px) rem(30px) rem(14px) rem(20px);
+    background: linear-gradient(#f5f4f0, #e8e7e3);
+    border: 1px solid #ccc;
+    @include border-radius(5px);
+    margin-bottom: 3px;
+
+    @include breakpoint($desktop-wide) {
+      display: none;
+    }
+  }
+
+	.horizontal-tabs-list {
+		display: none;
+		border: 1px solid #ccc;
+    @include border-radius(5px);
+    overflow: hidden;
+
+    @include breakpoint($desktop-wide) {
+    	display: inline-block;
+    }
+
+    &.active {
+    	display: block;
+
+    	@include breakpoint($desktop-wide) {
+    		display: inline-block;
+    	}
+    }
+
+		.horizontal-tab-button {
+			float: left;
+
+			@include breakpoint($desktop-wide) {			
+				border-right: 1px solid #ccc;
+			}
+
+			&.selected {
+				a {
+					background: linear-gradient(#f5f4f0, #e8e7e3);
+					font-family: source_sans_prosemibold;
+				}
+			}
+
+			&:last-child {
+				border-right: none;
+			}
+
+			a {
+				height: rem(52px);
+		    min-width: rem(327px);
+		    padding: rem(18px) rem(20px);
+		    display: inline-block;
+			}
+		}
+	}
+
+	.horizontal-tabs-panes {
+		.horizontal-tabs-pane {
+			display: block;
+
+			&.horizontal-tab-hidden {
+				display: none;
+			}
+		}
+	}
+}
