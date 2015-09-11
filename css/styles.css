@@ -906,15 +906,15 @@ iframe {
 }
 
 .horizontal-tabs .tab-horizontal-mobile {
-  font-family: source_sans_prosemibold;
-  font-size: 1.125rem;
-  padding: 0.9375rem 1.875rem 0.875rem 1.25rem;
-  background: linear-gradient(#f5f4f0, #e8e7e3);
-  border: 1px solid #ccc;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  background: linear-gradient(#f5f4f0, #e8e7e3);
+  border: 1px solid #ccc;
+  font-family: source_sans_prosemibold;
+  font-size: 1.125rem;
   margin-bottom: 3px;
+  padding: 0.9375rem 1.875rem 0.875rem 1.25rem;
 }
 @media (min-width: 73.125em) {
   .horizontal-tabs .tab-horizontal-mobile {
@@ -922,11 +922,11 @@ iframe {
   }
 }
 .horizontal-tabs .horizontal-tabs-list {
-  display: none;
-  border: 1px solid #ccc;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  border: 1px solid #ccc;
+  display: none;
   overflow: hidden;
 }
 @media (min-width: 73.125em) {
@@ -958,10 +958,10 @@ iframe {
   border-right: none;
 }
 .horizontal-tabs .horizontal-tabs-list .horizontal-tab-button a {
+  display: inline-block;
   height: 3.25rem;
   min-width: 20.4375rem;
   padding: 1.125rem 1.25rem;
-  display: inline-block;
 }
 .horizontal-tabs .horizontal-tabs-panes .horizontal-tabs-pane {
   display: block;

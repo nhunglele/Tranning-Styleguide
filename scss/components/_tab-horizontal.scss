@@ -1,12 +1,12 @@
 .horizontal-tabs {
   .tab-horizontal-mobile {
-    font-family: source_sans_prosemibold;
-    font-size: rem(18px);
-    padding: rem(15px) rem(30px) rem(14px) rem(20px);
+    @include border-radius(5px);
     background: linear-gradient(#f5f4f0, #e8e7e3);
     border: 1px solid #ccc;
-    @include border-radius(5px);
+    font-family: source_sans_prosemibold;
+    font-size: rem(18px);
     margin-bottom: 3px;
+    padding: rem(15px) rem(30px) rem(14px) rem(20px);
 
     @include breakpoint($desktop-wide) {
       display: none;
@@ -14,9 +14,9 @@
   }
 
   .horizontal-tabs-list {
-    display: none;
-    border: 1px solid #ccc;
     @include border-radius(5px);
+    border: 1px solid #ccc;
+    display: none;
     overflow: hidden;
 
     @include breakpoint($desktop-wide) {
@@ -50,10 +50,10 @@
       }
 
       a {
+        display: inline-block;
         height: rem(52px);
         min-width: rem(327px);
         padding: rem(18px) rem(20px);
-        display: inline-block;
       }
     }
   }
