@@ -547,7 +547,7 @@ iframe {
   display: inline-block;
   float: left;
   margin: 0 5px;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .box-tag .box-tag_item a {
