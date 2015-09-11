@@ -1,10 +1,10 @@
 .box-teaser{
   .box-teaser__item{
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
 
     .box-teaser__line-task{
       display: inline-block;
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
       width: 100%;
 
       .box-teaser__title{
@@ -18,8 +18,8 @@
       .box-teaser__status{
         color: $white;
         text-transform: uppercase;
-        padding: 2px 10px;
-        margin-left: 20px;
+        padding: rem( 2px 10px);
+        margin-left: rem(20px);
         font-size: rem(12px);
         @include border-radius(3px);
       }
@@ -35,7 +35,7 @@
       .box-teaser__line-item{
         display: inline-block;
         width : span(3 of 12);
-        padding-right: 35px;
+        padding-right: rem(35px);
         vertical-align: top;
 
         &:last-of-type{
@@ -52,12 +52,12 @@
       }
 
       .box-teaser__rating .br-widget {
-        height: 28px;
-        line-height: 28px;
+        height: rem(28px);
+        line-height: rem(28px);
 
         a{
           @include icomoon;
-          margin-right: 5px;
+          margin-right: rem(5px);
           float: left;
 
           &:before{
@@ -76,9 +76,9 @@
 
         .br-current-rating{
           float: left;
-          margin-left: 10px;
+          margin-left: rem(10px);
           position: relative;
-          padding-right: 15px;
+          padding-right: rem(15px);
 
           &:before{
             content: "/5";
@@ -89,9 +89,6 @@
         }
       }
     }
-  }
-
-  &.box-teaser--full{
   }
 }
 
