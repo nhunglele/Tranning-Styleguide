@@ -8,13 +8,13 @@
     }
 
     .tab-mobile {
-      font-family: source_sans_prosemibold;
-      font-size: rem(18px);
-      padding: rem(15px) rem(30px) rem(14px) rem(20px);
+      @include border-radius(5px);
+      @include source-sans-prosemibold;
       background: linear-gradient(#f5f4f0, #e8e7e3);
       border: 1px solid #ccc;
-      @include border-radius(5px);
+      font-size: rem(18px);
       margin-bottom: 3px;
+      padding: rem(15px 30px 14px 20px);
 
       @include breakpoint($desktop-wide) {
         display: none;
@@ -22,18 +22,18 @@
     }
 
     .quicktabs-tabs {
-      display: none;
-      border: 1px solid #ccc;
       @include border-radius(5px);
+      border: 1px solid #ccc;
+      display: none;
 
       &.active {
         display: block;
       }
 
       @include breakpoint($desktop-wide) {
-        display: block;
-        border: none;
         @include border-radius(0);
+        border: none;
+        display: block;
       }
 
       li {
@@ -130,21 +130,21 @@
         }
 
         .quicktabs-loaded {
-          font-family: source_sans_prosemibold;
-          font-size: rem(18px);
-          padding: rem(15px) rem(30px) rem(14px) rem(20px);
+          @include source-sans-prosemibold;
           display: block;
+          font-size: rem(18px);
+          padding: rem(15px 30px 14px 20px);
 
           @include breakpoint($desktop-wide) {
-            padding: rem(15px) 0;
             border: none;
+            padding: rem(15px 0);
             &:before {
+              color: #000000;
               content: "\e60a";
               float: right;
+              font-family: 'icomoon';
               font-weight: bold;
               text-indent: 0;
-              color: #000000;
-              font-family: 'icomoon';
             }
           }
 
@@ -160,8 +160,8 @@
     padding-top: 34px;
     @include breakpoint($desktop-wide) {
       @include span(last 9 of 12);
-      padding-left: 55px;
-      padding-top: 10px;
+      padding-left: rem(55px);
+      padding-top: rem(10px);
     }
 
     .quicktabs-tabpage {
