@@ -1,17 +1,17 @@
 .testimonial-wrapper{
   background-color: $grey-f4;
   @include clearfix;
-  padding: 30px 0 40px 0;
+  padding: rem(30px 0 40px 0);
   @include breakpoint($desktop-small){
-    padding: 25px 0 60px 0;
+    padding: rem(25px 0 60px 0);
   }
   .pane-title{
     @include source-sans-prosemibold;
-    font-size: $base-font-size + 4px;
+    font-size: rem($base-font-size + 4px);
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     @include breakpoint($desktop-small){
-      margin-bottom: 42px;
+      margin-bottom: rem(42px);
     }
   }
   .testimonial-inner{
@@ -20,13 +20,33 @@
       @extend .container;
       text-align: center;
       color: $grey-5f;
-      font-size: $base-font-size + 2px;
+      font-size: rem($base-font-size + 2px);
       @include breakpoint($desktop-small){
-        padding: 0 150px;
+        padding: rem(0 150px);
       }
       .testimonial__content{
-        margin-bottom: 35px;
-        line-height: 1.7;
+        margin-bottom: rem(35px);
+        line-height: rem(31px);
+        position: relative;
+        p{
+          display: inline;
+          margin-bottom: 0;
+        }
+        &:before, &:after{
+          content: "\201c";
+          @include source-sans-proit;
+          font-size: rem(48px);
+          color: $blue-14;
+          line-height: 0.1em;
+          margin-right: rem(20px);
+          vertical-align: rem(-13px);
+        }
+        &:after{
+          content: "\201d";
+          position:absolute;
+          bottom: rem(-5px);
+          right: rem(-60px);
+        }
       }
       .testimonial__author{
         font-style: normal;
@@ -39,35 +59,34 @@
       width: 100%;
       text-align: none;
       margin-top: 0;
-      // display: none !important;
       @include breakpoint($mobile-and-tablet){
         display: none !important;
       }
       .owl-prev, .owl-next{
         background: none;
         @include border-radius(0);
-        font-size: $base-font-size + 14px;
+        font-size: rem($base-font-size + 14px);
         color: $grey-5f;
         @include opacity(1);
         text-indent: -9999em;
         position: absolute;
         top: 50%;
-        margin-top: -45px;
+        margin-top: rem(-45px);
         &:before{
           float: left;
           text-indent: 0;
           @extend %icons;
-          font-weight: bold;
+          font-weight: bold !important;
         }
       }
       .owl-prev{
         left: 0;
-        margin-left: 20px;
+        margin-left: rem(20px);
         @extend .icon-chevron-thin-left;
       }
       .owl-next{
         right: 0;
-        margin-right: 40px;
+        margin-right: rem(40px);
         @extend .icon-chevron-thin-right;
       }
     }
