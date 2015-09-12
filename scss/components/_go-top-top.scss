@@ -1,0 +1,15 @@
+.go-to-top {
+  @include source-sans-prosemibold();
+  @include opacity(0);
+  bottom: rem(20px);
+  color: $black;
+  font-size: rem(13px);
+  left: rem(20px);
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 1;
+
+  &.cd-is-visible {
+    @include opacity(1);
+  }
+}
