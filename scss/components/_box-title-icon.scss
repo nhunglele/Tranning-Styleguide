@@ -88,11 +88,12 @@
     padding-bottom: rem(32px);
 
     @include breakpoint($desktop-wide) {
+      @include span(8 of 12);
+      float: none;
       line-height: rem(24px);
       margin-left: auto;
       margin-right: auto;
       padding-bottom: rem(45px);
-      width: 65.812%;
     }
 
     p {

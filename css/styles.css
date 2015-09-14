@@ -807,11 +807,14 @@ iframe {
 }
 @media (min-width: 73.125em) {
   .box-title-icon .box-title-icon__content {
+    width: 65.81197%;
+    float: left;
+    margin-right: 2.5641%;
+    float: none;
     line-height: 1.5rem;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2.8125rem;
-    width: 65.812%;
   }
 }
 .box-title-icon .box-title-icon__content p {
