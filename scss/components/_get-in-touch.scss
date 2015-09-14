@@ -1,0 +1,56 @@
+.get-in-touch {
+  @include breakpoint($desktop-wide) {
+    padding: rem(0 197px);
+  }
+
+  .webform-component-textfield,
+  .webform-component-email {
+    float: left;
+    margin-bottom: rem(16px);
+    width: 100%;
+
+    @include breakpoint($desktop-wide) {
+      margin-bottom: rem(38px);
+      width: 50%;
+    }
+  }
+
+  .webform-component-textfield {
+    
+
+    @include breakpoint($desktop-wide) {
+      padding-right: rem(15px);
+    }
+  }
+
+  .webform-component-email {
+    
+
+    @include breakpoint($desktop-wide) {
+      padding-left: rem(15px);
+    }
+  }
+
+  .webform-component-textarea {
+    clear: both;
+    margin-bottom: rem(22px);
+
+    @include breakpoint($desktop-wide) {
+      margin-bottom: rem(40px);
+    }
+
+    .form-textarea {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-submit {
+    padding: rem(8px 88px);
+    width: 100%;
+
+    @include breakpoint($desktop-wide) {
+      padding: rem(13px 88px);
+      width: auto;
+    }
+  }
+}
