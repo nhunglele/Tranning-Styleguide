@@ -1,0 +1,70 @@
+.horizontal-tabs {
+  .tab-horizontal-mobile {
+    @include border-radius(5px);
+    @include background(linear-gradient($grey-f5, $grey-e8));
+    border: 1px solid $grey-c;
+    font-family: source_sans_prosemibold;
+    font-size: rem(18px);
+    margin-bottom: rem(3px);
+    padding: rem(15px 30px 14px 20px);
+
+    @include breakpoint($desktop-wide) {
+      display: none;
+    }
+  }
+
+  .horizontal-tabs-list {
+    @include border-radius(5px);
+    border: 1px solid $grey-c;
+    display: none;
+    overflow: hidden;
+
+    @include breakpoint($desktop-wide) {
+      display: inline-block;
+    }
+
+    &.active {
+      display: block;
+
+      @include breakpoint($desktop-wide) {
+        display: inline-block;
+      }
+    }
+
+    .horizontal-tab-button {
+      float: left;
+
+      @include breakpoint($desktop-wide) {      
+        border-right: 1px solid $grey-c;
+      }
+
+      &.selected {
+        a {
+          background: linear-gradient(#f5f4f0, #e8e7e3);
+          font-family: source_sans_prosemibold;
+        }
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        display: inline-block;
+        height: rem(52px);
+        min-width: rem(327px);
+        padding: rem(18px 20px);
+      }
+    }
+  }
+
+  .horizontal-tabs-panes {
+    .horizontal-tabs-pane {
+      display: block;
+
+      &.horizontal-tab-hidden {
+        display: none;
+      }
+    }
+  }
+}

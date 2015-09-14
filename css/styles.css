@@ -905,6 +905,75 @@ iframe {
   content: "\e602";
 }
 
+.horizontal-tabs .tab-horizontal-mobile {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y1ZjRmMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U4ZTdlMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5f4f0), color-stop(100%, #e8e7e3));
+  background: -moz-linear-gradient(#f5f4f0, #e8e7e3);
+  background: -webkit-linear-gradient(#f5f4f0, #e8e7e3);
+  background: linear-gradient(#f5f4f0, #e8e7e3);
+  border: 1px solid #ccc;
+  font-family: source_sans_prosemibold;
+  font-size: 1.125rem;
+  margin-bottom: 0.1875rem;
+  padding: 0.9375rem 1.875rem 0.875rem 1.25rem;
+}
+@media (min-width: 73.125em) {
+  .horizontal-tabs .tab-horizontal-mobile {
+    display: none;
+  }
+}
+.horizontal-tabs .horizontal-tabs-list {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: none;
+  overflow: hidden;
+}
+@media (min-width: 73.125em) {
+  .horizontal-tabs .horizontal-tabs-list {
+    display: inline-block;
+  }
+}
+.horizontal-tabs .horizontal-tabs-list.active {
+  display: block;
+}
+@media (min-width: 73.125em) {
+  .horizontal-tabs .horizontal-tabs-list.active {
+    display: inline-block;
+  }
+}
+.horizontal-tabs .horizontal-tabs-list .horizontal-tab-button {
+  float: left;
+}
+@media (min-width: 73.125em) {
+  .horizontal-tabs .horizontal-tabs-list .horizontal-tab-button {
+    border-right: 1px solid #ccc;
+  }
+}
+.horizontal-tabs .horizontal-tabs-list .horizontal-tab-button.selected a {
+  background: linear-gradient(#f5f4f0, #e8e7e3);
+  font-family: source_sans_prosemibold;
+}
+.horizontal-tabs .horizontal-tabs-list .horizontal-tab-button:last-child {
+  border-right: none;
+}
+.horizontal-tabs .horizontal-tabs-list .horizontal-tab-button a {
+  display: inline-block;
+  height: 3.25rem;
+  min-width: 20.4375rem;
+  padding: 1.125rem 1.25rem;
+}
+.horizontal-tabs .horizontal-tabs-panes .horizontal-tabs-pane {
+  display: block;
+}
+.horizontal-tabs .horizontal-tabs-panes .horizontal-tabs-pane.horizontal-tab-hidden {
+  display: none;
+}
+
 .testimonial-wrapper {
   background-color: #f4f3ef;
   padding: 1.875rem 0 2.5rem 0;
