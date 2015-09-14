@@ -1,12 +1,12 @@
 .horizontal-tabs {
   .tab-horizontal-mobile {
     @include border-radius(5px);
-    background: linear-gradient(#f5f4f0, #e8e7e3);
-    border: 1px solid #ccc;
+    @include background(linear-gradient($grey-f5, $grey-e8));
+    border: 1px solid $grey-c;
     font-family: source_sans_prosemibold;
     font-size: rem(18px);
-    margin-bottom: 3px;
-    padding: rem(15px) rem(30px) rem(14px) rem(20px);
+    margin-bottom: rem(3px);
+    padding: rem(15px 30px 14px 20px);
 
     @include breakpoint($desktop-wide) {
       display: none;
@@ -15,7 +15,7 @@
 
   .horizontal-tabs-list {
     @include border-radius(5px);
-    border: 1px solid #ccc;
+    border: 1px solid $grey-c;
     display: none;
     overflow: hidden;
 
@@ -35,7 +35,7 @@
       float: left;
 
       @include breakpoint($desktop-wide) {      
-        border-right: 1px solid #ccc;
+        border-right: 1px solid $grey-c;
       }
 
       &.selected {
@@ -53,7 +53,7 @@
         display: inline-block;
         height: rem(52px);
         min-width: rem(327px);
-        padding: rem(18px) rem(20px);
+        padding: rem(18px 20px);
       }
     }
   }
