@@ -4,32 +4,48 @@
 }
 
 .box-img {
-  @include span(2);
+  @include span(6 of 12);
   float: left;
-  margin-bottom: 44px;
-  padding: 0 45px;
+  margin-bottom: rem(19px);
+  padding: 0 rem(15px);
   text-align: center;
 
   @include breakpoint($desktop-wide) {
     @include span(4 of $susy_wide_desktop at 3);
+    margin-bottom: rem(44px);
+    padding: 0 rem(45px);
   }
   
-  &:nth-child(3) {
-    margin-right: 0;
+  &:nth-child(2),
+  &:nth-child(4),
+  &:nth-child(6) {
+    @include span(last 6 of 12);
   }
 
-  &:nth-child(6) {
-    margin-right: 0;
+  @include breakpoint($desktop-wide) {
+    &:nth-child(3),
+    &:nth-child(6) {
+      @include span(last 4 of 12);
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      @include span(4 of 12);
+    }
+
+    &:nth-child(4) {
+      clear: both; 
+    }
   }
 
   .box-img__image {
     @include border-radius(100%);
     background: #f4f3ef;
     display: inline-block;
-    height: 85px;
-    margin-bottom: 16px;
+    height: rem(85px);
+    margin-bottom: rem(16px);
     position: relative;
-    width: 85px;
+    width: rem(85px);
 
     .field-img {
       @include transform(translateY(-50%));
@@ -46,18 +62,34 @@
   }
 
   .box-img__title {
-    font-size: 22px;
-    margin-bottom: 18px;
+    @include source-sans-prosemibold;
+    font-size: rem(16px);
+    font-weight: 400;
+    margin-bottom: rem(18px);
+
+    @include breakpoint($desktop-wide) {
+      font-size: rem(22px)
+    }
   }
 
   .box-img__content {
-    font-size: 18px;
-    margin-bottom: 18px;
+    display: none;
+
+    @include breakpoint($desktop-wide) {
+      display: block;
+      font-size: rem(18px);
+      margin-bottom: rem(18px);
+    }
   }
 
   .box-hero__link {
-    font-size: 19px;
-    font-weight: bold;
+    display: none;
+
+    @include breakpoint($desktop-wide) {
+      display: block;
+      font-size: rem(19px);
+      font-weight: bold;
+    }
   }
 }
 
