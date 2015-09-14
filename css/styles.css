@@ -728,6 +728,99 @@ iframe {
   width: 23.07692%;
 }
 
+.box-title-icon {
+  text-align: center;
+}
+.box-title-icon .title-icon {
+  display: inline-block;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 21px;
+  position: relative;
+}
+@media (min-width: 73.125em) {
+  .box-title-icon .title-icon {
+    margin-bottom: 1.8125rem;
+    font-size: 2.25rem;
+  }
+}
+.box-title-icon .title-icon:before {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  content: "";
+  display: inline-block;
+  height: 1.375rem;
+  margin-right: 0.625rem;
+  margin-top: -0.8125rem;
+  width: 2rem;
+}
+@media (min-width: 73.125em) {
+  .box-title-icon .title-icon:before {
+    height: 1.875rem;
+    margin-top: 0;
+    width: 2.5rem;
+  }
+}
+.box-title-icon .title-icon.performance_tasks {
+  color: #d85682;
+}
+.box-title-icon .title-icon.performance_tasks:before {
+  background-image: url("/img/performance-tasks.png");
+}
+.box-title-icon .title-icon.learning_progressions {
+  color: #00A986;
+}
+.box-title-icon .title-icon.learning_progressions:before {
+  background-image: url("/img/learning-progressions.png");
+}
+.box-title-icon .title-icon.assessment_literacy {
+  color: #9b59b6;
+}
+.box-title-icon .title-icon.assessment_literacy:before {
+  background-image: url("/img/assessment-literacy.png");
+}
+.box-title-icon .title-icon.curriculum_instruction_assessment {
+  color: #1b7cff;
+}
+.box-title-icon .title-icon.curriculum_instruction_assessment:before {
+  background-image: url("/img/curriculum-instruction-assessment.png");
+}
+.box-title-icon .title-icon.portfolio_frameworks {
+  color: #eaab02;
+}
+.box-title-icon .title-icon.portfolio_frameworks:before {
+  background-image: url("/img/portfolio-frameworks.png");
+  background-size: 100% auto;
+}
+.box-title-icon .title-icon.policy_resources {
+  color: #da2626;
+}
+.box-title-icon .title-icon.policy_resources:before {
+  background-image: url("/img/policy-resources.png");
+}
+.box-title-icon .box-title-icon__content {
+  font-size: 1.3125rem;
+  line-height: 1.3;
+  padding-bottom: 2rem;
+}
+@media (min-width: 73.125em) {
+  .box-title-icon .box-title-icon__content {
+    width: 65.81197%;
+    float: left;
+    margin-right: 2.5641%;
+    float: none;
+    line-height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.8125rem;
+  }
+}
+.box-title-icon .box-title-icon__content p {
+  margin-bottom: 0;
+}
+
 .breadcrumd {
   display: inline-block;
   width: 100%;
