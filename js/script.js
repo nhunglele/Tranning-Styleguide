@@ -56,12 +56,12 @@ $(document).ready(function () {
               textstatus = $(this).find('.box-teaser__status').text();
           if(textstatus == "free"){
             $(this).find('.box-teaser__status').css({
-              'background-color': 'red'
+              'background-color': '#16a085'
             });
           }
           else{
             $(this).find('.box-teaser__status').css({
-              'background-color': 'blue'
+              'background-color': '#3498db'
             });
           }
         });
