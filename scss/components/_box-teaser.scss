@@ -169,7 +169,9 @@
 
   &.box-teaser--detail{
     .box-teaser__title{
+      color: $black;
       font-size: rem(40px);
+      @include source-sans-pro-regular;
     }
   }
 }

@@ -776,7 +776,9 @@ iframe {
   }
 }
 .box-teaser.box-teaser--detail .box-teaser__title {
+  color: #000;
   font-size: 2.5rem;
+  font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
 }
 
 .box-title-icon {
