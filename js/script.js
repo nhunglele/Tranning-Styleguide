@@ -56,12 +56,12 @@ $(document).ready(function () {
               textstatus = $(this).find('.box-teaser__status').text();
           if(textstatus == "free"){
             $(this).find('.box-teaser__status').css({
-              'background-color': 'red'
+              'background-color': '#16a085'
             });
           }
           else{
             $(this).find('.box-teaser__status').css({
-              'background-color': 'blue'
+              'background-color': '#3498db'
             });
           }
         });
@@ -105,7 +105,7 @@ $(document).ready(function () {
     $('.horizontal-tabs .tab-horizontal-mobile').empty();
     $('.horizontal-tabs').each(function(){
     var tabclone = $(this).find('> .horizontal-tabs-list .horizontal-tab-button.selected a').text();
-        $(this).find('> .tab-horizontal-mobile').html(tabclone);
+      $(this).find('> .tab-horizontal-mobile').html(tabclone);
       $('.quicktabs-wrapper').each(function(index){
         var tabclone = $(this).find('> .item-list ul.quicktabs-tabs li .quicktabs-loaded.active').text();
         $(this).find('> .item-list ul.quicktabs-tabs').before('<div class="tab-mobile">'+tabclone+'</div>');
@@ -122,6 +122,7 @@ $(document).ready(function () {
 
 
   $('.horizontal-tabs .tab-horizontal-mobile').on('click', processTabHorizontalMobile);
+  };
   
   //Js for vertical tabs
   var processTabVertical = function () {

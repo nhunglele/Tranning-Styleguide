@@ -727,6 +727,11 @@ iframe {
 .box-teaser.box-teaser--twocol .box-teaser__grid .box-teaser__item .box-teaser__line-item:last-of-type {
   width: 23.07692%;
 }
+.box-teaser.box-teaser--detail .box-teaser__line-task .box-teaser__title {
+  font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 2.5rem;
+}
 
 .box-title-icon {
   text-align: center;

@@ -124,5 +124,15 @@
       }
     }
   }
+  &.box-teaser--detail{
+    .box-teaser__line-task{
+      .box-teaser__title{
+        @include source-sans-pro-regular;
+        color: $black;
+        font-size: rem(40px);
+      }
+    }
+  }
 }
+
 
