@@ -1,6 +1,6 @@
 .get-in-touch {
   @include breakpoint($desktop-wide) {
-    padding: 0 rem(197px);
+    padding: rem(0 197px);
   }
 
   .webform-component-textfield,
@@ -45,12 +45,12 @@
   }
 
   .form-submit {
-    padding: rem(8px) rem(88px);
+    padding: rem(8px 88px);
     width: 100%;
 
     @include breakpoint($desktop-wide) {
-      padding: rem(13px) rem(88px);
-      width: auto;;
+      padding: rem(13px 88px);
+      width: auto;
     }
   }
 }
