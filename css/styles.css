@@ -639,6 +639,61 @@ iframe {
   }
 }
 
+.block-download {
+  background: #f4f3ef;
+  padding: 0.9375rem 1.25rem;
+  display: inline-block;
+}
+@media (min-width: 73.125em) {
+  .block-download {
+    width: 65.81197%;
+    float: right;
+    margin-right: 0;
+    padding: 1.875rem;
+    float: none;
+  }
+}
+.block-download .download_doc,
+.block-download .download_pdf {
+  padding: 0 0.3125rem;
+  margin-bottom: 30px;
+}
+@media (min-width: 73.125em) {
+  .block-download .download_doc,
+  .block-download .download_pdf {
+    width: 48.71795%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+.block-download .download_doc a,
+.block-download .download_pdf a {
+  margin-left: 2.8125rem;
+  position: relative;
+  display: inline-block;
+}
+.block-download .download_doc a:before,
+.block-download .download_pdf a:before {
+  background-position: left center;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -2.8125rem;
+  height: 2.3125rem;
+  bottom: 0;
+  margin-right: 0.625rem;
+  margin-top: -0.8125rem;
+  width: 1.75rem;
+}
+.block-download .download_doc a:before {
+  background-image: url("/img/1.png");
+}
+.block-download .download_pdf a:before {
+  background-image: url("/img/2.png");
+}
+
 #box_img .component--demo {
   display: inline-block;
 }
