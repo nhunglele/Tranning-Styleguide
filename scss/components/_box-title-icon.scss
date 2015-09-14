@@ -1,0 +1,102 @@
+.box-title-icon {
+  text-align: center;
+
+  .title-icon {
+    display: inline-block;
+    font-size: rem(22px);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: (21px);
+    position: relative;
+
+    @include breakpoint($desktop-wide) {
+      margin-bottom: rem(29px);
+      font-size: rem(36px);
+    }
+
+    &:before {
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      content: "";
+      display: inline-block;
+      height: rem(22px);
+      margin-right: rem(10px);
+      margin-top: rem(-13px);
+      width: rem(32px);
+
+      @include breakpoint($desktop-wide) {
+        height: rem(30px);
+        margin-top: 0;
+        width: rem(40px);
+      }
+    }
+
+    &.performance_tasks {
+      color: $pink-d8;
+
+      &:before {
+        background-image: url("/img/performance-tasks.png");
+      }
+    }
+
+    &.learning_progressions {
+      color: $dark-green;
+
+      &:before {
+        background-image: url("/img/learning-progressions.png");
+      }
+    }
+
+    &.assessment_literacy {
+      color: $dark-orchid3;
+
+      &:before {
+        background-image: url("/img/assessment-literacy.png");
+      }
+    }
+
+    &.curriculum_instruction_assessment {
+      color: $blue-1b;
+
+      &:before {
+        background-image: url("/img/curriculum-instruction-assessment.png");
+      }
+    }
+
+    &.portfolio_frameworks {
+      color: $yellow-ea;
+
+      &:before {
+        background-image: url("/img/portfolio-frameworks.png");
+        background-size: 100% auto;
+      }
+    }
+
+    &.policy_resources {
+      color: $red;
+
+      &:before {
+        background-image: url("/img/policy-resources.png");
+      }
+    }
+   }
+
+  .box-title-icon__content {
+    font-size: rem(21px);
+    line-height: 1.3;
+    padding-bottom: rem(32px);
+
+    @include breakpoint($desktop-wide) {
+      line-height: rem(24px);
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: rem(45px);
+      width: 65.812%;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
