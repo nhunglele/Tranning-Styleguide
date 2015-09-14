@@ -105,12 +105,17 @@ $(document).ready(function () {
     $('.horizontal-tabs .tab-horizontal-mobile').empty();
     $('.horizontal-tabs').each(function(){
     var tabclone = $(this).find('> .horizontal-tabs-list .horizontal-tab-button.selected a').text();
+<<<<<<< HEAD
         $(this).find('> .tab-horizontal-mobile').html(tabclone);
+=======
+      $(this).find('> .tab-horizontal-mobile').html(tabclone);
+>>>>>>> 20
       $('.quicktabs-wrapper').each(function(index){
         var tabclone = $(this).find('> .item-list ul.quicktabs-tabs li .quicktabs-loaded.active').text();
         $(this).find('> .item-list ul.quicktabs-tabs').before('<div class="tab-mobile">'+tabclone+'</div>');
       });
     });
+<<<<<<< HEAD
     return false;
   };
 
@@ -122,6 +127,9 @@ $(document).ready(function () {
 
 
   $('.horizontal-tabs .tab-horizontal-mobile').on('click', processTabHorizontalMobile);
+=======
+  };
+>>>>>>> 20
   
   //Js for vertical tabs
   var processTabVertical = function () {
