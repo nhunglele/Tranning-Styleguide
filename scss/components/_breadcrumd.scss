@@ -1,0 +1,68 @@
+.breadcrumd {
+  display: inline-block;
+  width: 100%;
+}
+
+.breadcrumd-left {
+  @include breakpoint($desktop-wide) {
+    float: left;
+  }
+
+  li {
+    @include source_sans_prosemibold;
+    color: $grey-5f;
+    display: inline-block;
+    font-size: rem(18px);
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+
+    @include breakpoint($desktop-wide) {
+      margin-right: rem(12px);
+    }
+
+    a {
+      @include source_sans_prosemibold;
+      color: $grey-5f;
+      font-size: rem(18px);
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+
+      &:hover {
+        color: $color-links;
+      }
+
+      @include breakpoint($desktop-wide) {
+        &:before {
+          content: "/";
+          float: right;
+          margin-left: rem(15px);
+        }
+      }
+    }
+
+    &.current {
+      float: right;
+    }
+  }
+}
+
+.breadcrumd-right {
+  display: none;
+
+  @include breakpoint($desktop-wide) {
+    display: block;
+    float: right;
+  }
+
+  a {
+    @include source_sans_prosemibold;
+    color: $grey-5f;
+    font-size: rem(18px);
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $color-links;
+    }
+  }
+}
