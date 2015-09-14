@@ -10,7 +10,7 @@
 
   li {
     @include source_sans_prosemibold;
-    color: #5f574f;
+    color: $grey-5f;
     display: inline-block;
     font-size: rem(18px);
     letter-spacing: 0.5px;
@@ -22,7 +22,7 @@
 
     a {
       @include source_sans_prosemibold;
-      color: #5f574f;
+      color: $grey-5f;
       font-size: rem(18px);
       letter-spacing: 0.5px;
       text-transform: capitalize;
@@ -56,7 +56,7 @@
 
   a {
     @include source_sans_prosemibold;
-    color: #5f574f;
+    color: $grey-5f;
     font-size: rem(18px);
     letter-spacing: 0.5px;
     text-transform: capitalize;
