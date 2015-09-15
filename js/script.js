@@ -120,9 +120,7 @@ $(document).ready(function () {
     $('.horizontal-tabs .horizontal-tabs-list').toggleClass('active');
   };
 
-
   $('.horizontal-tabs .tab-horizontal-mobile').on('click', processTabHorizontalMobile);
-  };
   
   //Js for vertical tabs
   var processTabVertical = function () {
@@ -141,9 +139,10 @@ $(document).ready(function () {
   };
 
   $('.quicktabs-wrapper .quicktabs-tabs li .quicktabs-loaded').on('click', processTabVertical);
-  $('.quicktabs-wrapper .item-list .tab-mobile').on('click', processTabVerticalMobile);
 
   var processTabVerticalMobile = function () {
     $('.quicktabs-wrapper .item-list .quicktabs-tabs').toggleClass('active');
   };
+
+  $('.quicktabs-wrapper .item-list .tab-mobile').on('click', processTabVerticalMobile);
 });
