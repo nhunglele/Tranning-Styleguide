@@ -17,6 +17,18 @@
 }
 
 // IMPORTANT. For updating the icon lib, replace the icons code below:
+.icon-twitter:before {
+  content: "\e60b";
+}
+.icon-google-plus:before {
+  content: "\e60f";
+}
+.icon-envelope-o:before {
+  content: "\e610";
+}
+.icon-facebook2:before {
+  content: "\e611";
+}
 .icon-angle-down:before {
   content: "\e607";
 }

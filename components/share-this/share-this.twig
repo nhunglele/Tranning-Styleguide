@@ -1,0 +1,32 @@
+{% block share_this %}
+  {% set share_this = [
+    {
+      'class_icon': 'icon-facebook',
+      'href_link': '#',
+      'text': 'facebook'
+    },
+    {
+      'class_icon': 'icon-google-plus',
+      'href_link': '#',
+      'text': 'googleplus'
+    },
+    {
+      'class_icon': 'icon-twitter',
+      'href_link': '#',
+      'text': 'twitter'
+    },
+    {
+      'class_icon': 'icon-envelope-o',
+      'href_link': '#',
+      'text': 'mail'
+    }
+  ] %}
+  <div class="share-this">
+  <h2 class="pane-title">SHARE:</h2>
+    <ul>
+      {% for item in share_this %}
+        <li><a class="{{item.class_icon}}" href="{{item.href_link}}">{{item.text}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
