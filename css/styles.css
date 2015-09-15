@@ -266,7 +266,7 @@ textarea {
   }
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
+[class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
 .modal-content-sign-up .popups-container:before,
 .modal-content-sign-in .popups-container:before, .form-sign-up .field-name-field-user-name:before,
 .form-sign-up .form-item-name:before,
@@ -287,12 +287,29 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-thin-right:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-next:before {
-  content: "\e603";
+.icon-envelope-o:before {
+  content: "\e607";
 }
 
-.icon-chevron-thin-left:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-prev:before {
-  content: "\e604";
+.icon-twitter:before {
+  content: "\e608";
+}
+
+.icon-google-plus:before {
+  content: "\e609";
+}
+
+.icon-facebook:before, .form-sign-up .hybridauth-widget-wrapper .item-list .hybridauth-icon.facebook:before,
+.form-sign-in .hybridauth-widget-wrapper .item-list .hybridauth-icon.facebook:before {
+  content: "\e60a";
+}
+
+.icon-arrow-right:before {
+  content: "\e606";
+}
+
+.icon-checkmark:before {
+  content: "\e605";
 }
 
 .icon-star-empty:before {
@@ -301,6 +318,14 @@ textarea {
 
 .icon-star-full:before {
   content: "\e601";
+}
+
+.icon-chevron-thin-right:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-next:before {
+  content: "\e603";
+}
+
+.icon-chevron-thin-left:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-prev:before {
+  content: "\e604";
 }
 
 .icon-star:before {
@@ -1284,7 +1309,7 @@ iframe {
   opacity: 1;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
+[class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
 .modal-content-sign-up .popups-container:before,
 .modal-content-sign-in .popups-container:before, .form-sign-up .field-name-field-user-name:before,
 .form-sign-up .form-item-name:before,
