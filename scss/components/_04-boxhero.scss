@@ -4,53 +4,59 @@
   font-family: 'source_sans_prosemibold';
   margin-bottom: 60px;
   position: relative;
-
-  @include breakpoint($mobile-and-tablet) {
-    height: 489px;
-    overflow: hidden;
-  }
+  height: 489px;
+  overflow: hidden;
 
   &__image {
-    @include breakpoint($mobile-and-tablet) {
-     position: absolute;
-     left: 0;
-     bottom: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    @include breakpoint($desktop-small) {
+      width: 100%;
     }
 
     img {
       height: 498px;
+
+      @include breakpoint($desktop-small) {
+        width: 100%;
+      }
     }
   }
 
   &__group-content {
-    left: 221px;
-    padding-right: 50px;
     position: absolute;
-    top: 129px;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 
-    @include breakpoint($mobile-and-tablet) {
-      left: 0;
-      padding: 20px;
-      text-align: center;
-      width: 100%;
+    @include breakpoint($desktop-small) {
+      left: 221px;
+      padding-right: 50px;
+      padding-top: 0;
+      top: 129px;
+      text-align: left;
+      width: auto;
     }
 
     &__title {
-      font-size: 36px;
+      font-size: 20px;
       margin-bottom: 5px;
 
-      @include breakpoint($mobile-and-tablet) {
-        font-size: 20px;
+      @include breakpoint($desktop-small) {
+        font-size: 36px;
       }
     }
 
     &__description {
-      font-size: 55px;
+      font-size: 30px;
       margin-bottom: 45px;
       margin-left: -4px;
 
-      @include breakpoint($mobile-and-tablet) {
-        font-size: 30px;
+      @include breakpoint($desktop-small) {
+        font-size: 55px;
       }
     }
 
@@ -65,11 +71,11 @@
         color: $white;
         display: inline-block;
         font-size: 22px;
-        padding: 14px 54px;
+        padding: 5px 15px;
         text-transform: capitalize;
 
-        @include breakpoint($mobile-and-tablet) {
-          padding: 5px 15px;
+        @include breakpoint($desktop-small) {
+          padding: 14px 54px;
         }
 
         &:hover {
@@ -87,11 +93,13 @@
 
 .box-hero--wide {
   .box-hero__image {
-    @include breakpoint($mobile-and-tablet) {
-      bottom: 0;
-      left: auto;
-      position: absolute;
-      right: -520px;
+    bottom: 0;
+    left: auto;
+    position: absolute;
+    right: -520px;
+
+    @include breakpoint($desktop-small) {
+      right: 0;
     }
   }
 
@@ -99,8 +107,10 @@
     top: 86px;
 
     &__content {
-      @include breakpoint($mobile-and-tablet) {
-        display: none;
+      display: none;
+
+      @include breakpoint($desktop-small) {
+        display: block;
       }
     }
 
@@ -127,51 +137,51 @@
 }
 
 .box-hero--more {
-  @include breakpoint($mobile-and-tablet) {
-    height: auto;
-    overflow: initial;
-  }
+  height: auto;
+  overflow: initial;
 
   .box-hero__image {
-    @include breakpoint($mobile-and-tablet) {
-      height: 498px;
-      overflow: hidden;
-      position: relative;
+    height: 498px;
+    overflow: hidden;
+    position: relative;
 
-      img {
-        @include breakpoint($mobile-and-tablet) {
-          height: 498px;
-          max-width: 1600px;
-          position: absolute;
-          right: -70px;
-        }
+    img {
+      height: 498px;
+      position: absolute;
+      right: -70px;
+
+      @include breakpoint($desktop-small) {
+       right: 0;
       }
     }
   }
 
   .box-hero__group-content {
-    top: 155px;
-
-    @include breakpoint($mobile-and-tablet) {
-      position: relative;
-      top: auto;
+    position: relative;
+    top: auto;
+    @include breakpoint($desktop-small) {
+      position: absolute;
+      top: 155px;
     }
+
 
     &__title {
       color: $black;
       font-size: 48px;
-      margin-bottom: 52px;
+      margin-bottom: 15px;
 
-      @include breakpoint($mobile-and-tablet) {
-        margin-bottom: 15px;
+      @include breakpoint($desktop-small) {
+        margin-bottom: 52px;
       }
     }
 
     &__content {
       color: $black;
       font-size: 24px;
-      @include breakpoint($mobile-and-tablet) {
-        font-weight: bold;
+      font-weight: bold;
+
+      @include breakpoint($desktop-small) {
+        font-weight: normal;
       }
     }
   }
