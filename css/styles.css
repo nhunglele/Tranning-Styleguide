@@ -465,9 +465,9 @@ iframe {
 .box-hero {
   color: #fff;
   font-family: 'source_sans_prosemibold';
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   position: relative;
-  height: 489px;
+  height: 30.5625rem;
   overflow: hidden;
 }
 .box-hero__image {
@@ -481,7 +481,7 @@ iframe {
   }
 }
 .box-hero__image img {
-  height: 498px;
+  height: 31.125rem;
 }
 @media (min-width: 60em) {
   .box-hero__image img {
@@ -491,37 +491,37 @@ iframe {
 .box-hero__group-content {
   position: absolute;
   left: 0;
-  padding: 20px;
+  padding: 1.25rem;
   text-align: center;
   width: 100%;
 }
 @media (min-width: 60em) {
   .box-hero__group-content {
-    left: 221px;
-    padding-right: 50px;
+    left: 13.8125rem;
+    padding-right: 3.125rem;
     padding-top: 0;
-    top: 129px;
+    top: 8.0625rem;
     text-align: left;
     width: auto;
   }
 }
 .box-hero__group-content__title {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 1.25rem;
+  margin-bottom: 0.3125rem;
 }
 @media (min-width: 60em) {
   .box-hero__group-content__title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 .box-hero__group-content__description {
-  font-size: 30px;
-  margin-bottom: 45px;
-  margin-left: -4px;
+  font-size: 1.875rem;
+  margin-bottom: 2.8125rem;
+  margin-left: -0.25rem;
 }
 @media (min-width: 60em) {
   .box-hero__group-content__description {
-    font-size: 55px;
+    font-size: 3.4375rem;
   }
 }
 .box-hero__group-content__content {
@@ -529,11 +529,11 @@ iframe {
 }
 .box-hero__group-content__link .btn-default {
   background-color: #eaab02;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   color: #fff;
   display: inline-block;
-  font-size: 22px;
-  padding: 5px 15px;
+  font-size: 1.375rem;
+  padding: 0.3125rem 0.9375rem;
   text-transform: capitalize;
 }
 @media (min-width: 60em) {
@@ -545,7 +545,7 @@ iframe {
   background-color: #f39c12;
 }
 .box-hero__group-content__link .learm-more {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: capitalize;
 }
 
@@ -553,7 +553,7 @@ iframe {
   bottom: 0;
   left: auto;
   position: absolute;
-  right: -520px;
+  right: -32.5rem;
 }
 @media (min-width: 60em) {
   .box-hero--wide .box-hero__image {
@@ -572,12 +572,12 @@ iframe {
   }
 }
 .box-hero--wide .box-hero__group-content__description {
-  margin-bottom: 51px;
+  margin-bottom: 3.1875rem;
 }
 .box-hero--wide .box-hero__group-content__content {
   font-family: 'source_sans_proregular';
-  font-size: 21px;
-  margin-bottom: 62px;
+  font-size: 1.3125rem;
+  margin-bottom: 3.875rem;
 }
 .box-hero--wide .box-hero__group-content__link .btn-default {
   background-color: #16a085;
@@ -591,14 +591,14 @@ iframe {
   overflow: initial;
 }
 .box-hero--more .box-hero__image {
-  height: 498px;
+  height: 31.125rem;
   overflow: hidden;
   position: relative;
 }
 .box-hero--more .box-hero__image img {
-  height: 498px;
+  height: 31.125rem;
   position: absolute;
-  right: -70px;
+  right: -4.375rem;
 }
 @media (min-width: 60em) {
   .box-hero--more .box-hero__image img {
@@ -612,22 +612,22 @@ iframe {
 @media (min-width: 60em) {
   .box-hero--more .box-hero__group-content {
     position: absolute;
-    top: 155px;
+    top: 9.6875rem;
   }
 }
 .box-hero--more .box-hero__group-content__title {
   color: #000;
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 0.9375rem;
 }
 @media (min-width: 60em) {
   .box-hero--more .box-hero__group-content__title {
-    margin-bottom: 52px;
+    margin-bottom: 3.25rem;
   }
 }
 .box-hero--more .box-hero__group-content__content {
   color: #000;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 @media (min-width: 60em) {

@@ -2,9 +2,9 @@
 .box-hero {
   color: $white;
   font-family: 'source_sans_prosemibold';
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
   position: relative;
-  height: 489px;
+  height: rem(489px);
   overflow: hidden;
 
   &__image {
@@ -17,7 +17,7 @@
     }
 
     img {
-      height: 498px;
+      height: rem(498px);
 
       @include breakpoint($desktop-small) {
         width: 100%;
@@ -28,35 +28,35 @@
   &__group-content {
     position: absolute;
     left: 0;
-    padding: 20px;
+    padding: rem(20px);
     text-align: center;
     width: 100%;
 
     @include breakpoint($desktop-small) {
-      left: 221px;
-      padding-right: 50px;
+      left: rem(221px);
+      padding-right: rem(50px);
       padding-top: 0;
-      top: 129px;
+      top: rem(129px);
       text-align: left;
       width: auto;
     }
 
     &__title {
-      font-size: 20px;
-      margin-bottom: 5px;
+      font-size: rem(20px);
+      margin-bottom: rem(5px);
 
       @include breakpoint($desktop-small) {
-        font-size: 36px;
+        font-size: rem(36px);
       }
     }
 
     &__description {
-      font-size: 30px;
-      margin-bottom: 45px;
-      margin-left: -4px;
+      font-size: rem(30px);
+      margin-bottom: rem(45px);
+      margin-left: rem(-4px);
 
       @include breakpoint($desktop-small) {
-        font-size: 55px;
+        font-size: rem(55px);
       }
     }
 
@@ -67,11 +67,11 @@
     &__link {
       .btn-default {
         background-color: $yellow-ea;
-        border-radius: 4px;
+        border-radius: rem(4px);
         color: $white;
         display: inline-block;
-        font-size: 22px;
-        padding: 5px 15px;
+        font-size: rem(22px);
+        padding: rem(5px) rem(15px);
         text-transform: capitalize;
 
         @include breakpoint($desktop-small) {
@@ -84,7 +84,7 @@
       }
 
       .learm-more {
-        font-size: 20px;
+        font-size: rem(20px);
         text-transform: capitalize;
       }
     }
@@ -96,7 +96,7 @@
     bottom: 0;
     left: auto;
     position: absolute;
-    right: -520px;
+    right: rem(-520px);
 
     @include breakpoint($desktop-small) {
       right: 0;
@@ -115,13 +115,13 @@
     }
 
     &__description {
-      margin-bottom: 51px;
+      margin-bottom: rem(51px);
     }
 
     &__content {
       font-family: 'source_sans_proregular';
-      font-size: 21px;
-      margin-bottom: 62px;
+      font-size: rem(21px);
+      margin-bottom: rem(62px);
     }
 
     &__link {
@@ -141,14 +141,14 @@
   overflow: initial;
 
   .box-hero__image {
-    height: 498px;
+    height: rem(498px);
     overflow: hidden;
     position: relative;
 
     img {
-      height: 498px;
+      height: rem(498px);
       position: absolute;
-      right: -70px;
+      right: rem(-70px);
 
       @include breakpoint($desktop-small) {
        right: 0;
@@ -161,23 +161,23 @@
     top: auto;
     @include breakpoint($desktop-small) {
       position: absolute;
-      top: 155px;
+      top: rem(155px);
     }
 
 
     &__title {
       color: $black;
-      font-size: 48px;
-      margin-bottom: 15px;
+      font-size: rem(48px);
+      margin-bottom: rem(15px);
 
       @include breakpoint($desktop-small) {
-        margin-bottom: 52px;
+        margin-bottom: rem(52px);
       }
     }
 
     &__content {
       color: $black;
-      font-size: 24px;
+      font-size: rem(24px);
       font-weight: bold;
 
       @include breakpoint($desktop-small) {
