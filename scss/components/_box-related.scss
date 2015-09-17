@@ -4,8 +4,8 @@
     
     .box-related__line-task{
       display: inline-block;
-      width: 100%;
       margin-bottom: 10px;
+      width: 100%;
     }
 
     .box-related__status{
@@ -25,15 +25,15 @@
     }
 
     .box-related__category{
-      text-transform: uppercase;
-      font-size: rem(12px);
-      color: $grey-5f;
-      background-color: $grey-f4;
-      padding: 5px 10px;
-      @include source-sans-pro-regular;
-      display: inline-block;
       @include border-radius(3px);
+      @include source-sans-pro-regular;
+      background-color: $grey-f4;
+      color: $grey-5f;
+      display: inline-block;
+      font-size: rem(12px);
       margin-bottom: 10px;
+      padding: 5px 10px;
+      text-transform: uppercase;
     }
 
     .box-related__tags{
