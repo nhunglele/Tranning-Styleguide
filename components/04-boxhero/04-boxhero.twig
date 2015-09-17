@@ -1,0 +1,59 @@
+
+{% block boxhero %}
+  {% set boxhero = [
+    {
+      "typebox" : 'box-hero',
+      "title" : 'Welcome to the',
+      "description": 'ILN Performance Assessment Resource Bank',
+      "img" : '<img src="../../images/box-frontpage.jpg" alt="image box hero">',
+      "link" : '<a class="btn-default" href="#">login</a> or <a class="learm-more" href="#">Learn More</a>'
+    },
+    {
+    "typebox" : 'box-hero box-hero--wide',
+      "description": 'ILN Performance Assessment Resource Bank',
+      "content": 'High-quality, expert-reviewed performance tasks and the resources teachers, leaders, and policymakers need to support the use of performance assessment for meaningful learning.',
+      "img" : '<img src="../../images/box-hero--wide.jpg" alt="image box hero wide">',
+      "link" : '<a class="btn-default" href="#">Start Using Resources for Free</a>',
+  }
+  ,
+    {
+    "typebox" : 'box-hero box-hero--more box-hero--dark',
+      "title" : 'About Us',
+      "img" : '<img src="../../images/boxhero-about-page.jpg" alt="image box hero about">',
+      "content": 'The Innovation Lab Network (ILN) Performance Assessment Project supports ILN member states with integrating performance assessments into their systems of assessment, developing the capacity of educators to effectively use performance assessment, and designing policies to support these efforts.'
+  }
+  ] %}
+
+  {% for item in boxhero %}
+      <div class="{{item.typebox}}">
+        <div class="box-hero__image">
+          {{item.img}}
+        </div>
+        <div class="box-hero__group-content">
+          {% if item.title is not empty %}
+            <div class="box-hero__group-content__title">
+             {{item.title}}
+            </div>
+          {% endif %}
+          {% if item.description is not empty %}
+            <div class="box-hero__group-content__description">
+              {{item.description}}
+            </div>
+          {% endif %}
+          {% if item.content is not empty %}
+            <div class="box-hero__group-content__content">
+              {{item.content}}
+            </div>
+          {% endif %}
+          {% if item.link is not empty %}
+            <div class="box-hero__group-content__link">
+              {{item.link}}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+  {% endfor %}
+{% endblock %}
+
+
+

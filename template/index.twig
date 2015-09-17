@@ -21,6 +21,10 @@
         'name': 'Demo'
       },
       {
+        'id':'04-boxhero',
+        'name': 'Box hero'
+      },
+      {
         'id':'box-logo',
         'name': 'Box Logo'
       },
@@ -28,7 +32,7 @@
         'id':'box_img',
         'name': 'Box Img'
       },
-      { 
+      {
         'id':'box-tags',
         'name': 'Box Tags'
       },
@@ -63,7 +67,7 @@
         'name': 'Box Teaser Detail'
       }
 
-    ] %} 
+    ] %}
     {% for component in list_components %}
       <div class="component--item" id="{{component.id}}">
         <h2 class="component--title">{{ loop.index }}. {{ component.name }}</h2>
