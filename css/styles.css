@@ -538,7 +538,7 @@ iframe {
 }
 @media (min-width: 60em) {
   .box-hero__group-content__link .btn-default {
-    padding: 14px 54px;
+    padding: 0.875rem 3.375rem;
   }
 }
 .box-hero__group-content__link .btn-default:hover {
@@ -561,7 +561,7 @@ iframe {
   }
 }
 .box-hero--wide .box-hero__group-content {
-  top: 86px;
+  top: 5.375rem;
 }
 .box-hero--wide .box-hero__group-content__content {
   display: none;
