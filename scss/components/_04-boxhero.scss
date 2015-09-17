@@ -1,0 +1,178 @@
+//style boc hero
+.box-hero {
+  color: $white;
+  font-family: 'source_sans_prosemibold';
+  margin-bottom: 60px;
+  position: relative;
+
+  @include breakpoint($mobile-and-tablet) {
+    height: 489px;
+    overflow: hidden;
+  }
+
+  &__image {
+    @include breakpoint($mobile-and-tablet) {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+    }
+
+    img {
+      height: 498px;
+    }
+  }
+
+  &__group-content {
+    left: 221px;
+    padding-right: 50px;
+    position: absolute;
+    top: 129px;
+
+    @include breakpoint($mobile-and-tablet) {
+      left: 0;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 5px;
+
+      @include breakpoint($mobile-and-tablet) {
+        font-size: 20px;
+      }
+    }
+
+    &__description {
+      font-size: 55px;
+      margin-bottom: 45px;
+      margin-left: -4px;
+
+      @include breakpoint($mobile-and-tablet) {
+        font-size: 30px;
+      }
+    }
+
+    &__content {
+      font-family: 'source_sans_proregular';
+    }
+
+    &__link {
+      .btn-default {
+        background-color: $yellow-ea;
+        border-radius: 4px;
+        color: $white;
+        display: inline-block;
+        font-size: 22px;
+        padding: 14px 54px;
+        text-transform: capitalize;
+
+        @include breakpoint($mobile-and-tablet) {
+          padding: 5px 15px;
+        }
+
+        &:hover {
+          background-color: $dark-orange;
+        }
+      }
+
+      .learm-more {
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.box-hero--wide {
+  .box-hero__image {
+    @include breakpoint($mobile-and-tablet) {
+      bottom: 0;
+      left: auto;
+      position: absolute;
+      right: -520px;
+    }
+  }
+
+  .box-hero__group-content {
+    top: 86px;
+
+    &__content {
+      @include breakpoint($mobile-and-tablet) {
+        display: none;
+      }
+    }
+
+    &__description {
+      margin-bottom: 51px;
+    }
+
+    &__content {
+      font-family: 'source_sans_proregular';
+      font-size: 21px;
+      margin-bottom: 62px;
+    }
+
+    &__link {
+      .btn-default {
+        background-color: $green;
+
+        &:hover {
+          background-color: $dark-green;
+        }
+      }
+    }
+  }
+}
+
+.box-hero--more {
+  @include breakpoint($mobile-and-tablet) {
+    height: auto;
+    overflow: initial;
+  }
+
+  .box-hero__image {
+    @include breakpoint($mobile-and-tablet) {
+      height: 498px;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        @include breakpoint($mobile-and-tablet) {
+          height: 498px;
+          max-width: 1600px;
+          position: absolute;
+          right: -70px;
+        }
+      }
+    }
+  }
+
+  .box-hero__group-content {
+    top: 155px;
+
+    @include breakpoint($mobile-and-tablet) {
+      position: relative;
+      top: auto;
+    }
+
+    &__title {
+      color: $black;
+      font-size: 48px;
+      margin-bottom: 52px;
+
+      @include breakpoint($mobile-and-tablet) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__content {
+      color: $black;
+      font-size: 24px;
+      @include breakpoint($mobile-and-tablet) {
+        font-weight: bold;
+      }
+    }
+  }
+}
