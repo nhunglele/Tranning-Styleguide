@@ -121,7 +121,7 @@ $(document).ready(function () {
   };
 
   $('.horizontal-tabs .tab-horizontal-mobile').on('click', processTabHorizontalMobile);
-  
+
   //Js for vertical tabs
   var processTabVertical = function () {
     $('.quicktabs-wrapper .quicktabs-tabs li .quicktabs-loaded').removeClass("active");
@@ -145,4 +145,6 @@ $(document).ready(function () {
   };
 
   $('.quicktabs-wrapper .item-list .tab-mobile').on('click', processTabVerticalMobile);
+
+  $(".chosen-enable").chosen();
 });
