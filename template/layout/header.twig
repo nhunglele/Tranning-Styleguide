@@ -8,8 +8,11 @@
       <a href="#" class="toggleMenu">Menu</a>
       <div class="region-header">
         <div class="link-header">
-          <a href="#">Sign In</a><span>or</span><a href="#">Sign up</a>
+          <a href="#" data-toggle="modal" data-target=".region-header .modal-content-sign-in">Sign In</a><span>or</span><a href="#" data-toggle="modal" data-target=".region-header .modal-content-sign-up">Sign up</a>
         </div>
+        {% include '../../components/sign-in/sign-in.twig' %}
+        {% include '../../components/sign-up/sign-up.twig' %}
+        {% include '../../components/sign-up-note/sign-up-note.twig' %}
         <div class="navigation">
           <ul class="main-menu">
             {% set navigation = [

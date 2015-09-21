@@ -12,6 +12,9 @@ $mobile-only: 'screen' 'max-width' $tablet - 1;
 $mobile-and-tablet: 'screen' 'max-width' $desktop-small - 1;
 $tablet-only: $tablet $desktop-small - 1;
 
+//Fix browers
+$browers: 'screen' 'min--moz-device-pixel-ratio' 0;
+$desktop-small-browers: 'screen' $desktop-small ('min--moz-device-pixel-ratio' 0);
 
 // Grid variables
 $container-margin: 20px;

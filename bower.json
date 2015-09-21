@@ -1,0 +1,20 @@
+{
+  "name": "Tranning-Styleguide-test",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dohuuthanh/Tranning-Styleguide",
+  "authors": [
+    "Thanh <huuthanhcntt3a2@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chosen": "~1.4.2",
+    "susy": "~2.2.6"
+  }
+}

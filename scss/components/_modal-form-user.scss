@@ -1,0 +1,803 @@
+.modal-content-agree-sign-up,
+.modal-content-sign-up,
+.modal-content-sign-in {
+  .popups-container {
+    @extend .icon-user;
+    margin: 0 auto;
+    overflow: inherit;
+
+    &:before {
+      @extend %icons;
+      @include border-radius(100%);
+      @include box-sizing(border-box);
+      background: $grey-f4;
+      color: $green;
+      display: block;
+      font-size: rem(38px);
+      height: rem(108px);
+      left: 50%;
+      margin-left: rem(-54px);
+      overflow: hidden;
+      padding: rem(32px) 0;
+      position: absolute;
+      text-align: center;
+      top: rem(-51px);
+      width: rem(108px);
+
+      @include breakpoint($mobile-and-tablet) {
+        margin: 0 auto;
+        position: static;
+      }
+    }
+  }
+}
+
+@include breakpoint($desktop-small) {
+  .modal-content-sign-in div.ctools-modal-content div.popups-container {
+    padding: rem(45px) rem(42px) rem(42px);
+  }
+
+  .modal-content-sign-in .modal-forms-modal-content {
+    max-width: rem(401px);
+  }
+}
+
+%style-radio {
+  margin-bottom: rem(5px);
+  position: relative;
+
+  label,
+  .form-checkbox {
+    display: inline;
+  }
+
+  label {
+    @include source-sans-pro-regular();
+    color: $grey-5f;
+    display: inline-block;
+    font-size: rem(16px);
+    font-weight: 400;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  input {
+    @include opacity(0);
+    display: block;
+    height: rem(15px);
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    width: rem(15px);
+
+    + label {
+      position: relative;
+      text-indent: rem(27px);
+      z-index: 2;
+    }
+
+    &.error + label:before {
+      border: 1px solid $red;
+    }
+
+    &[type=radio],
+    &[type=checkbox] {
+      &:checked + label {
+        @include source-sans-prosemibold();
+        color: $green;
+
+        &:before {
+          border: 2px solid $green;
+          left: -1px;
+          top: -1px;
+        }
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.form-sign-up .form-item-field-role-ref-und .form-checkboxes .form-type-checkbox {
+  @extend %style-radio;
+}
+
+.form-sign-up,
+.form-sign-in {
+  position: relative;
+  text-align: center;
+
+  .form-item-field-district-ref-und,
+  .form-item-mail,
+  .field-name-field-user-name,
+  .form-type-password,
+  .form-item-name {
+    margin-bottom: rem(33px);
+    position: relative;
+    text-align: left;
+
+    @include breakpoint($browers) {
+      margin-bottom: rem(31px);
+    }
+
+    .description,
+    label {
+      display: none;
+    }
+
+    &:before {
+      color: $grey-af;
+      display: block;
+      font-size: rem(16px);
+      height: rem(15px);
+      left: rem(19px);
+      position: absolute;
+      text-align: center;
+      top: rem(13px);
+      width: rem(15px);
+      z-index: 3;
+    }
+  }
+
+  .field-name-field-user-name,
+  .form-item-name {
+    @extend .icon-user;
+
+    &:before {
+      @extend %icons;
+    }
+  }
+
+  .form-item-mail:before {
+    font-size: rem(15px);
+  }
+
+  .form-item-field-district-ref-und {
+    @extend .icon-location;
+
+    &:before {
+      @extend %icons;
+    }
+
+    input.form-autocomplete {
+      background-position: 98% center;
+    }
+  }
+
+  .form-type-password {
+    @extend .icon-locked;
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: rem(17px);
+    }
+
+    display: inline-block;
+    margin-bottom: rem(24px);
+    width: 100%;
+
+    &:before {
+      @extend %icons;
+      font-size: rem(14px);
+    }
+  }
+
+  .form-text {
+    @include box-sizing(border-box);
+    @include source-sans-pro-regular();
+    font-weight: 400;
+    margin: 0;
+    max-width: 100%;
+    padding: rem(10px) rem(15px) rem(10px) rem(46px);
+    width: 100%;
+  }
+
+  .field-name-field-state {
+    text-align: left;
+
+    label {
+      display: none;
+    }
+  }
+
+  .hybridauth-widget-wrapper .item-list {
+    position: relative;
+
+    &:before {
+      border-top: 1px solid $grey-e5;
+      content: '';
+      display: block;
+      left: rem(17px);
+      position: absolute;
+      right: rem(17px);
+      top: rem(10px);
+    }
+
+    > h3 {
+      @include source-sans-pro-regular();
+      background: $white;
+      color: $grey-5f;
+      display: inline-block;
+      font-size: rem(16px);
+      font-weight: 400;
+      margin-bottom: rem(25px);
+      padding: 0 rem(10px);
+      position: relative;
+      text-transform: uppercase;
+      z-index: 2;
+
+      @include breakpoint($desktop-small) {
+        margin-bottom: rem(27px);
+      }
+    }
+
+    ul.hybridauth-widget {
+      a {
+        @include border-radius(5px);
+        display: block;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      li {
+        display: block;
+        float: none;
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    .hybridauth-icon.facebook {
+      @extend .icon-facebook;
+      @include opacity(1);
+      background: $san-marino none repeat scroll 0 0;
+      color: $white;
+      display: inline-block;
+      float: none;
+      height: 100%;
+      padding: rem(9px 15px 8px);
+      text-align: center;
+      width: 100%;
+
+      @include breakpoint($desktop-small) {
+        padding: rem(8px 15px 7px);
+      }
+
+      &:hover {
+        background-color: $chambray;
+        color: $white;
+        text-decoration: none;
+      }
+
+      &:before {
+        @extend %icons;
+        display: inline-block;
+        font-size: rem(24px);
+        margin-right: rem(8px);
+      }
+
+      &:after {
+        @include source-sans-pro-regular();
+        content: 'Sign in with Facebook';
+        display: inline-block;
+        font-size: rem(15px);
+        position: relative;
+        top: rem(-5px);
+      }
+
+      @include breakpoint($desktop-small-browers) {
+        padding: rem(8px 15px 5px);
+      }
+    }
+  }
+}
+
+.form-sign-in {
+  .form-wrapper {
+    margin: 0;
+  }
+
+  .forgot-pw-link {
+    color: $grey-5f;
+    display: inline-block;
+    font-size: rem(14px);
+    margin-bottom: rem(26px);
+    margin-top: rem(2px);
+    text-transform: capitalize;
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: rem(30px);
+      margin-top: 0;
+    }
+
+    @include breakpoint($desktop-small-browers) {
+      margin-bottom: rem(30px);
+      margin-top: rem(-2px);
+    }
+
+    &:hover {
+      color: $green;
+      text-decoration: none;
+    }
+  }
+
+  @include breakpoint($desktop-small-browers) {
+    .form-type-password {
+      margin-bottom: rem(15px);
+    }
+  }
+
+  .form-actions {
+    margin-bottom: rem(34px);
+  }
+
+  .form-submit {
+    @include box-sizing(border-box);
+    background: $yellow-ea;
+    display: block;
+    font-size: rem(16px);
+    padding: rem(12px 15px);
+    text-transform: uppercase;
+    width: 100%;
+
+    @include breakpoint($desktop-small) {
+      padding: rem(12px 15px);
+    }
+
+    @include breakpoint($desktop-small-browers) {
+      padding: rem(10px 15px);
+    }
+
+    &:hover {
+      background-color: $buddha-gold;
+    }
+  }
+}
+
+.notes-sign-up {
+  color: $grey-5f;
+  font-size: rem(13px);
+  line-height: rem(25px);
+
+  > h4 {
+    @include source-sans-pro-regular();
+    color: $grey-5f;
+    display: block;
+    font-size: rem(16px);
+    font-weight: 400;
+    margin-bottom: rem(17px);
+    text-align: center;
+  }
+
+  .button-cancel-sign-up,
+  .button-agree-sign-up {
+    @include border-radius(4px);
+    @include source-sans-prosemibold();
+    display: block;
+    font-size: rem(16px);
+    font-weight: 400;
+    padding: rem(8px 15px);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .button-agree-sign-up {
+    margin-bottom: rem(19px);
+    margin-top: rem(45px);
+  }
+
+  .button-cancel-sign-up {
+    background: $grey-f4;
+    color: $grey-5f;
+
+    &:hover {
+      background-color: $green-white;
+      color: $grey-5f;
+      text-decoration: none;
+    }
+  }
+}
+
+@include breakpoint($desktop-small-browers) {
+  .modal-content-agree-sign-up .ctools-modal-content .popups-container .modal-title {
+    margin-bottom: rem(34px);
+  }
+}
+
+.form-sign-up {
+  .form-wrapper {
+    margin: 0;
+
+    @include breakpoint($desktop-small) {
+      @include box-sizing(border-box);
+      float: left;
+      margin: 0;
+      width: 50%;
+
+      &:nth-child(2n+1) {
+        clear: both;
+        padding-right: rem(16px);
+      }
+
+      &:nth-child(2n+2) {
+        padding-left: rem(16px);
+      }
+    }
+  }
+
+  .form-item-field-district-ref-und,
+  .form-item-mail,
+  .field-name-field-user-name,
+  .form-type-password,
+  .form-item-name {
+    margin-bottom: rem(32px);
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: rem(25px);
+    }
+
+    @include breakpoint($desktop-small-browers) {
+      margin-bottom: rem(24px);
+    }
+  }
+
+  .form-item-mail {
+    @extend .icon-mail;
+
+    &:before {
+      @extend %icons;
+    }
+  }
+
+  @include breakpoint($desktop-small) {
+    > div {
+      @include clearfix;
+      position: relative;
+    }
+
+    .form-item-pass {
+      @include clearfix;
+      clear: both;
+      margin-bottom: rem(11px);
+
+      > .form-type-password {
+        @include box-sizing(border-box);
+        float: left;
+        margin-bottom: rem(27px);
+        width: 50%;
+
+        &:nth-child(2n+1) {
+          clear: both;
+          padding-right: rem(16px);
+        }
+
+        &:nth-child(2n+2) {
+          padding-left: rem(16px);
+        }
+
+        &:nth-child(2n+2):before {
+          left: rem(38px);
+        }
+      }
+    }
+  }
+
+  .field-name-field-other-role-ref {
+    clear: both;
+    display: block;
+    left: 0;
+    margin: rem(-109px) 0 0;
+    padding: 0 !important;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+
+    @include breakpoint($desktop-small) {
+      left: auto;
+      margin: rem(-87px) 0 0;
+      padding: rem(0 22px 0 16px) !important;
+    }
+
+    label {
+      display: none;
+    }
+
+    .form-text {
+      padding: rem(8px 15px);
+
+      &.form-autocomplete {
+        background-position: 98% center;
+      }
+    }
+  }
+
+  .field-name-field-role-ref {
+    @include clearfix;
+    background: $grey-f4;
+    clear: both;
+    display: block;
+    float: none;
+    margin-bottom: rem(37px);
+    margin-left: rem(-20px);
+    margin-right: rem(-20px);
+    margin-top: rem(43px);
+    padding: rem(23px) rem(22px) rem(74px) !important;
+    text-align: left;
+
+    @include breakpoint($desktop-small) {
+      @include border-radius(4px);
+      display: inline-block;
+      margin-bottom: rem(28px);
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: rem(2px);
+      padding: rem(17px) rem(22px) rem(20px) !important;
+      width: 100%;
+
+      &.items-even {
+        padding: rem(20px) rem(22px) rem(63px) !important;
+
+        + .field-name-field-other-role-ref {
+          left: 0;
+          padding: 0 rem(16px) 0 rem(22px) !important;
+          right: auto;
+        }
+      }
+    }
+  }
+
+  .form-item-field-role-ref-und {
+    > label {
+      @include source-sans-prosemibold();
+      color: $grey-5f;
+      font-size: rem(16px);
+      font-weight: 400;
+      margin-bottom: rem(27px);
+      text-transform: uppercase;
+
+      @include breakpoint($desktop-small) {
+        margin-bottom: rem(20px);
+      }
+    }
+
+    .form-checkboxes .form-type-checkbox {
+      @include box-sizing(border-box);
+      clear: none;
+      float: left;
+      margin-bottom: rem(20px);
+      width: 50%;
+
+      @include breakpoint($desktop-small) {
+          margin-bottom: rem(20px);
+      }
+
+      input + label {
+        &:before {
+          @include border-radius(3px);
+          background: $white;
+          border: 1px solid $grey-c;
+          content: "";
+          display: block;
+          height: rem(15px);
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: rem(15px);
+          z-index: 2;
+        }
+
+        &:after {
+          background: transparent url("../img/icon-checked.png") no-repeat scroll center center / 10px 7px;
+          content: '';
+          display: none;
+          height: rem(15px);
+          left: 1px;
+          position: absolute;
+          top: 1px;
+          width: rem(15px);
+          z-index: 4;
+        }
+      }
+
+      &:nth-child(2n+1) {
+        clear: both;
+        padding-right: rem(11px);
+
+        @include breakpoint($desktop-small) {
+          padding-right: rem(18px);
+        }
+      }
+
+      &:nth-child(2n+2) {
+        padding-left: rem(11px);
+
+        @include breakpoint($desktop-small) {
+          padding-left: rem(18px);
+        }
+      }
+    }
+  }
+
+  .form-item-pass {
+    div.password-confirm,
+    div.password-strength {
+      bottom: rem(-28px);
+      display: none !important;
+      left: 0;
+      margin: 0;
+      position: absolute;
+      z-index: 3;
+    }
+
+    .password-confirm {
+      left: rem(16px);
+    }
+
+    .description {
+      display: none !important;
+    }
+  }
+
+  .form-actions {
+    float: none;
+    margin-bottom: rem(22px);
+    margin-top: rem(7px);
+    padding: 0;
+    width: 100%;
+
+    @include breakpoint($desktop-small) {
+      margin-bottom: rem(18px);
+      margin-top: 0;
+    }
+
+    &:nth-child(2n+1) {
+      padding-right: 0;
+    }
+
+    &:nth-child(2n+2) {
+      padding-left: 0;
+    }
+
+    .form-submit {
+      @include border-radius(4px);
+      @include box-sizing(border-box);
+      display: block;
+      font-size: rem(16px);
+      padding: rem(12px 15px);
+      text-transform: uppercase;
+      width: 100%;
+
+      @include breakpoint($desktop-small) {
+        padding: rem(11px 15px);
+      }
+    }
+
+    .sign-up-confirm {
+      @include source-sans-pro-regular();
+      color: $grey-5f;
+      font-size: rem(14px);
+      margin-top: rem(14px);
+
+      a {
+        @include source-sans-prosemibold();
+        color: $grey-5f;
+        font-weight: 400;
+
+        &:hover {
+          color: $green;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .field-name-field-state {
+    margin-bottom: rem(33px);
+
+    select {
+      width: 100%;
+    }
+  }
+
+  .chosen-container {
+    margin-bottom: 0;
+    width: 100% !important;
+
+    .chosen-single {
+      color: $grey-5f;
+      font-size: rem(16px);
+    }
+  }
+
+  @include breakpoint($desktop-small) {
+    .hybridauth-widget-wrapper {
+      margin: 0 auto;
+      max-width: rem(318px);
+
+      .item-list > h3 {
+        margin-bottom: rem(22px);
+      }
+    }
+  }
+}
+
+.chosen-container.chosen-container-single {
+  @include source-sans-pro-regular();
+
+  &.error {
+    background-image: none;
+    border: none !important;
+
+    .chosen-single {
+      border: 1px solid $red;
+    }
+  }
+
+  .chosen-single {
+    @include box-shadow(none);
+    background: $white;
+    border: 1px solid $grey-c1;
+    color: $grey-5f;
+    font-size: rem(16px);
+    height: auto;
+    padding: rem(8px 44px 8px 15px);
+    position: relative;
+    z-index: 2;
+
+    > span {
+      @include opacity(.7);
+    }
+
+    > div {
+      @extend .icon-angle-down;
+
+      bottom: rem(16px);
+      color: $grey-5f;
+      font-size: rem(24px);
+      height: rem(16px);
+      left: auto;
+      position: absolute;
+      right: rem(13px);
+      text-align: center;
+      top: auto;
+      width: rem(16px);
+
+      &:before {
+        @extend %icons;
+      }
+
+      b {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.chosen-container-active.chosen-with-drop > a.chosen-single {
+  @include box-shadow(none);
+  background: $white;
+
+  > div {
+    @extend .icon-angle-up;
+
+    &:before {
+      @extend %icons;
+    }
+  }
+}
+
+.chosen-container-multi,
+.chosen-container-active {
+  .chosen-choices {
+    @include border-radius(5px);
+    @include box-shadow(none);
+    background: none;
+    border: 1px solid $grey-c1;
+    color: $grey-5f;
+    height: auto;
+    padding: rem(12px 15px);
+  }
+}

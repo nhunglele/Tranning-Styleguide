@@ -1,0 +1,139 @@
+.modal-open {
+  overflow: hidden;
+
+  .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.modal {
+  bottom: 0;
+  display: none;
+  left: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1050;
+}
+
+.modal-backdrop {
+  background-color: $black;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1040;
+
+  &.fade {
+    @include opacity(0);
+  }
+
+  &.in {
+    @include opacity(.5);
+  }
+}
+
+.modal-forms-modal-content {
+  @include breakpoint($desktop-small) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(150px);
+    max-width: rem(651px);
+  }
+}
+
+.popups-close {
+  cursor: pointer;
+  float: right;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+#modalContent .popups-container {
+  margin-bottom: rem(100px);
+  background-color: $white;
+}
+
+@include breakpoint($mobile-and-tablet) {
+  #modalContent {
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    .ctools-modal-content {
+      width: 100%;
+
+      .popups-container {
+        margin-bottom: 0;
+        max-width: inherit;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ctools-modal-content .popups-container {
+  @include border-radius(0);
+  height: auto;
+  overflow: inherit;
+  padding: rem(45px 20px 42px);
+  position: relative;
+
+  @include breakpoint($desktop-small) {
+    padding: rem(45px 32px 40px);
+  }
+
+  .modal-content,
+  .modal-header {
+    padding: 0;
+  }
+
+  .modal-header {
+    position: static;
+
+    .popups-close {
+      background: transparent url('../img/icon-close.png') no-repeat scroll center center / rem(22px) rem(22px);
+      bottom: auto;
+      height: rem(22px);
+      left: auto;
+      position: absolute;
+      right: rem(20px);
+      top: rem(20px);
+      width: rem(22px);
+
+      &:hover {
+        @include opacity(.8);
+      }
+    }
+  }
+
+  .modal-title {
+    @include source-sans-pro-regular();
+    color: $grey-5f;
+    display: block;
+    font-size: rem(24px);
+    font-weight: 400;
+    margin-bottom: rem(43px);
+    margin-top: rem(40px);
+    text-align: center;
+    text-transform: capitalize;
+
+     @include breakpoint($desktop-small) {
+      margin-bottom: rem(48px);
+      margin-top: rem(52px);
+    }
+  }
+
+  .modal-content {
+    height: auto !important;
+    max-width: 100%;
+    overflow: inherit;
+    width: auto !important;
+  }
+}

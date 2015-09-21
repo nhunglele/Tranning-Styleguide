@@ -1,0 +1,111 @@
+.hybridauth-icon-hybridauth-48 {
+  display: block;
+  float: left;
+  width: 48px;
+  height: 48px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.hybridauth-icon-hybridauth-48:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.hybridauth-none-hybridauth-48 {
+  background: transparent url(../img/openid.png) 0px 0px no-repeat;
+}
+.hybridauth-aol-hybridauth-48 {
+  background: transparent url(../img/aol.png) 0px 0px no-repeat;
+}
+.hybridauth-facebook-hybridauth-48 {
+  background: transparent url(../img/facebook.png) 0px 0px no-repeat;
+}
+.hybridauth-foursquare-hybridauth-48 {
+  background: transparent url(../img/foursquare.png) 0px 0px no-repeat;
+}
+.hybridauth-google-hybridauth-48 {
+  background: transparent url(../img/google.png) 0px 0px no-repeat;
+}
+.hybridauth-linkedin-hybridauth-48 {
+  background: transparent url(../img/linkedin.png) 0px 0px no-repeat;
+}
+.hybridauth-live-hybridauth-48 {
+  background: transparent url(../img/live.png) 0px 0px no-repeat;
+}
+.hybridauth-myspace-hybridauth-48 {
+  background: transparent url(../img/myspace.png) 0px 0px no-repeat;
+}
+.hybridauth-openid-hybridauth-48 {
+  background: transparent url(../img/openid.png) 0px 0px no-repeat;
+}
+.hybridauth-twitter-hybridauth-48 {
+  background: transparent url(../img/twitter.png) 0px 0px no-repeat;
+}
+.hybridauth-yahoo-hybridauth-48 {
+  background: transparent url(../img/yahoo.png) 0px 0px no-repeat;
+}
+
+.hybridauth-px500-hybridauth-48 {
+  background: transparent url(../img/500px.png) 0px 0px no-repeat;
+}
+.hybridauth-disqus-hybridauth-48 {
+  background: transparent url(../img/disqus.png) 0px 0px no-repeat;
+}
+.hybridauth-github-hybridauth-48 {
+  background: transparent url(../img/github.png) 0px 0px no-repeat;
+}
+.hybridauth-goodreads-hybridauth-48 {
+  background: transparent url(../img/goodreads.png) 0px 0px no-repeat;
+}
+.hybridauth-identica-hybridauth-48 {
+  background: transparent url(../img/identica.png) 0px 0px no-repeat;
+}
+.hybridauth-instagram-hybridauth-48 {
+  background: transparent url(../img/instagram.png) 0px 0px no-repeat;
+}
+.hybridauth-lastfm-hybridauth-48 {
+  background: transparent url(../img/lastfm.png) 0px 0px no-repeat;
+}
+.hybridauth-mailru-hybridauth-48 {
+  background: transparent url(../img/mailru.png) 0px 0px no-repeat;
+}
+.hybridauth-murmur-hybridauth-48 {
+  background: transparent url(../img/murmur.png) 0px 0px no-repeat;
+}
+.hybridauth-odnoklassniki-hybridauth-48 {
+  background: transparent url(../img/odnoklassniki.png) 0px 0px no-repeat;
+}
+.hybridauth-pixnet-hybridauth-48 {
+  background: transparent url(../img/pixnet.png) 0px 0px no-repeat;
+}
+.hybridauth-plurk-hybridauth-48 {
+  background: transparent url(../img/plurk.png) 0px 0px no-repeat;
+}
+.hybridauth-qq-hybridauth-48 {
+  background: transparent url(../img/qq.png) 0px 0px no-repeat;
+}
+.hybridauth-sina-hybridauth-48 {
+  background: transparent url(../img/sina.png) 0px 0px no-repeat;
+}
+.hybridauth-skyrock-hybridauth-48 {
+  background: transparent url(../img/skyrock.png) 0px 0px no-repeat;
+}
+.hybridauth-tumblr-hybridauth-48 {
+  background: transparent url(../img/tumblr.png) 0px 0px no-repeat;
+}
+.hybridauth-viadeo-hybridauth-48 {
+  background: transparent url(../img/viadeo.png) 0px 0px no-repeat;
+}
+.hybridauth-vimeo-hybridauth-48 {
+  background: transparent url(../img/vimeo.png) 0px 0px no-repeat;
+}
+.hybridauth-vkontakte-hybridauth-48 {
+  background: transparent url(../img/vkontakte.png) 0px 0px no-repeat;
+}
+.hybridauth-yandex-hybridauth-48 {
+  background: transparent url(../img/yandex.png) 0px 0px no-repeat;
+}
+/* Last used provider */
+.hybridauth-last-provider .hybridauth-icon-hybridauth-48 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}

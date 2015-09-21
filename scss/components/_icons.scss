@@ -28,6 +28,33 @@
 
 // IMPORTANT. For updating the icon lib, replace the icons code below:
 
+.icon-angle-down:before {
+  content: "\e607";
+}
+.icon-angle-up:before {
+  content: "\e608";
+}
+.icon-mail:before {
+  content: "\e609";
+}
+.icon-chevron-thin-right:before {
+  content: "\e603";
+}
+.icon-chevron-thin-left:before {
+  content: "\e604";
+}
+.icon-locked:before {
+  content: "\e60a";
+}
+.icon-user:before {
+  content: "\e60c";
+}
+.icon-location:before {
+  content: "\e60d";
+}
+.icon-facebook:before {
+  content: "\e60e";
+}
 .icon-checkmark:before {
   content: "\e605";
 }
@@ -37,45 +64,9 @@
 .icon-star-full:before {
   content: "\e601";
 }
-.icon-chevron-thin-right:before {
-  content: "\e603";
-}
-.icon-chevron-thin-left:before {
-  content: "\e604";
+.icon-arrow-right:before {
+  content: "\e606";
 }
 .icon-star:before {
   content: "\e602";
-}
-.icon-arrow-right:before {
-  content: "\e60a";
-}
-.icon-chevron-thin-right:before {
-  content: "\e608";
-}
-.icon-chevron-thin-left:before {
-  content: "\e609";
-}
-.icon-chevron-right2:before {
-  content: "\e606";
-}
-.icon-chevron-left2:before {
-  content: "\e607";
-}
-.icon-chevron-right:before {
-  content: "\e604";
-}
-.icon-chevron-left:before {
-  content: "\e605";
-}
-.icon-envelop:before {
-  content: "\e600";
-}
-.icon-checkmark:before {
-  content: "\e601";
-}
-.icon-google-plus:before {
-  content: "\e602";
-}
-.icon-facebook:before {
-  content: "\e603";
 }
