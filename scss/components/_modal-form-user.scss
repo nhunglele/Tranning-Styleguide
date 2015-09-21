@@ -257,12 +257,12 @@
       display: inline-block;
       float: none;
       height: 100%;
-      padding: rem(9px) rem(15px) rem(8px);
+      padding: rem(9px 15px 8px);
       text-align: center;
       width: 100%;
 
       @include breakpoint($desktop-small) {
-        padding: rem(8px) rem(15px) rem(7px);
+        padding: rem(8px 15px 7px);
       }
 
       &:hover {
@@ -288,7 +288,7 @@
       }
 
       @include breakpoint($desktop-small-browers) {
-        padding: rem(8px) rem(15px) rem(5px);
+        padding: rem(8px 15px 5px);
       }
     }
   }
@@ -338,16 +338,16 @@
     background: $yellow-ea;
     display: block;
     font-size: rem(16px);
-    padding: rem(12px) rem(15px);
+    padding: rem(12px 15px);
     text-transform: uppercase;
     width: 100%;
 
     @include breakpoint($desktop-small) {
-      padding: rem(12px) rem(15px);
+      padding: rem(12px 15px);
     }
 
     @include breakpoint($desktop-small-browers) {
-      padding: rem(10px) rem(15px);
+      padding: rem(10px 15px);
     }
 
     &:hover {
@@ -378,7 +378,7 @@
     display: block;
     font-size: rem(16px);
     font-weight: 400;
-    padding: rem(8px) rem(15px);
+    padding: rem(8px 15px);
     text-align: center;
     text-transform: uppercase;
     width: 100%;
@@ -498,7 +498,7 @@
     @include breakpoint($desktop-small) {
       left: auto;
       margin: rem(-87px) 0 0;
-      padding: 0 rem(22px) 0 rem(16px) !important;
+      padding: rem(0 22px 0 16px) !important;
     }
 
     label {
@@ -506,11 +506,7 @@
     }
 
     .form-text {
-      padding: rem(8px) rem(15px);
-
-      @include breakpoint($desktop-small) {
-        padding: rem(8px) rem(15px);
-      }
+      padding: rem(8px 15px);
 
       &.form-autocomplete {
         background-position: 98% center;
@@ -670,12 +666,12 @@
       @include box-sizing(border-box);
       display: block;
       font-size: rem(16px);
-      padding: rem(12px) rem(15px);
+      padding: rem(12px 15px);
       text-transform: uppercase;
       width: 100%;
 
       @include breakpoint($desktop-small) {
-        padding: rem(11px) rem(15px);
+        padding: rem(11px 15px);
       }
     }
 
@@ -747,7 +743,7 @@
     color: $grey-5f;
     font-size: rem(16px);
     height: auto;
-    padding: rem(8px) rem(44px) rem(8px) rem(15px);
+    padding: rem(8px 44px 8px 15px);
     position: relative;
     z-index: 2;
 
@@ -802,6 +798,6 @@
     border: 1px solid $grey-c1;
     color: $grey-5f;
     height: auto;
-    padding: rem(12px) rem(15px);
+    padding: rem(12px 15px);
   }
 }

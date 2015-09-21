@@ -1764,11 +1764,6 @@ iframe {
 .form-sign-up .field-name-field-other-role-ref .form-text {
   padding: 0.5rem 0.9375rem;
 }
-@media (min-width: 60em) {
-  .form-sign-up .field-name-field-other-role-ref .form-text {
-    padding: 0.5rem 0.9375rem;
-  }
-}
 .form-sign-up .field-name-field-other-role-ref .form-text.form-autocomplete {
   background-position: 98% center;
 }

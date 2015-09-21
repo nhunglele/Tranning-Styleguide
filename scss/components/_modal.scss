@@ -82,11 +82,11 @@
   @include border-radius(0);
   height: auto;
   overflow: inherit;
-  padding: rem(45px) rem(20px) rem(42px);
+  padding: rem(45px 20px 42px);
   position: relative;
 
   @include breakpoint($desktop-small) {
-    padding: rem(45px) rem(32px) rem(40px);
+    padding: rem(45px 32px 40px);
   }
 
   .modal-content,
