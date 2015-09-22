@@ -839,7 +839,7 @@ iframe {
 }
 
 .box-related .box-related__item {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .box-related .box-related__item .box-related__line-task {
   display: inline-block;
