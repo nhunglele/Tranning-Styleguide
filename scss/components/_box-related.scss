@@ -1,5 +1,13 @@
 .box-related{
   .box-related__item{
+    margin-bottom: 25px;
+    
+    .box-related__line-task{
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
     .box-related__status{
       @include border-radius(3px);
       @include source-sans-prosemibold;
@@ -13,6 +21,26 @@
       
       &.blue{
         color: $blue;
+      }
+    }
+
+    .box-related__category{
+      text-transform: uppercase;
+      font-size: rem(12px);
+      color: $grey-5f;
+      background-color: $grey-f4;
+      padding: 5px 10px;
+      @include source-sans-pro-regular;
+      display: inline-block;
+      @include border-radius(3px);
+      margin-bottom: 10px;
+    }
+
+    .box-related__tags{
+      margin-bottom: 10px;
+
+      .box-tag{
+        margin-bottom: 0;
       }
     }
   }
