@@ -5,8 +5,8 @@
 */
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?9tb3im");
-  src: url("../fonts/icomoon.eot?#iefix9tb3im") format("embedded-opentype"), url("../fonts/icomoon.ttf?9tb3im") format("truetype"), url("../fonts/icomoon.woff?9tb3im") format("woff"), url("../fonts/icomoon.svg?9tb3im#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?ksijsz");
+  src: url("../fonts/icomoon.eot?#iefixksijsz") format("embedded-opentype"), url("../fonts/icomoon.ttf?ksijsz") format("truetype"), url("../fonts/icomoon.woff?ksijsz") format("woff"), url("../fonts/icomoon.svg?ksijsz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -266,7 +266,7 @@ textarea {
   }
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .modal-content-agree-sign-up .popups-container:before,
+[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
 .modal-content-sign-up .popups-container:before,
 .modal-content-sign-in .popups-container:before, .form-sign-up .field-name-field-user-name:before,
 .form-sign-up .form-item-name:before,
@@ -349,7 +349,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: inherit;
+  font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
   font-size: 100%;
   vertical-align: baseline;
   outline: 0 none;
@@ -1198,14 +1198,7 @@ iframe {
   opacity: 1;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?q9270p");
-  src: url("../fonts/icomoon.eot?#iefixq9270p") format("embedded-opentype"), url("../fonts/icomoon.ttf?q9270p") format("truetype"), url("../fonts/icomoon.woff?q9270p") format("woff"), url("../fonts/icomoon.svg?q9270p#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .modal-content-agree-sign-up .popups-container:before,
+[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
 .modal-content-sign-up .popups-container:before,
 .modal-content-sign-in .popups-container:before, .form-sign-up .field-name-field-user-name:before,
 .form-sign-up .form-item-name:before,
@@ -1288,6 +1281,83 @@ iframe {
 
 .icon-star:before {
   content: "\e602";
+}
+
+.list:before, .list:after {
+  content: '';
+  display: table;
+}
+.list:after {
+  clear: both;
+}
+.list.list-has-border li {
+  padding: 0 0 1.0625rem 1.125rem;
+  position: relative;
+}
+.list.list-has-border li:before {
+  background-color: #5f574f;
+  content: '';
+  height: 0.0625rem;
+  left: 0;
+  line-height: 1.125rem;
+  position: absolute;
+  top: 0.625rem;
+  width: 0.625rem;
+}
+@media (min-width: 48em) {
+  .list.list-grid li {
+    width: 48.71795%;
+    float: left;
+  }
+  .list.list-grid li:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+  .list.list-grid li:nth-child(2n + 2) {
+    margin-left: 51.28205%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+.list-number {
+  counter-reset: my-badass-counter;
+}
+@media (min-width: 48em) {
+  .list-number {
+    -moz-column-count: 2;
+    -moz-column-gap: 40px;
+    -ms-column-count: 2;
+    -ms-column-gap: 40px;
+    -o-column-count: 2;
+    -o-column-gap: 40px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 40px;
+    column-count: 2;
+    column-gap: 40px;
+  }
+}
+.list-number li {
+  font-size: 1.125rem;
+  padding: 0 0 0.8125rem 0;
+}
+.list-number li:before {
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  color: #149077;
+  content: counter(my-badass-counter) ". ";
+  counter-increment: my-badass-counter;
+}
+
+.list-icon li {
+  font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 1.6875rem;
+}
+.list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before {
+  color: #149077;
+  padding-right: 0.4375rem;
 }
 
 .modal-content-agree-sign-up .popups-container,

@@ -1,0 +1,1027 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 warn package.json gulp_starter@1.0.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/home/mit/Desktop/Tranning-Styleguide',
+7 verbose install   [ 'browser-sync',
+7 verbose install     'del',
+7 verbose install     'gulp',
+7 verbose install     'gulp-autoprefixer',
+7 verbose install     'gulp-compass',
+7 verbose install     'gulp-plumber',
+7 verbose install     'gulp-rename',
+7 verbose install     'gulp-uglify',
+7 verbose install     'gulp-twig' ] ]
+8 info preinstall gulp_starter@1.0.0
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'gulp@^3.9.0', null ]
+11 verbose cache add name=undefined spec="gulp@^3.9.0" args=["gulp@^3.9.0",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'gulp@^3.9.0',
+12 verbose parsed url   path: 'gulp@^3.9.0',
+12 verbose parsed url   href: 'gulp@^3.9.0' }
+13 verbose cache add [ 'gulp-autoprefixer@^2.3.1', null ]
+14 verbose cache add name=undefined spec="gulp-autoprefixer@^2.3.1" args=["gulp-autoprefixer@^2.3.1",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'gulp-autoprefixer@^2.3.1',
+15 verbose parsed url   path: 'gulp-autoprefixer@^2.3.1',
+15 verbose parsed url   href: 'gulp-autoprefixer@^2.3.1' }
+16 verbose cache add name="gulp" spec="^3.9.0" args=["gulp","^3.9.0"]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: '^3.9.0',
+17 verbose parsed url   path: '^3.9.0',
+17 verbose parsed url   href: '^3.9.0' }
+18 verbose addNamed [ 'gulp', '^3.9.0' ]
+19 verbose addNamed [ null, '>=3.9.0-0 <4.0.0-0' ]
+20 verbose cache add [ 'gulp-compass@^2.1.0', null ]
+21 verbose cache add name=undefined spec="gulp-compass@^2.1.0" args=["gulp-compass@^2.1.0",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'gulp-compass@^2.1.0',
+22 verbose parsed url   path: 'gulp-compass@^2.1.0',
+22 verbose parsed url   href: 'gulp-compass@^2.1.0' }
+23 verbose cache add name="gulp-autoprefixer" spec="^2.3.1" args=["gulp-autoprefixer","^2.3.1"]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: '^2.3.1',
+24 verbose parsed url   path: '^2.3.1',
+24 verbose parsed url   href: '^2.3.1' }
+25 verbose addNamed [ 'gulp-autoprefixer', '^2.3.1' ]
+26 verbose addNamed [ null, '>=2.3.1-0 <3.0.0-0' ]
+27 silly lockFile a7ccee77-gulp-3-9-0 gulp@^3.9.0
+28 verbose lock gulp@^3.9.0 /home/mit/.npm/a7ccee77-gulp-3-9-0.lock
+29 silly lockFile 75c62153-gulp-autoprefixer-2-3-1 gulp-autoprefixer@^2.3.1
+30 verbose lock gulp-autoprefixer@^2.3.1 /home/mit/.npm/75c62153-gulp-autoprefixer-2-3-1.lock
+31 verbose cache add [ 'gulp-plumber@^1.0.1', null ]
+32 verbose cache add name=undefined spec="gulp-plumber@^1.0.1" args=["gulp-plumber@^1.0.1",null]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: 'gulp-plumber@^1.0.1',
+33 verbose parsed url   path: 'gulp-plumber@^1.0.1',
+33 verbose parsed url   href: 'gulp-plumber@^1.0.1' }
+34 verbose cache add [ 'gulp-rename@^1.2.2', null ]
+35 verbose cache add name=undefined spec="gulp-rename@^1.2.2" args=["gulp-rename@^1.2.2",null]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: 'gulp-rename@^1.2.2',
+36 verbose parsed url   path: 'gulp-rename@^1.2.2',
+36 verbose parsed url   href: 'gulp-rename@^1.2.2' }
+37 verbose cache add name="gulp-compass" spec="^2.1.0" args=["gulp-compass","^2.1.0"]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: '^2.1.0',
+38 verbose parsed url   path: '^2.1.0',
+38 verbose parsed url   href: '^2.1.0' }
+39 verbose addNamed [ 'gulp-compass', '^2.1.0' ]
+40 verbose addNamed [ null, '>=2.1.0-0 <3.0.0-0' ]
+41 silly lockFile 5a7fe685-gulp-compass-2-1-0 gulp-compass@^2.1.0
+42 verbose lock gulp-compass@^2.1.0 /home/mit/.npm/5a7fe685-gulp-compass-2-1-0.lock
+43 verbose cache add name="gulp-plumber" spec="^1.0.1" args=["gulp-plumber","^1.0.1"]
+44 verbose parsed url { protocol: null,
+44 verbose parsed url   slashes: null,
+44 verbose parsed url   auth: null,
+44 verbose parsed url   host: null,
+44 verbose parsed url   port: null,
+44 verbose parsed url   hostname: null,
+44 verbose parsed url   hash: null,
+44 verbose parsed url   search: null,
+44 verbose parsed url   query: null,
+44 verbose parsed url   pathname: '^1.0.1',
+44 verbose parsed url   path: '^1.0.1',
+44 verbose parsed url   href: '^1.0.1' }
+45 verbose addNamed [ 'gulp-plumber', '^1.0.1' ]
+46 verbose addNamed [ null, '>=1.0.1-0 <2.0.0-0' ]
+47 silly lockFile b676d428-gulp-plumber-1-0-1 gulp-plumber@^1.0.1
+48 verbose lock gulp-plumber@^1.0.1 /home/mit/.npm/b676d428-gulp-plumber-1-0-1.lock
+49 verbose cache add [ 'gulp-uglify@^1.2.0', null ]
+50 verbose cache add name=undefined spec="gulp-uglify@^1.2.0" args=["gulp-uglify@^1.2.0",null]
+51 verbose parsed url { protocol: null,
+51 verbose parsed url   slashes: null,
+51 verbose parsed url   auth: null,
+51 verbose parsed url   host: null,
+51 verbose parsed url   port: null,
+51 verbose parsed url   hostname: null,
+51 verbose parsed url   hash: null,
+51 verbose parsed url   search: null,
+51 verbose parsed url   query: null,
+51 verbose parsed url   pathname: 'gulp-uglify@^1.2.0',
+51 verbose parsed url   path: 'gulp-uglify@^1.2.0',
+51 verbose parsed url   href: 'gulp-uglify@^1.2.0' }
+52 verbose cache add [ 'gulp-twig@', null ]
+53 verbose cache add name=undefined spec="gulp-twig@" args=["gulp-twig@",null]
+54 verbose parsed url { protocol: null,
+54 verbose parsed url   slashes: null,
+54 verbose parsed url   auth: null,
+54 verbose parsed url   host: null,
+54 verbose parsed url   port: null,
+54 verbose parsed url   hostname: null,
+54 verbose parsed url   hash: null,
+54 verbose parsed url   search: null,
+54 verbose parsed url   query: null,
+54 verbose parsed url   pathname: 'gulp-twig@',
+54 verbose parsed url   path: 'gulp-twig@',
+54 verbose parsed url   href: 'gulp-twig@' }
+55 verbose cache add [ 'browser-sync@^2.8.2', null ]
+56 verbose cache add name=undefined spec="browser-sync@^2.8.2" args=["browser-sync@^2.8.2",null]
+57 verbose parsed url { protocol: null,
+57 verbose parsed url   slashes: null,
+57 verbose parsed url   auth: null,
+57 verbose parsed url   host: null,
+57 verbose parsed url   port: null,
+57 verbose parsed url   hostname: null,
+57 verbose parsed url   hash: null,
+57 verbose parsed url   search: null,
+57 verbose parsed url   query: null,
+57 verbose parsed url   pathname: 'browser-sync@^2.8.2',
+57 verbose parsed url   path: 'browser-sync@^2.8.2',
+57 verbose parsed url   href: 'browser-sync@^2.8.2' }
+58 verbose cache add name="gulp-rename" spec="^1.2.2" args=["gulp-rename","^1.2.2"]
+59 verbose parsed url { protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: '^1.2.2',
+59 verbose parsed url   path: '^1.2.2',
+59 verbose parsed url   href: '^1.2.2' }
+60 verbose addNamed [ 'gulp-rename', '^1.2.2' ]
+61 verbose addNamed [ null, '>=1.2.2-0 <2.0.0-0' ]
+62 silly lockFile 1035ba1c-gulp-rename-1-2-2 gulp-rename@^1.2.2
+63 verbose lock gulp-rename@^1.2.2 /home/mit/.npm/1035ba1c-gulp-rename-1-2-2.lock
+64 verbose cache add [ 'del@^1.2.1', null ]
+65 verbose cache add name=undefined spec="del@^1.2.1" args=["del@^1.2.1",null]
+66 verbose parsed url { protocol: null,
+66 verbose parsed url   slashes: null,
+66 verbose parsed url   auth: null,
+66 verbose parsed url   host: null,
+66 verbose parsed url   port: null,
+66 verbose parsed url   hostname: null,
+66 verbose parsed url   hash: null,
+66 verbose parsed url   search: null,
+66 verbose parsed url   query: null,
+66 verbose parsed url   pathname: 'del@^1.2.1',
+66 verbose parsed url   path: 'del@^1.2.1',
+66 verbose parsed url   href: 'del@^1.2.1' }
+67 verbose cache add name="gulp-uglify" spec="^1.2.0" args=["gulp-uglify","^1.2.0"]
+68 verbose parsed url { protocol: null,
+68 verbose parsed url   slashes: null,
+68 verbose parsed url   auth: null,
+68 verbose parsed url   host: null,
+68 verbose parsed url   port: null,
+68 verbose parsed url   hostname: null,
+68 verbose parsed url   hash: null,
+68 verbose parsed url   search: null,
+68 verbose parsed url   query: null,
+68 verbose parsed url   pathname: '^1.2.0',
+68 verbose parsed url   path: '^1.2.0',
+68 verbose parsed url   href: '^1.2.0' }
+69 verbose addNamed [ 'gulp-uglify', '^1.2.0' ]
+70 verbose addNamed [ null, '>=1.2.0-0 <2.0.0-0' ]
+71 silly lockFile c20ad875-gulp-uglify-1-2-0 gulp-uglify@^1.2.0
+72 verbose lock gulp-uglify@^1.2.0 /home/mit/.npm/c20ad875-gulp-uglify-1-2-0.lock
+73 verbose cache add name="gulp-twig" spec="" args=["gulp-twig",""]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: null,
+74 verbose parsed url   path: null,
+74 verbose parsed url   href: '' }
+75 verbose addNamed [ 'gulp-twig', '' ]
+76 verbose addNamed [ null, '*' ]
+77 silly lockFile d25cce1e-gulp-twig gulp-twig@
+78 verbose lock gulp-twig@ /home/mit/.npm/d25cce1e-gulp-twig.lock
+79 verbose cache add name="browser-sync" spec="^2.8.2" args=["browser-sync","^2.8.2"]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: '^2.8.2',
+80 verbose parsed url   path: '^2.8.2',
+80 verbose parsed url   href: '^2.8.2' }
+81 verbose addNamed [ 'browser-sync', '^2.8.2' ]
+82 verbose addNamed [ null, '>=2.8.2-0 <3.0.0-0' ]
+83 silly lockFile 220d60b6-browser-sync-2-8-2 browser-sync@^2.8.2
+84 verbose lock browser-sync@^2.8.2 /home/mit/.npm/220d60b6-browser-sync-2-8-2.lock
+85 verbose cache add name="del" spec="^1.2.1" args=["del","^1.2.1"]
+86 verbose parsed url { protocol: null,
+86 verbose parsed url   slashes: null,
+86 verbose parsed url   auth: null,
+86 verbose parsed url   host: null,
+86 verbose parsed url   port: null,
+86 verbose parsed url   hostname: null,
+86 verbose parsed url   hash: null,
+86 verbose parsed url   search: null,
+86 verbose parsed url   query: null,
+86 verbose parsed url   pathname: '^1.2.1',
+86 verbose parsed url   path: '^1.2.1',
+86 verbose parsed url   href: '^1.2.1' }
+87 verbose addNamed [ 'del', '^1.2.1' ]
+88 verbose addNamed [ null, '>=1.2.1-0 <2.0.0-0' ]
+89 silly lockFile dbb5caf7-del-1-2-1 del@^1.2.1
+90 verbose lock del@^1.2.1 /home/mit/.npm/dbb5caf7-del-1-2-1.lock
+91 silly addNameRange { name: 'gulp', range: '>=3.9.0-0 <4.0.0-0', hasData: false }
+92 silly addNameRange { name: 'gulp-rename',
+92 silly addNameRange   range: '>=1.2.2-0 <2.0.0-0',
+92 silly addNameRange   hasData: false }
+93 silly addNameRange { name: 'gulp-uglify',
+93 silly addNameRange   range: '>=1.2.0-0 <2.0.0-0',
+93 silly addNameRange   hasData: false }
+94 silly addNameRange { name: 'gulp-twig', range: '*', hasData: false }
+95 silly addNameRange { name: 'browser-sync',
+95 silly addNameRange   range: '>=2.8.2-0 <3.0.0-0',
+95 silly addNameRange   hasData: false }
+96 silly addNameRange { name: 'del', range: '>=1.2.1-0 <2.0.0-0', hasData: false }
+97 silly addNameRange { name: 'gulp-autoprefixer',
+97 silly addNameRange   range: '>=2.3.1-0 <3.0.0-0',
+97 silly addNameRange   hasData: false }
+98 silly addNameRange { name: 'gulp-compass',
+98 silly addNameRange   range: '>=2.1.0-0 <3.0.0-0',
+98 silly addNameRange   hasData: false }
+99 silly addNameRange { name: 'gulp-plumber',
+99 silly addNameRange   range: '>=1.0.1-0 <2.0.0-0',
+99 silly addNameRange   hasData: false }
+100 verbose request where is /gulp-uglify
+101 verbose request registry https://registry.npmjs.org/
+102 verbose request id 9ad84e227fa11854
+103 verbose url raw /gulp-uglify
+104 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-uglify' ]
+105 verbose url resolved https://registry.npmjs.org/gulp-uglify
+106 verbose request where is https://registry.npmjs.org/gulp-uglify
+107 info trying registry request attempt 1 at 16:03:11
+108 verbose etag "9K01ODRNQGDLARV5F24LJSWAS"
+109 http GET https://registry.npmjs.org/gulp-uglify
+110 verbose request where is /gulp-rename
+111 verbose request registry https://registry.npmjs.org/
+112 verbose url raw /gulp-rename
+113 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-rename' ]
+114 verbose url resolved https://registry.npmjs.org/gulp-rename
+115 verbose request where is https://registry.npmjs.org/gulp-rename
+116 info trying registry request attempt 1 at 16:03:11
+117 verbose etag "DP0FX5QCZ21OE0MTVSKS9XFM1"
+118 http GET https://registry.npmjs.org/gulp-rename
+119 verbose request where is /gulp
+120 verbose request registry https://registry.npmjs.org/
+121 verbose url raw /gulp
+122 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+123 verbose url resolved https://registry.npmjs.org/gulp
+124 verbose request where is https://registry.npmjs.org/gulp
+125 info trying registry request attempt 1 at 16:03:11
+126 verbose etag "4PCS86L8FMW4OCT2JMRAH9W47"
+127 http GET https://registry.npmjs.org/gulp
+128 verbose request where is /gulp-twig
+129 verbose request registry https://registry.npmjs.org/
+130 verbose url raw /gulp-twig
+131 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-twig' ]
+132 verbose url resolved https://registry.npmjs.org/gulp-twig
+133 verbose request where is https://registry.npmjs.org/gulp-twig
+134 info trying registry request attempt 1 at 16:03:11
+135 verbose etag "CSM4OIVRDNM6FXD6AM9NDU8YB"
+136 http GET https://registry.npmjs.org/gulp-twig
+137 verbose request where is /gulp-compass
+138 verbose request registry https://registry.npmjs.org/
+139 verbose url raw /gulp-compass
+140 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-compass' ]
+141 verbose url resolved https://registry.npmjs.org/gulp-compass
+142 verbose request where is https://registry.npmjs.org/gulp-compass
+143 info trying registry request attempt 1 at 16:03:11
+144 verbose etag "26D7NTQYI7W1KUXI829BPFXBE"
+145 http GET https://registry.npmjs.org/gulp-compass
+146 verbose request where is /browser-sync
+147 verbose request registry https://registry.npmjs.org/
+148 verbose url raw /browser-sync
+149 verbose url resolving [ 'https://registry.npmjs.org/', './browser-sync' ]
+150 verbose url resolved https://registry.npmjs.org/browser-sync
+151 verbose request where is https://registry.npmjs.org/browser-sync
+152 info trying registry request attempt 1 at 16:03:11
+153 verbose etag "3MHMQ79ZBBYAO426ASLRHLTJI"
+154 http GET https://registry.npmjs.org/browser-sync
+155 verbose request where is /gulp-autoprefixer
+156 verbose request registry https://registry.npmjs.org/
+157 verbose url raw /gulp-autoprefixer
+158 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-autoprefixer' ]
+159 verbose url resolved https://registry.npmjs.org/gulp-autoprefixer
+160 verbose request where is https://registry.npmjs.org/gulp-autoprefixer
+161 info trying registry request attempt 1 at 16:03:11
+162 verbose etag "56TT3KXLOP3TQR97827U2MBVM"
+163 http GET https://registry.npmjs.org/gulp-autoprefixer
+164 verbose request where is /del
+165 verbose request registry https://registry.npmjs.org/
+166 verbose url raw /del
+167 verbose url resolving [ 'https://registry.npmjs.org/', './del' ]
+168 verbose url resolved https://registry.npmjs.org/del
+169 verbose request where is https://registry.npmjs.org/del
+170 info trying registry request attempt 1 at 16:03:11
+171 verbose etag "4E3OSWXJNJ3T0KH9TLJWFE4N3"
+172 http GET https://registry.npmjs.org/del
+173 verbose request where is /gulp-plumber
+174 verbose request registry https://registry.npmjs.org/
+175 verbose url raw /gulp-plumber
+176 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-plumber' ]
+177 verbose url resolved https://registry.npmjs.org/gulp-plumber
+178 verbose request where is https://registry.npmjs.org/gulp-plumber
+179 info trying registry request attempt 1 at 16:03:11
+180 verbose etag "AFHQB4RBWO64NUDB08PKEUOAT"
+181 http GET https://registry.npmjs.org/gulp-plumber
+182 http 304 https://registry.npmjs.org/gulp-compass
+183 silly registry.get cb [ 304,
+183 silly registry.get   { date: 'Tue, 01 Sep 2015 09:03:12 GMT',
+183 silly registry.get     via: '1.1 varnish',
+183 silly registry.get     'cache-control': 'max-age=60',
+183 silly registry.get     etag: '"26D7NTQYI7W1KUXI829BPFXBE"',
+183 silly registry.get     age: '0',
+183 silly registry.get     connection: 'keep-alive',
+183 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+183 silly registry.get     'x-cache': 'HIT',
+183 silly registry.get     'x-cache-hits': '1',
+183 silly registry.get     'x-timer': 'S1441098192.650472,VS0,VE92',
+183 silly registry.get     vary: 'Accept' } ]
+184 verbose etag https://registry.npmjs.org/gulp-compass from cache
+185 silly addNameRange number 2 { name: 'gulp-compass',
+185 silly addNameRange   range: '>=2.1.0-0 <3.0.0-0',
+185 silly addNameRange   hasData: true }
+186 silly addNameRange versions [ 'gulp-compass',
+186 silly addNameRange   [ '0.0.1',
+186 silly addNameRange     '0.0.2',
+186 silly addNameRange     '0.0.3',
+186 silly addNameRange     '0.0.4',
+186 silly addNameRange     '0.0.5',
+186 silly addNameRange     '0.0.6',
+186 silly addNameRange     '1.0.0',
+186 silly addNameRange     '1.0.1',
+186 silly addNameRange     '1.0.2',
+186 silly addNameRange     '1.0.3',
+186 silly addNameRange     '1.0.4',
+186 silly addNameRange     '1.0.5',
+186 silly addNameRange     '1.0.6',
+186 silly addNameRange     '1.0.7',
+186 silly addNameRange     '1.0.8',
+186 silly addNameRange     '1.0.9',
+186 silly addNameRange     '1.1.0',
+186 silly addNameRange     '1.1.1',
+186 silly addNameRange     '1.1.2',
+186 silly addNameRange     '1.1.3',
+186 silly addNameRange     '1.1.4',
+186 silly addNameRange     '1.1.5',
+186 silly addNameRange     '1.1.6',
+186 silly addNameRange     '1.1.7',
+186 silly addNameRange     '1.1.8',
+186 silly addNameRange     '1.1.9',
+186 silly addNameRange     '1.2.0',
+186 silly addNameRange     '1.3.0',
+186 silly addNameRange     '1.3.1',
+186 silly addNameRange     '1.3.2',
+186 silly addNameRange     '1.3.3',
+186 silly addNameRange     '2.0.0',
+186 silly addNameRange     '2.0.1',
+186 silly addNameRange     '2.0.2',
+186 silly addNameRange     '2.0.3',
+186 silly addNameRange     '2.0.4',
+186 silly addNameRange     '2.1.0' ] ]
+187 verbose addNamed [ 'gulp-compass', '2.1.0' ]
+188 verbose addNamed [ '2.1.0', '2.1.0' ]
+189 silly lockFile ad2a5e9b-gulp-compass-2-1-0 gulp-compass@2.1.0
+190 verbose lock gulp-compass@2.1.0 /home/mit/.npm/ad2a5e9b-gulp-compass-2-1-0.lock
+191 silly lockFile ad2a5e9b-gulp-compass-2-1-0 gulp-compass@2.1.0
+192 silly lockFile ad2a5e9b-gulp-compass-2-1-0 gulp-compass@2.1.0
+193 silly lockFile 5a7fe685-gulp-compass-2-1-0 gulp-compass@^2.1.0
+194 silly lockFile 5a7fe685-gulp-compass-2-1-0 gulp-compass@^2.1.0
+195 http 200 https://registry.npmjs.org/gulp-uglify
+196 silly registry.get cb [ 200,
+196 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+196 silly registry.get     etag: '"87DF37EZAZVNIDNKHLND4Y12N"',
+196 silly registry.get     'content-type': 'application/json',
+196 silly registry.get     'cache-control': 'max-age=60',
+196 silly registry.get     'content-length': '30812',
+196 silly registry.get     'accept-ranges': 'bytes',
+196 silly registry.get     date: 'Tue, 01 Sep 2015 09:03:12 GMT',
+196 silly registry.get     via: '1.1 varnish',
+196 silly registry.get     age: '54',
+196 silly registry.get     connection: 'keep-alive',
+196 silly registry.get     'x-served-by': 'cache-ams4141-AMS',
+196 silly registry.get     'x-cache': 'HIT',
+196 silly registry.get     'x-cache-hits': '1',
+196 silly registry.get     'x-timer': 'S1441098192.549338,VS0,VE0',
+196 silly registry.get     vary: 'Accept' } ]
+197 silly addNameRange number 2 { name: 'gulp-uglify',
+197 silly addNameRange   range: '>=1.2.0-0 <2.0.0-0',
+197 silly addNameRange   hasData: true }
+198 silly addNameRange versions [ 'gulp-uglify',
+198 silly addNameRange   [ '0.0.1',
+198 silly addNameRange     '0.0.3',
+198 silly addNameRange     '0.0.4',
+198 silly addNameRange     '0.1.0',
+198 silly addNameRange     '0.2.0',
+198 silly addNameRange     '0.2.1',
+198 silly addNameRange     '0.3.0',
+198 silly addNameRange     '0.3.1',
+198 silly addNameRange     '0.3.2',
+198 silly addNameRange     '1.0.0-0',
+198 silly addNameRange     '1.0.0',
+198 silly addNameRange     '1.0.1',
+198 silly addNameRange     '1.0.2',
+198 silly addNameRange     '1.1.0',
+198 silly addNameRange     '1.2.0',
+198 silly addNameRange     '1.3.0',
+198 silly addNameRange     '1.4.0' ] ]
+199 verbose addNamed [ 'gulp-uglify', '1.4.0' ]
+200 verbose addNamed [ '1.4.0', '1.4.0' ]
+201 silly lockFile 1084f198-gulp-uglify-1-4-0 gulp-uglify@1.4.0
+202 verbose lock gulp-uglify@1.4.0 /home/mit/.npm/1084f198-gulp-uglify-1-4-0.lock
+203 silly lockFile 748fb0f9-ulp-uglify-gulp-uglify-1-4-0-tgz https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz
+204 verbose lock https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz /home/mit/.npm/748fb0f9-ulp-uglify-gulp-uglify-1-4-0-tgz.lock
+205 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz',
+205 verbose addRemoteTarball   '70f5de40dbb5929efc39c27d635e6ea92d2a8496' ]
+206 info retry fetch attempt 1 at 16:03:12
+207 verbose fetch to= /tmp/npm-4173-vebi3STo/registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz
+208 http GET https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz
+209 http 200 https://registry.npmjs.org/gulp-autoprefixer
+210 silly registry.get cb [ 200,
+210 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+210 silly registry.get     etag: '"A2A0PZIE99G32YOVZ6FN3PZBH"',
+210 silly registry.get     'content-type': 'application/json',
+210 silly registry.get     'cache-control': 'max-age=60',
+210 silly registry.get     'content-length': '25171',
+210 silly registry.get     'accept-ranges': 'bytes',
+210 silly registry.get     date: 'Tue, 01 Sep 2015 09:03:13 GMT',
+210 silly registry.get     via: '1.1 varnish',
+210 silly registry.get     age: '44',
+210 silly registry.get     connection: 'keep-alive',
+210 silly registry.get     'x-served-by': 'cache-ams4141-AMS',
+210 silly registry.get     'x-cache': 'HIT',
+210 silly registry.get     'x-cache-hits': '1',
+210 silly registry.get     'x-timer': 'S1441098193.186619,VS0,VE0',
+210 silly registry.get     vary: 'Accept' } ]
+211 silly addNameRange number 2 { name: 'gulp-autoprefixer',
+211 silly addNameRange   range: '>=2.3.1-0 <3.0.0-0',
+211 silly addNameRange   hasData: true }
+212 silly addNameRange versions [ 'gulp-autoprefixer',
+212 silly addNameRange   [ '0.0.1',
+212 silly addNameRange     '0.0.2',
+212 silly addNameRange     '0.0.3',
+212 silly addNameRange     '0.0.4',
+212 silly addNameRange     '0.0.5',
+212 silly addNameRange     '0.0.6',
+212 silly addNameRange     '0.0.7',
+212 silly addNameRange     '0.0.8',
+212 silly addNameRange     '0.0.9',
+212 silly addNameRange     '0.0.10',
+212 silly addNameRange     '1.0.0',
+212 silly addNameRange     '1.0.1',
+212 silly addNameRange     '2.0.0',
+212 silly addNameRange     '2.1.0',
+212 silly addNameRange     '2.2.0',
+212 silly addNameRange     '2.3.0',
+212 silly addNameRange     '2.3.1' ] ]
+213 verbose addNamed [ 'gulp-autoprefixer', '2.3.1' ]
+214 verbose addNamed [ '2.3.1', '2.3.1' ]
+215 silly lockFile 93f1bc49-gulp-autoprefixer-2-3-1 gulp-autoprefixer@2.3.1
+216 verbose lock gulp-autoprefixer@2.3.1 /home/mit/.npm/93f1bc49-gulp-autoprefixer-2-3-1.lock
+217 silly lockFile 93f1bc49-gulp-autoprefixer-2-3-1 gulp-autoprefixer@2.3.1
+218 silly lockFile 93f1bc49-gulp-autoprefixer-2-3-1 gulp-autoprefixer@2.3.1
+219 silly lockFile 75c62153-gulp-autoprefixer-2-3-1 gulp-autoprefixer@^2.3.1
+220 silly lockFile 75c62153-gulp-autoprefixer-2-3-1 gulp-autoprefixer@^2.3.1
+221 http 200 https://registry.npmjs.org/gulp-rename
+222 silly registry.get cb [ 200,
+222 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+222 silly registry.get     etag: '"ANQGNJVJF5T0GVFZHWZF0G3LO"',
+222 silly registry.get     'content-type': 'application/json',
+222 silly registry.get     'cache-control': 'max-age=60',
+222 silly registry.get     'content-length': '12747',
+222 silly registry.get     'accept-ranges': 'bytes',
+222 silly registry.get     date: 'Tue, 01 Sep 2015 09:03:13 GMT',
+222 silly registry.get     via: '1.1 varnish',
+222 silly registry.get     age: '0',
+222 silly registry.get     connection: 'keep-alive',
+222 silly registry.get     'x-served-by': 'cache-ams4142-AMS',
+222 silly registry.get     'x-cache': 'HIT',
+222 silly registry.get     'x-cache-hits': '1',
+222 silly registry.get     'x-timer': 'S1441098192.549715,VS0,VE691',
+222 silly registry.get     vary: 'Accept' } ]
+223 http 304 https://registry.npmjs.org/gulp-twig
+224 silly registry.get cb [ 304,
+224 silly registry.get   { date: 'Tue, 01 Sep 2015 09:03:12 GMT',
+224 silly registry.get     via: '1.1 varnish',
+224 silly registry.get     'cache-control': 'max-age=60',
+224 silly registry.get     etag: '"CSM4OIVRDNM6FXD6AM9NDU8YB"',
+224 silly registry.get     age: '0',
+224 silly registry.get     connection: 'keep-alive',
+224 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+224 silly registry.get     'x-cache': 'MISS',
+224 silly registry.get     'x-cache-hits': '0',
+224 silly registry.get     'x-timer': 'S1441098192.564689,VS0,VE690',
+224 silly registry.get     vary: 'Accept' } ]
+225 verbose etag https://registry.npmjs.org/gulp-twig from cache
+226 silly addNameRange number 2 { name: 'gulp-rename',
+226 silly addNameRange   range: '>=1.2.2-0 <2.0.0-0',
+226 silly addNameRange   hasData: true }
+227 silly addNameRange versions [ 'gulp-rename',
+227 silly addNameRange   [ '0.1.0', '0.2.1', '0.2.2', '1.0.0', '1.1.0', '1.2.0', '1.2.2' ] ]
+228 verbose addNamed [ 'gulp-rename', '1.2.2' ]
+229 verbose addNamed [ '1.2.2', '1.2.2' ]
+230 silly lockFile 36a270fc-gulp-rename-1-2-2 gulp-rename@1.2.2
+231 verbose lock gulp-rename@1.2.2 /home/mit/.npm/36a270fc-gulp-rename-1-2-2.lock
+232 silly addNameRange number 2 { name: 'gulp-twig', range: '*', hasData: true }
+233 silly addNameRange versions [ 'gulp-twig',
+233 silly addNameRange   [ '0.0.1',
+233 silly addNameRange     '0.0.2',
+233 silly addNameRange     '0.0.3',
+233 silly addNameRange     '0.0.4',
+233 silly addNameRange     '0.1.0',
+233 silly addNameRange     '0.1.1',
+233 silly addNameRange     '0.2.1',
+233 silly addNameRange     '0.3.0',
+233 silly addNameRange     '0.4.0' ] ]
+234 verbose addNamed [ 'gulp-twig', '0.4.0' ]
+235 verbose addNamed [ '0.4.0', '0.4.0' ]
+236 silly lockFile dd55be14-gulp-twig-0-4-0 gulp-twig@0.4.0
+237 verbose lock gulp-twig@0.4.0 /home/mit/.npm/dd55be14-gulp-twig-0-4-0.lock
+238 silly lockFile bcfc2eaa-rg-gulp-twig-gulp-twig-0-4-0-tgz https://registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz
+239 verbose lock https://registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz /home/mit/.npm/bcfc2eaa-rg-gulp-twig-gulp-twig-0-4-0-tgz.lock
+240 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz',
+240 verbose addRemoteTarball   'e7a998a47401de59369f21c1ca26f72387da1cb9' ]
+241 info retry fetch attempt 1 at 16:03:13
+242 verbose fetch to= /tmp/npm-4173-vebi3STo/registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz
+243 http GET https://registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz
+244 silly lockFile 36a270fc-gulp-rename-1-2-2 gulp-rename@1.2.2
+245 silly lockFile 36a270fc-gulp-rename-1-2-2 gulp-rename@1.2.2
+246 silly lockFile 1035ba1c-gulp-rename-1-2-2 gulp-rename@^1.2.2
+247 silly lockFile 1035ba1c-gulp-rename-1-2-2 gulp-rename@^1.2.2
+248 http 200 https://registry.npmjs.org/del
+249 silly registry.get cb [ 200,
+249 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+249 silly registry.get     etag: '"BL2I5B6O8RHQF3D7SLKGJ4V4T"',
+249 silly registry.get     'content-type': 'application/json',
+249 silly registry.get     'cache-control': 'max-age=60',
+249 silly registry.get     'content-length': '17285',
+249 silly registry.get     'accept-ranges': 'bytes',
+249 silly registry.get     date: 'Tue, 01 Sep 2015 09:03:13 GMT',
+249 silly registry.get     via: '1.1 varnish',
+249 silly registry.get     age: '44',
+249 silly registry.get     connection: 'keep-alive',
+249 silly registry.get     'x-served-by': 'cache-ams4141-AMS',
+249 silly registry.get     'x-cache': 'HIT',
+249 silly registry.get     'x-cache-hits': '1',
+249 silly registry.get     'x-timer': 'S1441098193.513588,VS0,VE0',
+249 silly registry.get     vary: 'Accept' } ]
+250 silly addNameRange number 2 { name: 'del', range: '>=1.2.1-0 <2.0.0-0', hasData: true }
+251 silly addNameRange versions [ 'del',
+251 silly addNameRange   [ '0.1.0',
+251 silly addNameRange     '0.1.1',
+251 silly addNameRange     '0.1.2',
+251 silly addNameRange     '0.1.3',
+251 silly addNameRange     '1.0.0',
+251 silly addNameRange     '1.1.0',
+251 silly addNameRange     '1.1.1',
+251 silly addNameRange     '1.2.0',
+251 silly addNameRange     '1.2.1',
+251 silly addNameRange     '2.0.0' ] ]
+252 verbose addNamed [ 'del', '1.2.1' ]
+253 verbose addNamed [ '1.2.1', '1.2.1' ]
+254 silly lockFile 34263493-del-1-2-1 del@1.2.1
+255 verbose lock del@1.2.1 /home/mit/.npm/34263493-del-1-2-1.lock
+256 silly lockFile 34263493-del-1-2-1 del@1.2.1
+257 silly lockFile 34263493-del-1-2-1 del@1.2.1
+258 silly lockFile dbb5caf7-del-1-2-1 del@^1.2.1
+259 silly lockFile dbb5caf7-del-1-2-1 del@^1.2.1
+260 http 200 https://registry.npmjs.org/gulp
+261 silly registry.get cb [ 200,
+261 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+261 silly registry.get     etag: '"7P40TN1WN2NHCC10XHUQCA0N8"',
+261 silly registry.get     'content-type': 'application/json',
+261 silly registry.get     'cache-control': 'max-age=60',
+261 silly registry.get     'content-length': '105867',
+261 silly registry.get     'accept-ranges': 'bytes',
+261 silly registry.get     date: 'Tue, 01 Sep 2015 09:03:12 GMT',
+261 silly registry.get     via: '1.1 varnish',
+261 silly registry.get     age: '41',
+261 silly registry.get     connection: 'keep-alive',
+261 silly registry.get     'x-served-by': 'cache-ams4146-AMS',
+261 silly registry.get     'x-cache': 'HIT',
+261 silly registry.get     'x-cache-hits': '1',
+261 silly registry.get     'x-timer': 'S1441098192.551445,VS0,VE0',
+261 silly registry.get     vary: 'Accept' } ]
+262 silly addNameRange number 2 { name: 'gulp', range: '>=3.9.0-0 <4.0.0-0', hasData: true }
+263 silly addNameRange versions [ 'gulp',
+263 silly addNameRange   [ '0.0.1',
+263 silly addNameRange     '0.0.2',
+263 silly addNameRange     '0.0.3',
+263 silly addNameRange     '0.0.4',
+263 silly addNameRange     '0.0.5',
+263 silly addNameRange     '0.0.7',
+263 silly addNameRange     '0.0.8',
+263 silly addNameRange     '0.0.9',
+263 silly addNameRange     '0.1.0',
+263 silly addNameRange     '0.2.0',
+263 silly addNameRange     '1.0.0',
+263 silly addNameRange     '1.1.0',
+263 silly addNameRange     '1.2.0',
+263 silly addNameRange     '1.2.1',
+263 silly addNameRange     '2.0.0',
+263 silly addNameRange     '2.0.1',
+263 silly addNameRange     '2.1.0',
+263 silly addNameRange     '2.2.0',
+263 silly addNameRange     '2.3.0',
+263 silly addNameRange     '2.4.0',
+263 silly addNameRange     '2.4.1',
+263 silly addNameRange     '2.6.0',
+263 silly addNameRange     '2.6.1',
+263 silly addNameRange     '2.7.0',
+263 silly addNameRange     '3.0.0',
+263 silly addNameRange     '3.1.1',
+263 silly addNameRange     '3.1.2',
+263 silly addNameRange     '3.1.3',
+263 silly addNameRange     '3.1.4',
+263 silly addNameRange     '3.2.0',
+263 silly addNameRange     '3.2.1',
+263 silly addNameRange     '3.2.2',
+263 silly addNameRange     '3.2.3',
+263 silly addNameRange     '3.2.4',
+263 silly addNameRange     '3.2.5',
+263 silly addNameRange     '3.3.0',
+263 silly addNameRange     '3.3.1',
+263 silly addNameRange     '3.3.2',
+263 silly addNameRange     '3.3.4',
+263 silly addNameRange     '3.4.0',
+263 silly addNameRange     '3.5.0',
+263 silly addNameRange     '3.5.1',
+263 silly addNameRange     '3.5.2',
+263 silly addNameRange     '3.5.5',
+263 silly addNameRange     '3.5.6',
+263 silly addNameRange     '3.6.0',
+263 silly addNameRange     '3.6.1',
+263 silly addNameRange     '3.6.2',
+263 silly addNameRange     '3.7.0',
+263 silly addNameRange     '3.8.0',
+263 silly addNameRange     '3.8.1',
+263 silly addNameRange     '3.8.2',
+263 silly addNameRange     '3.8.3',
+263 silly addNameRange     '3.8.4',
+263 silly addNameRange     '3.8.5',
+263 silly addNameRange     '3.8.6',
+263 silly addNameRange     '3.8.7',
+263 silly addNameRange     '3.8.8',
+263 silly addNameRange     '3.8.9',
+263 silly addNameRange     '3.8.10',
+263 silly addNameRange     '3.8.11',
+263 silly addNameRange     '3.9.0' ] ]
+264 verbose addNamed [ 'gulp', '3.9.0' ]
+265 verbose addNamed [ '3.9.0', '3.9.0' ]
+266 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+267 verbose lock gulp@3.9.0 /home/mit/.npm/c2697a61-gulp-3-9-0.lock
+268 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+269 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+270 silly lockFile a7ccee77-gulp-3-9-0 gulp@^3.9.0
+271 silly lockFile a7ccee77-gulp-3-9-0 gulp@^3.9.0
+272 http 200 https://registry.npmjs.org/gulp-plumber
+273 silly registry.get cb [ 200,
+273 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+273 silly registry.get     etag: '"2V16H3EKWK97PKBV8APRDW7LQ"',
+273 silly registry.get     'content-type': 'application/json',
+273 silly registry.get     'cache-control': 'max-age=60',
+273 silly registry.get     'content-length': '39926',
+273 silly registry.get     'accept-ranges': 'bytes',
+273 silly registry.get     date: 'Tue, 01 Sep 2015 09:03:13 GMT',
+273 silly registry.get     via: '1.1 varnish',
+273 silly registry.get     age: '44',
+273 silly registry.get     connection: 'keep-alive',
+273 silly registry.get     'x-served-by': 'cache-ams4142-AMS',
+273 silly registry.get     'x-cache': 'HIT',
+273 silly registry.get     'x-cache-hits': '1',
+273 silly registry.get     'x-timer': 'S1441098193.564608,VS0,VE0',
+273 silly registry.get     vary: 'Accept' } ]
+274 silly addNameRange number 2 { name: 'gulp-plumber',
+274 silly addNameRange   range: '>=1.0.1-0 <2.0.0-0',
+274 silly addNameRange   hasData: true }
+275 silly addNameRange versions [ 'gulp-plumber',
+275 silly addNameRange   [ '0.0.1',
+275 silly addNameRange     '0.1.0',
+275 silly addNameRange     '0.2.0',
+275 silly addNameRange     '0.2.1',
+275 silly addNameRange     '0.2.3',
+275 silly addNameRange     '0.3.0',
+275 silly addNameRange     '0.4.0',
+275 silly addNameRange     '0.4.1',
+275 silly addNameRange     '0.5.0-rc1',
+275 silly addNameRange     '0.5.0',
+275 silly addNameRange     '0.5.1',
+275 silly addNameRange     '0.5.2',
+275 silly addNameRange     '0.5.3',
+275 silly addNameRange     '0.5.4',
+275 silly addNameRange     '0.5.5',
+275 silly addNameRange     '0.5.6',
+275 silly addNameRange     '0.6.0',
+275 silly addNameRange     '0.6.1',
+275 silly addNameRange     '0.6.2',
+275 silly addNameRange     '0.6.3',
+275 silly addNameRange     '0.6.4',
+275 silly addNameRange     '0.6.5',
+275 silly addNameRange     '0.6.6',
+275 silly addNameRange     '1.0.0',
+275 silly addNameRange     '1.0.1' ] ]
+276 verbose addNamed [ 'gulp-plumber', '1.0.1' ]
+277 verbose addNamed [ '1.0.1', '1.0.1' ]
+278 silly lockFile 2f655a33-gulp-plumber-1-0-1 gulp-plumber@1.0.1
+279 verbose lock gulp-plumber@1.0.1 /home/mit/.npm/2f655a33-gulp-plumber-1-0-1.lock
+280 silly lockFile 2f655a33-gulp-plumber-1-0-1 gulp-plumber@1.0.1
+281 silly lockFile 2f655a33-gulp-plumber-1-0-1 gulp-plumber@1.0.1
+282 silly lockFile b676d428-gulp-plumber-1-0-1 gulp-plumber@^1.0.1
+283 silly lockFile b676d428-gulp-plumber-1-0-1 gulp-plumber@^1.0.1
+284 http 200 https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz
+285 silly lockFile 748fb0f9-ulp-uglify-gulp-uglify-1-4-0-tgz https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz
+286 silly lockFile 748fb0f9-ulp-uglify-gulp-uglify-1-4-0-tgz https://registry.npmjs.org/gulp-uglify/-/gulp-uglify-1.4.0.tgz
+287 silly lockFile 1084f198-gulp-uglify-1-4-0 gulp-uglify@1.4.0
+288 silly lockFile 1084f198-gulp-uglify-1-4-0 gulp-uglify@1.4.0
+289 silly lockFile c20ad875-gulp-uglify-1-2-0 gulp-uglify@^1.2.0
+290 silly lockFile c20ad875-gulp-uglify-1-2-0 gulp-uglify@^1.2.0
+291 http 200 https://registry.npmjs.org/browser-sync
+292 silly registry.get cb [ 200,
+292 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+292 silly registry.get     etag: '"849S58WNQPIEKSINJUTP99IHG"',
+292 silly registry.get     'content-type': 'application/json',
+292 silly registry.get     'cache-control': 'max-age=60',
+292 silly registry.get     'content-length': '373902',
+292 silly registry.get     'accept-ranges': 'bytes',
+292 silly registry.get     date: 'Tue, 01 Sep 2015 09:03:13 GMT',
+292 silly registry.get     via: '1.1 varnish',
+292 silly registry.get     age: '19',
+292 silly registry.get     connection: 'keep-alive',
+292 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
+292 silly registry.get     'x-cache': 'HIT',
+292 silly registry.get     'x-cache-hits': '1',
+292 silly registry.get     'x-timer': 'S1441098193.065117,VS0,VE2',
+292 silly registry.get     vary: 'Accept' } ]
+293 http 200 https://registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz
+294 silly addNameRange number 2 { name: 'browser-sync',
+294 silly addNameRange   range: '>=2.8.2-0 <3.0.0-0',
+294 silly addNameRange   hasData: true }
+295 silly addNameRange versions [ 'browser-sync',
+295 silly addNameRange   [ '0.1.0',
+295 silly addNameRange     '0.1.1',
+295 silly addNameRange     '0.1.3',
+295 silly addNameRange     '0.1.5',
+295 silly addNameRange     '0.1.6',
+295 silly addNameRange     '0.1.7',
+295 silly addNameRange     '0.1.8',
+295 silly addNameRange     '0.1.9',
+295 silly addNameRange     '0.1.10',
+295 silly addNameRange     '0.2.0',
+295 silly addNameRange     '0.2.1',
+295 silly addNameRange     '0.3.0',
+295 silly addNameRange     '0.3.1',
+295 silly addNameRange     '0.3.2',
+295 silly addNameRange     '0.3.3',
+295 silly addNameRange     '0.3.4',
+295 silly addNameRange     '0.3.5',
+295 silly addNameRange     '0.3.6',
+295 silly addNameRange     '0.3.7',
+295 silly addNameRange     '0.3.8',
+295 silly addNameRange     '0.3.10',
+295 silly addNameRange     '0.4.0',
+295 silly addNameRange     '0.4.1',
+295 silly addNameRange     '0.4.2',
+295 silly addNameRange     '0.4.21',
+295 silly addNameRange     '0.4.3',
+295 silly addNameRange     '0.4.4',
+295 silly addNameRange     '0.4.5',
+295 silly addNameRange     '0.4.6',
+295 silly addNameRange     '0.4.7',
+295 silly addNameRange     '0.4.8',
+295 silly addNameRange     '0.4.9',
+295 silly addNameRange     '0.4.10',
+295 silly addNameRange     '0.4.11',
+295 silly addNameRange     '0.4.12',
+295 silly addNameRange     '0.5.0',
+295 silly addNameRange     '0.5.1',
+295 silly addNameRange     '0.5.2',
+295 silly addNameRange     '0.5.3',
+295 silly addNameRange     '0.5.4',
+295 silly addNameRange     '0.5.5',
+295 silly addNameRange     '0.5.6',
+295 silly addNameRange     '0.5.7',
+295 silly addNameRange     '0.5.8',
+295 silly addNameRange     '0.5.9',
+295 silly addNameRange     '0.6.0',
+295 silly addNameRange     '0.6.1',
+295 silly addNameRange     '0.6.2',
+295 silly addNameRange     '0.7.0',
+295 silly addNameRange     '0.7.1',
+295 silly addNameRange     '0.7.2',
+295 silly addNameRange     '0.7.3',
+295 silly addNameRange     '0.7.4',
+295 silly addNameRange     '0.7.5',
+295 silly addNameRange     '0.7.7',
+295 silly addNameRange     '0.8.0',
+295 silly addNameRange     '0.8.1',
+295 silly addNameRange     '0.8.2',
+295 silly addNameRange     '0.9.0',
+295 silly addNameRange     '0.9.1',
+295 silly addNameRange     '1.0.0',
+295 silly addNameRange     '1.1.0',
+295 silly addNameRange     '1.1.1',
+295 silly addNameRange     '1.1.2',
+295 silly addNameRange     '1.2.0',
+295 silly addNameRange     '1.2.1',
+295 silly addNameRange     '1.3.0',
+295 silly addNameRange     '1.3.2',
+295 silly addNameRange     '1.3.3',
+295 silly addNameRange     '1.3.4',
+295 silly addNameRange     '1.3.5',
+295 silly addNameRange     '1.3.6',
+295 silly addNameRange     '1.3.7',
+295 silly addNameRange     '1.5.0',
+295 silly addNameRange     '1.5.1',
+295 silly addNameRange     '1.5.2',
+295 silly addNameRange     '1.5.3',
+295 silly addNameRange     '1.5.4',
+295 silly addNameRange     '1.5.5',
+295 silly addNameRange     '1.5.6',
+295 silly addNameRange     '1.5.7',
+295 silly addNameRange     '1.5.8',
+295 silly addNameRange     '1.5.9',
+295 silly addNameRange     '1.6.0',
+295 silly addNameRange     '1.6.1',
+295 silly addNameRange     '1.6.2',
+295 silly addNameRange     '1.6.3',
+295 silly addNameRange     '1.6.4',
+295 silly addNameRange     '1.6.5',
+295 silly addNameRange     '1.7.0',
+295 silly addNameRange     '1.7.1',
+295 silly addNameRange     '1.7.2',
+295 silly addNameRange     '1.7.3',
+295 silly addNameRange     '1.8.0',
+295 silly addNameRange     '1.8.1',
+295 silly addNameRange     '1.8.2',
+295 silly addNameRange     '1.8.3',
+295 silly addNameRange     '1.9.0',
+295 silly addNameRange     '1.9.1',
+295 silly addNameRange     '2.0.0-rc1',
+295 silly addNameRange     '2.0.0-rc2',
+295 silly addNameRange     '2.0.0-rc3',
+295 silly addNameRange     '2.0.0-rc4',
+295 silly addNameRange     '2.0.0-rc5',
+295 silly addNameRange     '2.0.0-rc6',
+295 silly addNameRange     '2.0.0-rc7',
+295 silly addNameRange     '2.0.0-rc8',
+295 silly addNameRange     '2.0.0-rc9',
+295 silly addNameRange     '2.0.0-rc10',
+295 silly addNameRange     '2.0.0',
+295 silly addNameRange     '2.0.1',
+295 silly addNameRange     '2.1.0',
+295 silly addNameRange     '2.1.1',
+295 silly addNameRange     '2.1.2',
+295 silly addNameRange     '2.1.3',
+295 silly addNameRange     '2.1.4',
+295 silly addNameRange     '2.1.6',
+295 silly addNameRange     '2.2.0',
+295 silly addNameRange     '2.2.1',
+295 silly addNameRange     '2.2.2',
+295 silly addNameRange     '2.2.3',
+295 silly addNameRange     '2.2.4',
+295 silly addNameRange     '2.2.5',
+295 silly addNameRange     '2.3.0',
+295 silly addNameRange     '2.3.1',
+295 silly addNameRange     '2.3.2',
+295 silly addNameRange     '2.4.0',
+295 silly addNameRange     '2.4.1',
+295 silly addNameRange     '2.5.0',
+295 silly addNameRange     '2.5.1',
+295 silly addNameRange     '2.5.2',
+295 silly addNameRange     '2.5.3',
+295 silly addNameRange     '2.6.0',
+295 silly addNameRange     '2.6.1',
+295 silly addNameRange     '2.6.2',
+295 silly addNameRange     '2.6.3',
+295 silly addNameRange     '2.6.4',
+295 silly addNameRange     '2.6.5',
+295 silly addNameRange     '2.6.6',
+295 silly addNameRange     '1.9.2',
+295 silly addNameRange     '2.6.7',
+295 silly addNameRange     '2.6.8',
+295 silly addNameRange     '2.6.9',
+295 silly addNameRange     '2.6.10',
+295 silly addNameRange     '2.6.11',
+295 silly addNameRange     '2.7.0',
+295 silly addNameRange     '2.7.1',
+295 silly addNameRange     '2.7.2',
+295 silly addNameRange     '2.7.3',
+295 silly addNameRange     '2.7.4',
+295 silly addNameRange     '2.7.5',
+295 silly addNameRange     '2.7.6',
+295 silly addNameRange     '2.7.7',
+295 silly addNameRange     '2.7.8',
+295 silly addNameRange     '2.7.9',
+295 silly addNameRange     '2.7.10',
+295 silly addNameRange     '2.7.11',
+295 silly addNameRange     '2.7.12',
+295 silly addNameRange     '2.7.13',
+295 silly addNameRange     '2.8.0',
+295 silly addNameRange     '2.8.1',
+295 silly addNameRange     '2.8.2' ] ]
+296 verbose addNamed [ 'browser-sync', '2.8.2' ]
+297 verbose addNamed [ '2.8.2', '2.8.2' ]
+298 silly lockFile 3a2f73f9-browser-sync-2-8-2 browser-sync@2.8.2
+299 verbose lock browser-sync@2.8.2 /home/mit/.npm/3a2f73f9-browser-sync-2-8-2.lock
+300 silly lockFile bcfc2eaa-rg-gulp-twig-gulp-twig-0-4-0-tgz https://registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz
+301 silly lockFile bcfc2eaa-rg-gulp-twig-gulp-twig-0-4-0-tgz https://registry.npmjs.org/gulp-twig/-/gulp-twig-0.4.0.tgz
+302 silly lockFile dd55be14-gulp-twig-0-4-0 gulp-twig@0.4.0
+303 silly lockFile dd55be14-gulp-twig-0-4-0 gulp-twig@0.4.0
+304 silly lockFile d25cce1e-gulp-twig gulp-twig@
+305 silly lockFile d25cce1e-gulp-twig gulp-twig@
+306 silly lockFile 3a2f73f9-browser-sync-2-8-2 browser-sync@2.8.2
+307 silly lockFile 3a2f73f9-browser-sync-2-8-2 browser-sync@2.8.2
+308 silly lockFile 220d60b6-browser-sync-2-8-2 browser-sync@^2.8.2
+309 silly lockFile 220d60b6-browser-sync-2-8-2 browser-sync@^2.8.2
+310 error Error: EACCES, mkdir '/home/mit/.npm/gulp-uglify/1.4.0'
+310 error  { [Error: EACCES, mkdir '/home/mit/.npm/gulp-uglify/1.4.0']
+310 error   errno: 3,
+310 error   code: 'EACCES',
+310 error   path: '/home/mit/.npm/gulp-uglify/1.4.0',
+310 error   parent: 'gulp_starter' }
+311 error Please try running this command again as root/Administrator.
+312 error System Linux 3.16.0-46-generic
+313 error command "/usr/bin/node" "/usr/bin/npm" "install"
+314 error cwd /home/mit/Desktop/Tranning-Styleguide
+315 error node -v v0.10.37
+316 error npm -v 1.4.28
+317 error path /home/mit/.npm/gulp-uglify/1.4.0
+318 error code EACCES
+319 error errno 3
+320 error stack Error: EACCES, mkdir '/home/mit/.npm/gulp-uglify/1.4.0'
+321 verbose exit [ 3, true ]
