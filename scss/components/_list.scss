@@ -1,24 +1,27 @@
 .list{
   @include clearfix;
+
   &.list-has-border{
     li{
-      position: relative;
       padding: rem(0 0 17px 18px);
+      position: relative;
+
       &:before{
-        content: '';
-        position: absolute;
-        width: rem(10px);
-        height: rem(1px);
         background-color: $default-color;
-        top: rem(10px);
+        content: '';
+        height: rem(1px);
         left: 0;
         line-height: rem(18px);
+        position: absolute;
+        top: rem(10px);
+        width: rem(10px);
       }
     }
   }
+
   &.list-grid{
     li{
-      @include breakpoint($tablet){
+      @include breakpoint($tablet) {
         @include gallery(6 of 12);
       }
     }
@@ -28,26 +31,29 @@
 //Style list-number.
 .list-number{
   counter-reset: my-badass-counter;
-  @include breakpoint($tablet){
-    column-count:2;
-    column-gap:40px;
+
+  @include breakpoint($tablet) {
     -moz-column-count: 2;
     -moz-column-gap: 40px;
-    -o-column-count: 2;
-    -o-column-gap: 40px;
     -ms-column-count: 2;
     -ms-column-gap: 40px;
+    -o-column-count: 2;
+    -o-column-gap: 40px;
     -webkit-column-count: 2;
     -webkit-column-gap: 40px;
+    column-count:2;
+    column-gap:40px;
   }
+
   li{
     font-size: rem($base-font-size + 2px);
     padding: rem(0 0 13px 0);
+
     &:before{
+      @include source-sans-prosemibold;
+      color: $blue-14;
       content: counter(my-badass-counter) ". ";
       counter-increment: my-badass-counter;
-      color: $blue-14;
-      @include source-sans-prosemibold;
     }
   }
 }
@@ -55,15 +61,16 @@
 //Style list-icon.
 .list-icon{
   li{
-    margin-bottom: rem(27px);
     @include source-sans-pro-regular;
     font-size: rem($base-font-size + 2px);
+    margin-bottom: rem(27px);
   }
+
   [class^="icon-"], [class*=" icon-"] {
     &:before {
-      padding-right: rem(7px);
-      color: $blue-14;
       @extend %icons;
+      color: $blue-14;
+      padding-right: rem(7px);
     }
   }
 }
