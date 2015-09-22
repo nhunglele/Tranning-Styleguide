@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACT,aAAa,EAAE,IAAI;;AACnB,2BAAgB;EACf,UAAU,EAAE,MAAM;;AAEnB,6BAAkB;EACjB,WAAW,EAAE,GAAG",
+"sources": ["../../scss/components/box-intro.scss"],
+"names": [],
+"file": "box-intro.css"
+}

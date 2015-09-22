@@ -907,10 +907,10 @@ iframe {
 }
 
 .box-sign-up .pane-title {
-  text-align: center;
   font-family: 'source_sans_prolight', Helvetica, Arial, sans-serif;
   color: #5f574f;
   margin-bottom: 1.875rem;
+  text-align: center;
 }
 @media (min-width: 48em) {
   .box-sign-up .pane-title {
@@ -926,18 +926,18 @@ iframe {
   }
 }
 .box-sign-up .box-sign-up__form .box-sign-up__name, .box-sign-up .box-sign-up__form .box-sign-up__surename, .box-sign-up .box-sign-up__form .box-sign-up__email {
-  float: left;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 100%;
-  padding: 0 0.75rem;
+  float: left;
   margin-bottom: 1.25rem;
+  padding: 0 0.75rem;
+  width: 100%;
 }
 @media (min-width: 48em) {
   .box-sign-up .box-sign-up__form .box-sign-up__name, .box-sign-up .box-sign-up__form .box-sign-up__surename, .box-sign-up .box-sign-up__form .box-sign-up__email {
-    width: 33.333%;
     margin-bottom: 2.3125rem;
+    width: 33.333%;
   }
 }
 .box-sign-up .box-sign-up__form .form-text {
@@ -949,11 +949,11 @@ iframe {
   text-align: center;
 }
 .box-sign-up .box-sign-up__form .form-actions .form-submit {
-  width: 17rem;
-  height: 3.125rem;
-  font-size: 1.25rem;
   font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  height: 3.125rem;
   padding: 0.625rem 1.875rem;
+  width: 17rem;
 }
 
 .box-tag {
@@ -2522,7 +2522,7 @@ iframe {
   background-color: #A9A9A9;
 }
 .share-this ul li a.icon-envelope-o:hover {
-  background-color: #909090;
+  background-color: #8f8f8f;
 }
 .share-this ul li a:before {
   font-size: 1rem;
@@ -2885,6 +2885,16 @@ iframe {
 .testimonial-wrapper .testimonial-inner .owl-controls .owl-next {
   right: 0;
   margin-right: 2.5rem;
+}
+
+.box-intro {
+  margin-bottom: 50px;
+}
+.box-intro .box-intro_title {
+  text-align: center;
+}
+.box-intro .box-intro_content {
+  line-height: 1.9;
 }
 
 /* No files to import found in vendors/** */
