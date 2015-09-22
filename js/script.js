@@ -55,14 +55,10 @@ $(document).ready(function () {
           var boxTeaserStatus = boxTeaserItem.find('.box-teaser__status'),
               textstatus = $(this).find('.box-teaser__status').text();
           if(textstatus == "free"){
-            $(this).find('.box-teaser__status').css({
-              'background-color': '#16a085'
-            });
+            $(this).find('.box-teaser__status').addClass('green');
           }
           else{
-            $(this).find('.box-teaser__status').css({
-              'background-color': '#3498db'
-            });
+            $(this).find('.box-teaser__status').addClass('blue');
           }
         });
       };
