@@ -843,8 +843,8 @@ iframe {
 }
 .box-related .box-related__item .box-related__line-task {
   display: inline-block;
-  width: 100%;
   margin-bottom: 10px;
+  width: 100%;
 }
 .box-related .box-related__item .box-related__status {
   -moz-border-radius: 3px;
@@ -862,20 +862,20 @@ iframe {
   color: #235a8e;
 }
 .box-related .box-related__item .box-related__category {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  color: #5f574f;
-  background-color: #f4f3ef;
-  padding: 5px 10px;
-  font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
-  display: inline-block;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  margin-bottom: 10px;
+  font-family: 'source_sans_proregular', Helvetica, Arial, sans-serif;
+  background-color: #f4f3ef;
+  color: #5f574f;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-bottom: 0.625rem;
+  padding: 0.3125rem 0.625rem;
+  text-transform: uppercase;
 }
 .box-related .box-related__item .box-related__tags {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .box-related .box-related__item .box-related__tags .box-tag {
   margin-bottom: 0;
