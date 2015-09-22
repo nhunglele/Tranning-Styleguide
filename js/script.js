@@ -146,12 +146,6 @@ $(document).ready(function () {
 
   // Js readmore for Box Intro 
 
-  $('.box-intro_content').readmore({
-    speed: 75,
-    lessLink: '<a href="#">Read less</a>'
-  });
-
-
   var lesstext = "Read Less",
       moretext = "Read More",
       ellipsestext = ".",
