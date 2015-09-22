@@ -2,13 +2,15 @@
 	.box-related__item{
 		.box-related__status{
 			@include border-radius(3px);
-	        display: inline-block;
-	        font-size: rem(12px);
-	        @include source-sans-prosemibold;
-	        text-transform: uppercase;
+      @include source-sans-prosemibold;
+      display: inline-block;
+      font-size: rem(12px);
+      text-transform: uppercase;
+
 			&.green{
 				color: $green;
 			}
+			
 			&.blue{
 				color: $blue;
 			}

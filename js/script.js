@@ -49,7 +49,7 @@ $(document).ready(function () {
   $('.box-teaser__rating-select').barrating();
 
   // Js for color Category
-  var boxTeaserItem = $('.box-teaser .box-teaser__item'),
+  var boxTeaserItem = $('.box-teaser .box-teaser__line-task'),
       statusChange = function(){
         boxTeaserItem.each(function(){
           var boxTeaserStatus = boxTeaserItem.find('.box-teaser__status'),

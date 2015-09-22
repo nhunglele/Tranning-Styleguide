@@ -20,11 +20,13 @@
   <div class="box-related box-teaser">
     {% for itemrelated in boxrelated %}
       <div class="box-related__item box-teaser__item">
-        <h2 class="box-related__title box-teaser__title">{{ itemrelated.title }}</h2>
-        <span class="box-related__status box-teaser__status">{{ itemrelated.status }}</span>
-        <div class="box-related__category">{{ itemrelated.category }}</div>
-        <div class="box-related__content">{{ itemrelated.content }}</div>
-        <div class="box-related__tags">{% include "../box-tags/box-tags.twig" %}</div>
+        <div class="box-teaser__line-task box-related__line-task">
+          <h2 class="box-related__title box-teaser__title">{{ itemrelated.title }}</h2>
+          <span class="box-related__status box-teaser__status">{{ itemrelated.status }}</span>
+      </div>
+      <div class="box-related__category">{{ itemrelated.category }}</div>
+      <div class="box-related__content">{{ itemrelated.content }}</div>
+      <div class="box-related__tags">{% include "../box-tags/box-tags.twig" %}</div>
       </div>
     {% endfor %}
   </div>
