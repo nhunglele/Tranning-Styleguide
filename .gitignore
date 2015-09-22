@@ -11,3 +11,10 @@ node_modules/*
 # Bundler #
 ##########
 Gemfile.lock
+
+# NPM #
+npm-debug.log
+
+# Css #
+css/style.css
+css/style.css.map
