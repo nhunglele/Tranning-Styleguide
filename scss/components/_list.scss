@@ -27,6 +27,7 @@
 
 //Style list-number.
 .list-number{
+  counter-reset: my-badass-counter;
   @include breakpoint($tablet){
     column-count:2;
     column-gap:40px;
@@ -40,17 +41,11 @@
     -webkit-column-gap: 40px;
   }
   li{
-    padding: rem(0 0 13px 0);
-    position: relative;
     font-size: rem($base-font-size + 2px);
-    @for $i from 1 through 20 {
-      &:nth-child(#{$i}) {
-        &:before {
-          content: '#{$i}. ';
-        }
-      }
-    }
+    padding: rem(0 0 13px 0);
     &:before{
+      content: counter(my-badass-counter) ". ";
+      counter-increment: my-badass-counter;
       color: $blue-14;
       @include source-sans-prosemibold;
     }

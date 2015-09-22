@@ -1322,6 +1322,9 @@ iframe {
   }
 }
 
+.list-number {
+  counter-reset: my-badass-counter;
+}
 @media (min-width: 48em) {
   .list-number {
     column-count: 2;
@@ -1337,71 +1340,12 @@ iframe {
   }
 }
 .list-number li {
-  padding: 0 0 0.8125rem 0;
-  position: relative;
   font-size: 1.125rem;
-}
-.list-number li:nth-child(1):before {
-  content: "1. ";
-}
-.list-number li:nth-child(2):before {
-  content: "2. ";
-}
-.list-number li:nth-child(3):before {
-  content: "3. ";
-}
-.list-number li:nth-child(4):before {
-  content: "4. ";
-}
-.list-number li:nth-child(5):before {
-  content: "5. ";
-}
-.list-number li:nth-child(6):before {
-  content: "6. ";
-}
-.list-number li:nth-child(7):before {
-  content: "7. ";
-}
-.list-number li:nth-child(8):before {
-  content: "8. ";
-}
-.list-number li:nth-child(9):before {
-  content: "9. ";
-}
-.list-number li:nth-child(10):before {
-  content: "10. ";
-}
-.list-number li:nth-child(11):before {
-  content: "11. ";
-}
-.list-number li:nth-child(12):before {
-  content: "12. ";
-}
-.list-number li:nth-child(13):before {
-  content: "13. ";
-}
-.list-number li:nth-child(14):before {
-  content: "14. ";
-}
-.list-number li:nth-child(15):before {
-  content: "15. ";
-}
-.list-number li:nth-child(16):before {
-  content: "16. ";
-}
-.list-number li:nth-child(17):before {
-  content: "17. ";
-}
-.list-number li:nth-child(18):before {
-  content: "18. ";
-}
-.list-number li:nth-child(19):before {
-  content: "19. ";
-}
-.list-number li:nth-child(20):before {
-  content: "20. ";
+  padding: 0 0 0.8125rem 0;
 }
 .list-number li:before {
+  content: counter(my-badass-counter) ". ";
+  counter-increment: my-badass-counter;
   color: #149077;
   font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
 }
