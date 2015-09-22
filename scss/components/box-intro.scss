@@ -1,5 +1,5 @@
 .box-intro{
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   text-align: center;
 
   .box-intro_content{
@@ -13,7 +13,7 @@
       display: block;
       color: $grey-5f;
       @include source-sans-prosemibold;
-      margin-bottom: 30px;
+      margin-bottom: rem(30px);
       &:hover{
         color: $hover-links;
       }
