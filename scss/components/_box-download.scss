@@ -1,0 +1,54 @@
+.block-download {
+  background: $grey-f4;
+  padding: rem(15px 20px);
+  display: inline-block;
+
+  @include breakpoint($desktop-wide) {
+    @include span(last 8 of 12);
+    padding: rem(30px);
+    float: none;
+  }
+
+  .download_doc,
+  .download_pdf {
+    padding: rem(0 5px);
+    margin-bottom: 30px;
+
+    @include breakpoint($desktop-wide) {
+      @include span(last 6 of 12);
+      margin-bottom: 0;
+    }
+
+    a {
+      margin-left: rem(45px);
+      position: relative;
+      display: inline-block;
+
+      &:before {
+        background-position: left center;
+        background-repeat: no-repeat;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: rem(-45px);
+        height: rem(37px);
+        bottom: 0;
+        margin-right: rem(10px);
+        margin-top: rem(-13px);
+        width: rem(28px);
+      }
+    }
+  }
+
+  .download_doc a {
+    &:before {
+      background-image: url("/img/1.png");
+    }
+  }
+
+  .download_pdf a {
+    &:before {
+      background-image: url("/img/2.png");
+    }
+  }
+}
