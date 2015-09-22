@@ -1,0 +1,47 @@
+.box-related{
+  .box-related__item{
+    margin-bottom: rem(25px);
+
+    .box-related__line-task{
+      display: inline-block;
+      margin-bottom: rem(10px);
+      width: 100%;
+    }
+
+    .box-related__status{
+      @include border-radius(3px);
+      @include source-sans-prosemibold;
+      display: inline-block;
+      font-size: rem(12px);
+      text-transform: uppercase;
+
+      &.green{
+        color: $green;
+      }
+      
+      &.blue{
+        color: $blue;
+      }
+    }
+
+    .box-related__category{
+      @include border-radius(3px);
+      @include source-sans-pro-regular;
+      background-color: $grey-f4;
+      color: $grey-5f;
+      display: inline-block;
+      font-size: rem(12px);
+      margin-bottom: rem(10px);
+      padding: rem(5px 10px);
+      text-transform: uppercase;
+    }
+
+    .box-related__tags{
+      margin-bottom: rem(10px);
+
+      .box-tag{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

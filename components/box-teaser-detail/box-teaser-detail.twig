@@ -5,8 +5,7 @@
   'grade':'9 - 12',
   'subject':'Mathematics',
   'course':'Literacy Design Collaborative ',
-  'tags' : 'tags1',
-  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions'}
+  'content':'In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions In this task students will design and analyze an object made of regular shapes of their choosing. hey will specifically analyze how changing the objects dimensions.'}
 %}
 
 {% block boxteaserdetail %}
@@ -31,9 +30,10 @@
         </select>
       </div>
       <div class="box-teaser__tags box-teaser__line-item"><label class="box-teaser__label">Tags</label>{% include "../box-tags/box-tags.twig" %}</div>
+      <div class="box-teaser__img"><img src="../../images/imgdetail.jpg"></div>
+      <div class="box-teaser__content">{{ boxteaserdetail.content }}</div>
     </div>
-    <div class="box-teaser__img"><img src="../../images/imgdetail.jpg"></div>
-    <div class="box-teaser__content">{{ boxteaserdetail.content }}</div>
   </div>
 {% endblock %}
+
 

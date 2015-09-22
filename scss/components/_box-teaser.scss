@@ -11,17 +11,27 @@
         color: $black;
         float: left;
         font-size: rem(20px);
+        font-weight: normal;
         margin-bottom: 0;
         margin-right: rem(10px);
         text-transform: capitalize;
+
+        @include breakpoint($mobile-only) {
+          margin-bottom: rem(10px);
+        }
       }
 
       .box-teaser__status{
         @include border-radius(3px);
         color: $white;
+        display: inline-block;
         font-size: rem(12px);
         padding: rem( 2px 10px);
         text-transform: uppercase;
+
+        @include breakpoint($mobile-only) {
+          margin-bottom: rem(10px);
+        }
       }
 
       .box-teaser__label{
@@ -31,6 +41,10 @@
         font-size: rem(14px);
         margin-bottom: rem(5px);
         text-transform: uppercase;
+
+        @include breakpoint($mobile-only) {
+          margin-bottom: 0;
+        }
       }
 
       .box-teaser__line-item{
@@ -40,12 +54,16 @@
         vertical-align: top;
         width : span(3 of 12);
 
+        @include breakpoint($mobile-only) {
+          margin-bottom: (10px);
+        }
+
         &:last-of-type{
           padding-right: 0;
         }
 
         @include breakpoint($mobile-only) {
-          width : span(6 of 12);
+          width: 100%;
 
           &:nth-child(n+1){
             padding-right: 0;
@@ -95,11 +113,16 @@
         
       .box-teaser__line-task{
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
         width: 100%;
+
+        @include breakpoint($mobile-only) {
+          margin-bottom: 0;
+        }
       }
 
       .box-teaser__content{
+        line-height: 1.5;
         margin-bottom: rem(15px);
       }
     }
@@ -111,14 +134,27 @@
         float: left;
         width: span(6 of 12);
 
+        @include breakpoint($mobile-only) {
+          width : 100%;
+        }
+
         .box-teaser__line-item{
           float: left;
 
           &:first-of-type{
             width: span(6 of 12);
+
+            @include breakpoint($mobile-only) {
+              width : 100%;
+            }
           }
+
           &:last-of-type{
             width: span(last 3 of 12);
+
+            @include breakpoint($mobile-only) {
+              width : 100%;
+            }
           }
         }
       }
