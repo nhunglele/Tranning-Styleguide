@@ -945,6 +945,7 @@ iframe {
 }
 .box-teaser .box-teaser__grid .box-teaser__item .box-teaser__content {
   margin-bottom: 0.9375rem;
+  line-height: 1.5;
 }
 .box-teaser.box-teaser--twocol .box-teaser__grid .box-teaser__item {
   float: left;
