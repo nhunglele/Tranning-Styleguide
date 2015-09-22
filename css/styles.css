@@ -2901,6 +2901,10 @@ iframe {
   display: block;
   color: #5f574f;
   font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  margin-bottom: 30px;
+}
+.box-intro .box-intro_content .morelink:hover {
+  color: #16a085;
 }
 
 /* No files to import found in vendors/** */

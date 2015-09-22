@@ -13,6 +13,10 @@
       display: block;
       color: $grey-5f;
       @include source-sans-prosemibold;
+      margin-bottom: 30px;
+      &:hover{
+        color: $hover-links;
+      }
     }
   }
 }
