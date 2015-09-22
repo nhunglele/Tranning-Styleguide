@@ -843,7 +843,7 @@ iframe {
 }
 .box-related .box-related__item .box-related__line-task {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   width: 100%;
 }
 .box-related .box-related__item .box-related__status {
