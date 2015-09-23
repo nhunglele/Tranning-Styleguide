@@ -5,8 +5,8 @@
 */
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?ksijsz");
-  src: url("../fonts/icomoon.eot?#iefixksijsz") format("embedded-opentype"), url("../fonts/icomoon.ttf?ksijsz") format("truetype"), url("../fonts/icomoon.woff?ksijsz") format("woff"), url("../fonts/icomoon.svg?ksijsz#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-4so2qt");
+  src: url("../fonts/icomoon.eot?#iefix-4so2qt") format("embedded-opentype"), url("../fonts/icomoon.ttf?-4so2qt") format("truetype"), url("../fonts/icomoon.woff?-4so2qt") format("woff"), url("../fonts/icomoon.svg?-4so2qt#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -266,7 +266,7 @@ textarea {
   }
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
+[class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
 .modal-content-sign-up .popups-container:before,
 .modal-content-sign-in .popups-container:before, .form-sign-up .field-name-field-user-name:before,
 .form-sign-up .form-item-name:before,
@@ -287,12 +287,29 @@ textarea {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-thin-right:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-next:before {
-  content: "\e603";
+.icon-envelope-o:before {
+  content: "\e607";
 }
 
-.icon-chevron-thin-left:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-prev:before {
-  content: "\e604";
+.icon-twitter:before {
+  content: "\e608";
+}
+
+.icon-google-plus:before {
+  content: "\e609";
+}
+
+.icon-facebook:before, .form-sign-up .hybridauth-widget-wrapper .item-list .hybridauth-icon.facebook:before,
+.form-sign-in .hybridauth-widget-wrapper .item-list .hybridauth-icon.facebook:before {
+  content: "\e60a";
+}
+
+.icon-arrow-right:before {
+  content: "\e606";
+}
+
+.icon-checkmark:before {
+  content: "\e605";
 }
 
 .icon-star-empty:before {
@@ -301,6 +318,14 @@ textarea {
 
 .icon-star-full:before {
   content: "\e601";
+}
+
+.icon-chevron-thin-right:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-next:before {
+  content: "\e603";
+}
+
+.icon-chevron-thin-left:before, .testimonial-wrapper .testimonial-inner .owl-controls .owl-prev:before {
+  content: "\e604";
 }
 
 .icon-star:before {
@@ -1284,7 +1309,7 @@ iframe {
   opacity: 1;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before, [class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
+[class^="icon-"], [class*=" icon-"], .list-icon [class^="icon-"]:before, .list-icon [class*=" icon-"]:before, .modal-content-agree-sign-up .popups-container:before,
 .modal-content-sign-up .popups-container:before,
 .modal-content-sign-in .popups-container:before, .form-sign-up .field-name-field-user-name:before,
 .form-sign-up .form-item-name:before,
@@ -1303,6 +1328,22 @@ iframe {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e60b";
+}
+
+.icon-google-plus:before {
+  content: "\e60f";
+}
+
+.icon-envelope-o:before {
+  content: "\e610";
+}
+
+.icon-facebook2:before {
+  content: "\e611";
 }
 
 .icon-angle-down:before, .chosen-container.chosen-container-single .chosen-single > div:before {
@@ -2378,6 +2419,67 @@ iframe {
   max-width: 100%;
   overflow: inherit;
   width: auto !important;
+}
+
+.share-this .pane-title {
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.share-this ul:before, .share-this ul:after {
+  content: '';
+  display: table;
+}
+.share-this ul:after {
+  clear: both;
+}
+.share-this ul li {
+  display: inline-block;
+  margin-right: 2.5625rem;
+}
+.share-this ul li:last-child {
+  margin-right: 0;
+}
+.share-this ul li a {
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  font-size: 0;
+  height: 2.3125rem;
+  text-align: center;
+  width: 2.3125rem;
+}
+.share-this ul li a.icon-facebook2 {
+  background-color: #507cbe;
+}
+.share-this ul li a.icon-facebook2:hover {
+  background-color: #3b63a0;
+}
+.share-this ul li a.icon-twitter {
+  background-color: #63CDF1;
+}
+.share-this ul li a.icon-twitter:hover {
+  background-color: #34beed;
+}
+.share-this ul li a.icon-google-plus {
+  background-color: #F16261;
+}
+.share-this ul li a.icon-google-plus:hover {
+  background-color: #ed3332;
+}
+.share-this ul li a.icon-envelope-o {
+  background-color: #A9A9A9;
+}
+.share-this ul li a.icon-envelope-o:hover {
+  background-color: #909090;
+}
+.share-this ul li a:before {
+  font-size: 1rem;
+  height: 2.3125rem;
+  line-height: 2.375rem;
+  text-align: center;
+  width: 100%;
 }
 
 .horizontal-tabs .tab-horizontal-mobile {

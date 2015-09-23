@@ -1,0 +1,71 @@
+.share-this{
+  .pane-title{
+    @include source_sans_prosemibold;
+    color: $black;
+    font-size: rem($base-font-size);
+    margin-bottom: rem(16px);
+  }
+
+  ul {
+    @include clearfix;
+
+    li{
+      display: inline-block;
+      margin-right: rem(41px);
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      a{
+        border-radius: 100%;
+        color: $white;
+        display: inline-block;
+        font-size: 0;
+        height: rem(37px);
+        text-align: center;
+        width: rem(37px);
+
+        &.icon-facebook2{
+          background-color: $blue-50;
+
+          &:hover{
+            background-color: darken($blue-50, 10%);
+          }
+        }
+
+        &.icon-twitter{
+          background-color: $blue-63;
+
+          &:hover{
+            background-color: darken($blue-63, 10%);
+          }
+        }
+
+        &.icon-google-plus{
+          background-color: $red-f1;
+
+          &:hover{
+            background-color: darken($red-f1, 10%);
+          }
+        }
+
+        &.icon-envelope-o{
+          background-color: $gray-a9;
+          
+          &:hover{
+            background-color: darken($gray-a9, 10%);
+          }
+        }
+
+        &:before{
+          font-size: rem($base-font-size);
+          height: rem(37px);
+          line-height: rem(38px);
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

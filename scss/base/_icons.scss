@@ -1,4 +1,3 @@
-// ICONS.
 %icons {
   font-family: 'icomoon';
   speak: none;
@@ -14,23 +13,39 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  &:before {
-    @extend %icons;
-  }
+  @extend %icons;
 }
 
 // IMPORTANT. For updating the icon lib, replace the icons code below:
-.icon-chevron-thin-right:before {
-  content: "\e603";
+.icon-envelope-o:before {
+  content: "\e607";
 }
-.icon-chevron-thin-left:before {
-  content: "\e604";
+.icon-twitter:before {
+  content: "\e608";
+}
+.icon-google-plus:before {
+  content: "\e609";
+}
+.icon-facebook:before {
+  content: "\e60a";
+}
+.icon-arrow-right:before {
+  content: "\e606";
+}
+.icon-checkmark:before {
+  content: "\e605";
 }
 .icon-star-empty:before {
   content: "\e600";
 }
 .icon-star-full:before {
   content: "\e601";
+}
+.icon-chevron-thin-right:before {
+  content: "\e603";
+}
+.icon-chevron-thin-left:before {
+  content: "\e604";
 }
 .icon-star:before {
   content: "\e602";
