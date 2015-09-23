@@ -10,12 +10,12 @@
     }
     
     .morelink {
-      display: block;
-      color: $grey-5f;
-      @include source-sans-prosemibold;
-      margin-bottom: rem(30px);
       &:hover{
+        @include source-sans-prosemibold;
+        color: $grey-5f;
         color: $hover-links;
+        display: block;
+        margin-bottom: rem(30px);
       }
     }
   }
