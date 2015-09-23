@@ -2450,14 +2450,10 @@ iframe {
   text-align: center;
   width: 2.3125rem;
 }
-.share-this ul li a.icon-facebook, .share-this ul li .form-sign-up .hybridauth-widget-wrapper .item-list a.hybridauth-icon.facebook, .form-sign-up .hybridauth-widget-wrapper .item-list .share-this ul li a.hybridauth-icon.facebook,
-.share-this ul li .form-sign-in .hybridauth-widget-wrapper .item-list a.hybridauth-icon.facebook,
-.form-sign-in .hybridauth-widget-wrapper .item-list .share-this ul li a.hybridauth-icon.facebook {
+.share-this ul li a.icon-facebook2 {
   background-color: #507cbe;
 }
-.share-this ul li a.icon-facebook:hover, .share-this ul li .form-sign-up .hybridauth-widget-wrapper .item-list a.hybridauth-icon.facebook:hover, .form-sign-up .hybridauth-widget-wrapper .item-list .share-this ul li a.hybridauth-icon.facebook:hover,
-.share-this ul li .form-sign-in .hybridauth-widget-wrapper .item-list a.hybridauth-icon.facebook:hover,
-.form-sign-in .hybridauth-widget-wrapper .item-list .share-this ul li a.hybridauth-icon.facebook:hover {
+.share-this ul li a.icon-facebook2:hover {
   background-color: #3b63a0;
 }
 .share-this ul li a.icon-twitter {
