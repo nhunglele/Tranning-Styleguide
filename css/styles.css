@@ -2422,9 +2422,9 @@ iframe {
 }
 
 .share-this .pane-title {
-  font-size: 1rem;
-  color: #000;
   font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .share-this ul:before, .share-this ul:after {
@@ -2435,20 +2435,20 @@ iframe {
   clear: both;
 }
 .share-this ul li {
-  margin-right: 2.5625rem;
   display: inline-block;
+  margin-right: 2.5625rem;
 }
 .share-this ul li:last-child {
   margin-right: 0;
 }
 .share-this ul li a {
-  font-size: 0;
-  display: inline-block;
-  width: 2.3125rem;
-  height: 2.3125rem;
   border-radius: 100%;
-  text-align: center;
   color: #fff;
+  display: inline-block;
+  font-size: 0;
+  height: 2.3125rem;
+  text-align: center;
+  width: 2.3125rem;
 }
 .share-this ul li a.icon-facebook, .share-this ul li .form-sign-up .hybridauth-widget-wrapper .item-list a.hybridauth-icon.facebook, .form-sign-up .hybridauth-widget-wrapper .item-list .share-this ul li a.hybridauth-icon.facebook,
 .share-this ul li .form-sign-in .hybridauth-widget-wrapper .item-list a.hybridauth-icon.facebook,
@@ -2480,10 +2480,10 @@ iframe {
 }
 .share-this ul li a:before {
   font-size: 1rem;
-  width: 100%;
   height: 2.3125rem;
   line-height: 2.375rem;
   text-align: center;
+  width: 100%;
 }
 
 .horizontal-tabs .tab-horizontal-mobile {

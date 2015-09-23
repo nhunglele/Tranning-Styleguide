@@ -1,56 +1,69 @@
 .share-this{
   .pane-title{
-    font-size: rem($base-font-size);
-    color: $black;
     @include source_sans_prosemibold;
+    color: $black;
+    font-size: rem($base-font-size);
     margin-bottom: rem(16px);
   }
+
   ul {
     @include clearfix;
+
     li{
-      margin-right: rem(41px);
       display: inline-block;
+      margin-right: rem(41px);
+
       &:last-child{
         margin-right: 0;
       }
+
       a{
-        font-size: 0;
-        display: inline-block;
-        width: rem(37px);
-        height: rem(37px);
         border-radius: 100%;
-        text-align: center;
         color: $white;
+        display: inline-block;
+        font-size: 0;
+        height: rem(37px);
+        text-align: center;
+        width: rem(37px);
+
         &.icon-facebook{
           background-color: $blue-50;
+
           &:hover{
             background-color: darken($blue-50, 10%);
           }
         }
+
         &.icon-twitter{
           background-color: $blue-63;
+
           &:hover{
             background-color: darken($blue-63, 10%);
           }
         }
+
         &.icon-google-plus{
           background-color: $red-f1;
+
           &:hover{
             background-color: darken($red-f1, 10%);
           }
         }
+
         &.icon-envelope-o{
           background-color: $gray-a9;
+          
           &:hover{
             background-color: darken($gray-a9, 10%);
           }
         }
+
         &:before{
           font-size: rem($base-font-size);
-          width: 100%;
           height: rem(37px);
           line-height: rem(38px);
           text-align: center;
+          width: 100%;
         }
       }
     }
