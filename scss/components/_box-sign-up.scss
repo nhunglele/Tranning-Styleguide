@@ -1,42 +1,49 @@
 .box-sign-up{
   .pane-title{
-    text-align: center;
     @include source-sans-prolight;
     color: $grey-5f;
     margin-bottom: rem(30px);
-    @include breakpoint($tablet){
+    text-align: center;
+
+    @include breakpoint($tablet) {
       margin-bottom: rem(67px);
     }
   }
+
   .box-sign-up__form{
     padding: rem(0 0 30px);
-    @include breakpoint($desktop-small){
+
+    @include breakpoint($desktop-small) {
       padding: rem(0 140px 50px);
     }
+
     .box-sign-up__name, .box-sign-up__surename, .box-sign-up__email{
-      float: left;
       @include box-sizing(border-box);
-      width: 100%;
-      padding: rem(0 12px);
+      float: left;
       margin-bottom: rem(20px);
-      @include breakpoint($tablet){
-        width: 33.333%;
+      padding: rem(0 12px);
+      width: 100%;
+
+      @include breakpoint($tablet) {
         margin-bottom: rem(37px);
+        width: 33.333%;
       }
     }
     .form-text{
       height: rem(52px);
       padding: rem(16px 20px);
     }
+
     .form-actions{
       clear: both;
       text-align: center;
+
       .form-submit{
-        width: rem(272px);
-        height: rem(50px);
-        font-size: rem(20px);
         @include source-sans-prosemibold;
+        font-size: rem(20px);
+        height: rem(50px);
         padding: rem(10px 30px);
+        width: rem(272px);
       }
     }
   }
