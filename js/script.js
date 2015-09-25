@@ -41,7 +41,7 @@ $(document).ready(function () {
   var processHideCode = function () {
     $(this).parents('.component--source').removeClass("active");
   };
-
+  
   $('.show-code').on('click', processShowCode);
   $('.hide-code').on('click', processHideCode);
 
@@ -143,4 +143,39 @@ $(document).ready(function () {
   $('.quicktabs-wrapper .item-list .tab-mobile').on('click', processTabVerticalMobile);
 
   $(".chosen-enable").chosen();
+
+  // Js readmore for Box Intro 
+
+  var lesstext = "Read Less",
+      moretext = "Read More",
+      ellipsestext = ".",
+      showChar = 450,
+      boxIntrocontent = $('.box-intro_content'),
+      boxIntrocontentmarkup =function(){
+        boxIntrocontent.each(function() {
+          content = boxIntrocontent.html();
+          if(content.length > showChar) {
+            var c = content.substr(0, showChar),
+                h = content.substr(showChar, content.length - showChar),
+                html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+                $(this).html(html);
+          }
+        });
+      },
+      clickReadmore = function(){
+        if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+        } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+      };
+
+  boxIntrocontentmarkup();
+  $('.morelink').on('click', clickReadmore);
+
 });

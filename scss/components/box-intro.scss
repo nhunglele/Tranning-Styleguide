@@ -1,0 +1,22 @@
+.box-intro{
+  margin-bottom: rem(50px);
+  text-align: center;
+
+  .box-intro_content{
+    line-height: 1.9;
+
+    .morecontent span {
+      display: none;
+    }
+    
+    .morelink {
+      &:hover{
+        @include source-sans-prosemibold;
+        color: $grey-5f;
+        color: $hover-links;
+        display: block;
+        margin-bottom: rem(30px);
+      }
+    }
+  }
+}
