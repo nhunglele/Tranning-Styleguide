@@ -11,6 +11,8 @@
     
     .morelink {
       display: block;
+      color: $grey-5f;
+      @include source-sans-prosemibold;
     }
   }
 }

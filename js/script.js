@@ -145,13 +145,15 @@ $(document).ready(function () {
   $(".chosen-enable").chosen();
 
   // Js readmore for Box Intro 
+
   $('.box-intro_content').readmore({
     speed: 75,
     lessLink: '<a href="#">Read less</a>'
   });
 
-  var lesstext = "Show less",
-      moretext = "Show more",
+
+  var lesstext = "Read Less",
+      moretext = "Read More",
       ellipsestext = ".",
       showChar = 450,
       boxIntrocontent = $('.box-intro_content'),
