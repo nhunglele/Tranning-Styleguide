@@ -906,6 +906,56 @@ iframe {
   margin-bottom: 0;
 }
 
+.box-sign-up .pane-title {
+  text-align: center;
+  font-family: 'source_sans_prolight', Helvetica, Arial, sans-serif;
+  color: #5f574f;
+  margin-bottom: 1.875rem;
+}
+@media (min-width: 48em) {
+  .box-sign-up .pane-title {
+    margin-bottom: 4.1875rem;
+  }
+}
+.box-sign-up .box-sign-up__form {
+  padding: 0 0 1.875rem;
+}
+@media (min-width: 60em) {
+  .box-sign-up .box-sign-up__form {
+    padding: 0 8.75rem 3.125rem;
+  }
+}
+.box-sign-up .box-sign-up__form .box-sign-up__name, .box-sign-up .box-sign-up__form .box-sign-up__surename, .box-sign-up .box-sign-up__form .box-sign-up__email {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 0.75rem;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 48em) {
+  .box-sign-up .box-sign-up__form .box-sign-up__name, .box-sign-up .box-sign-up__form .box-sign-up__surename, .box-sign-up .box-sign-up__form .box-sign-up__email {
+    width: 33.333%;
+    margin-bottom: 2.3125rem;
+  }
+}
+.box-sign-up .box-sign-up__form .form-text {
+  height: 3.25rem;
+  padding: 1rem 1.25rem;
+}
+.box-sign-up .box-sign-up__form .form-actions {
+  clear: both;
+  text-align: center;
+}
+.box-sign-up .box-sign-up__form .form-actions .form-submit {
+  width: 17rem;
+  height: 3.125rem;
+  font-size: 1.25rem;
+  font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  padding: 0.625rem 1.875rem;
+}
+
 .box-tag {
   display: inline-block;
   margin-bottom: 1.875rem;
