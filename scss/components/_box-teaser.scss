@@ -150,7 +150,7 @@
   &.box-teaser--twocol{
     .box-teaser__grid{
       @include breakpoint($desktop-wide-only){
-        margin: 0 -40px;
+        margin: rem(0 -40px);
       }
 
       .box-teaser__item{
@@ -158,7 +158,7 @@
         width: span(6 of 12);
 
         @include breakpoint($desktop-wide-only){
-          padding: 0 40px;
+          padding: rem(0 40px);
         }
 
         @include breakpoint($mobile-only) {

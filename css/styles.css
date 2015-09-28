@@ -876,8 +876,10 @@ iframe {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   font-family: 'source_sans_prosemibold', Helvetica, Arial, sans-serif;
+  background-color: transparent !important;
   display: inline-block;
   font-size: 0.75rem;
+  padding: 0;
   text-transform: uppercase;
 }
 .box-related .box-related__item .box-related__status.green {
@@ -1109,7 +1111,7 @@ iframe {
 }
 @media screen and (min-width: 73.0625em) {
   .box-teaser.box-teaser--twocol .box-teaser__grid {
-    margin: 0 -40px;
+    margin: 0 -2.5rem;
   }
 }
 .box-teaser.box-teaser--twocol .box-teaser__grid .box-teaser__item {
@@ -1118,7 +1120,7 @@ iframe {
 }
 @media screen and (min-width: 73.0625em) {
   .box-teaser.box-teaser--twocol .box-teaser__grid .box-teaser__item {
-    padding: 0 40px;
+    padding: 0 2.5rem;
   }
 }
 @media screen and (max-width: 47.9375em) {
