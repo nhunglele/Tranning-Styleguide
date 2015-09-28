@@ -1,7 +1,6 @@
 .box-teaser{
   .box-teaser__grid{
     display: inline-block;
-    // width: 100%;
 
     .box-teaser__item{
       margin-bottom: rem(40px);  
@@ -47,6 +46,7 @@
     &.blue{
       background-color: $blue;
     }
+
     @include breakpoint($mobile-only) {
       margin-bottom: rem(10px);
     }
@@ -149,7 +149,7 @@
 
   &.box-teaser--twocol{
     .box-teaser__grid{
-      @include breakpoint($desktop-wide-only){
+      @include breakpoint($desktop-wide-only) {
         margin: rem(0 -40px);
       }
 
@@ -157,7 +157,7 @@
         float: left;
         width: span(6 of 12);
 
-        @include breakpoint($desktop-wide-only){
+        @include breakpoint($desktop-wide-only) {
           padding: rem(0 40px);
         }
 
