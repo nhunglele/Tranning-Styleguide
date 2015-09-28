@@ -1,138 +1,165 @@
 .box-teaser{
   .box-teaser__grid{
     display: inline-block;
-    width: 100%;
 
     .box-teaser__item{
-      margin-bottom: rem(40px);
+      margin-bottom: rem(40px);  
+    }
+  }
 
-      .box-teaser__title{
-        @include source-sans-prosemibold;
-        color: $black;
-        float: left;
-        font-size: rem(20px);
-        font-weight: normal;
-        margin-bottom: 0;
-        margin-right: rem(10px);
-        text-transform: capitalize;
+  .box-teaser__title{
+    @include source-sans-prosemibold;
+    display: inline;
+    font-size: rem(20px);
+    font-weight: normal;
+    line-height: rem(20px);
+    margin-bottom: 0;
+    margin-right: rem(10px);
+    text-transform: capitalize;
 
-        @include breakpoint($mobile-only) {
-          margin-bottom: rem(10px);
-        }
+    a{
+      color: $black;
+
+      &:hover{
+        color: $hover-links;
       }
+    }
+    
+    @include breakpoint($mobile-only) {
+      margin-bottom: rem(10px);
+    }
+  }
 
-      .box-teaser__status{
-        @include border-radius(3px);
-        color: $white;
-        display: inline-block;
-        font-size: rem(12px);
-        padding: rem( 2px 10px);
-        text-transform: uppercase;
+  .box-teaser__status{
+    @include border-radius(3px);
+    color: $white;
+    display: inline-block;
+    font-size: rem(12px);
+    padding: rem( 2px 10px);
+    text-transform: uppercase;
+    vertical-align: middle;
 
-        @include breakpoint($mobile-only) {
-          margin-bottom: rem(10px);
-        }
-      }
+    &.green{
+      background-color: $green;
+    }
 
-      .box-teaser__label{
-        @include source-sans-prosemibold;
-        color: $black;
-        display: block;
-        font-size: rem(14px);
-        margin-bottom: rem(5px);
-        text-transform: uppercase;
+    &.blue{
+      background-color: $blue;
+    }
 
-        @include breakpoint($mobile-only) {
-          margin-bottom: 0;
-        }
-      }
+    @include breakpoint($mobile-only) {
+      margin-bottom: rem(10px);
+    }
+  }
 
-      .box-teaser__line-item{
-        display: inline-block;
-        font-size: rem(14px);
-        padding-right: rem(35px);
-        vertical-align: top;
-        width : span(3 of 12);
+  .box-teaser__label{
+    @include source-sans-prosemibold;
+    color: $black;
+    display: block;
+    font-size: rem(14px);
+    margin-bottom: rem(5px);
+    text-transform: uppercase;
 
-        @include breakpoint($mobile-only) {
-          margin-bottom: (10px);
-        }
+    @include breakpoint($mobile-only) {
+      margin-bottom: 0;
+    }
+  }
 
-        &:last-of-type{
-          padding-right: 0;
-        }
+  .box-teaser__line-item{
+    display: inline-block;
+    font-size: rem(14px);
+    padding-right: rem(35px);
+    vertical-align: top;
+    width : span(3 of 12);
 
-        @include breakpoint($mobile-only) {
-          width: 100%;
+    @include breakpoint($mobile-only) {
+      margin-bottom: (10px);
+    }
 
-          &:nth-child(n+1){
-            padding-right: 0;
-          }
-        }
-      }
+    &:last-of-type{
+      padding-right: 0;
+    }
 
-      .box-teaser__rating .br-widget {
-        display: inline-block;
+    @include breakpoint($mobile-only) {
+      width: 100%;
 
-        a{
-          @include icomoon;
-          float: left;
-          margin-right: rem(5px);
-
-          &:before{
-            color: $grey-e1;
-            content: "\e601";
-          }
-
-          &.br-active,
-          &.br-selected{
-            &:before{
-              color: $yellow-ea;
-            }
-          }
-        }
-
-        .br-current-rating{
-          float: left;
-          margin-left: rem(10px);
-          padding-right: rem(15px);
-          position: relative;
-
-          &:before{
-            content: "/5";
-            position: absolute;
-            right: 0;
-            top: 0;
-          }
-        }
-      }
-
-      .box-tag{
-        margin-bottom: 0;
-      }
-        
-      .box-teaser__line-task{
-        display: inline-block;
-        margin-bottom: rem(20px);
-        width: 100%;
-
-        @include breakpoint($mobile-only) {
-          margin-bottom: 0;
-        }
-      }
-
-      .box-teaser__content{
-        line-height: 1.5;
-        margin-bottom: rem(15px);
+      &:nth-child(n+1){
+        padding-right: 0;
       }
     }
   }
 
+  .box-teaser__rating .br-widget {
+    display: inline-block;
+
+    a{
+      @include icomoon;
+      float: left;
+      margin-right: rem(5px);
+
+      &:before{
+        color: $grey-e1;
+        content: "\e601";
+      }
+
+      &.br-active,
+      &.br-selected{
+        &:before{
+          color: $yellow-ea;
+        }
+      }
+    }
+    .br-current-rating{
+      float: left;
+      margin-left: rem(10px);
+      padding-right: rem(15px);
+      position: relative;
+
+      &:before{
+        content: "/5";
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  .box-tag{
+    margin-bottom: 0;
+
+    .box-tag_item{
+      text-transform: uppercase;
+    }
+  }
+
+  .box-teaser__line-task{
+    display: inline-block;
+    margin-bottom: rem(20px);
+    width: 100%;
+
+    @include breakpoint($mobile-only) {
+      margin-bottom: 0;
+    }
+  }
+
+  .box-teaser__content{
+    line-height: 1.5;
+    margin-bottom: rem(15px);
+  }
+
   &.box-teaser--twocol{
     .box-teaser__grid{
+      @include breakpoint($desktop-wide-only) {
+        margin: rem(0 -40px);
+      }
+
       .box-teaser__item{
         float: left;
         width: span(6 of 12);
+
+        @include breakpoint($desktop-wide-only) {
+          padding: rem(0 40px);
+        }
 
         @include breakpoint($mobile-only) {
           width : 100%;
@@ -166,9 +193,14 @@
         @include source-sans-pro-regular;
         color: $black;
         font-size: rem(40px);
+        line-height: rem(40px);
+      }
+    }
+
+    .box-teaser__img{
+      img{
+        margin-bottom: rem(10px);
       }
     }
   }
 }
-
-

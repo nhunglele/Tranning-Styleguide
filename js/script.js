@@ -117,7 +117,6 @@ $(document).ready(function () {
   };
 
   $('.horizontal-tabs .tab-horizontal-mobile').on('click', processTabHorizontalMobile);
-
   //Js for vertical tabs
   var processTabVertical = function () {
     $('.quicktabs-wrapper .quicktabs-tabs li .quicktabs-loaded').removeClass("active");

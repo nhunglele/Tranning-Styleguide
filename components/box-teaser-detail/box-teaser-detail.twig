@@ -9,7 +9,7 @@
 %}
 
 {% block boxteaserdetail %}
-  <div class="box-teaser box-teaser--detail">
+  <div class="box-teaser box-teaser--detail container">
     <div class="box-teaser__line-task">
       <h2 class="box-teaser__title">{{ boxteaserdetail.title }}</h2>
       <span class="box-teaser__status">{{ boxteaserdetail.status }}</span>
@@ -30,9 +30,9 @@
         </select>
       </div>
       <div class="box-teaser__tags box-teaser__line-item"><label class="box-teaser__label">Tags</label>{% include "../box-tags/box-tags.twig" %}</div>
-      <div class="box-teaser__img"><img src="../../images/imgdetail.jpg"></div>
-      <div class="box-teaser__content">{{ boxteaserdetail.content }}</div>
     </div>
+    <div class="box-teaser__img"><img src="../../images/imgdetail.jpg"></div>
+    <div class="box-teaser__content">{{ boxteaserdetail.content }}</div>
   </div>
 {% endblock %}
 

@@ -11,10 +11,12 @@
     .box-related__status{
       @include border-radius(3px);
       @include source-sans-prosemibold;
+      background-color: transparent !important;
       display: inline-block;
       font-size: rem(12px);
+      padding: 0;
       text-transform: uppercase;
-
+      
       &.green{
         color: $green;
       }

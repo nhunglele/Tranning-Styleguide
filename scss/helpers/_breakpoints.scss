@@ -11,6 +11,7 @@ $desktop-lager: 1600px;
 $mobile-only: 'screen' 'max-width' $tablet - 1;
 $mobile-and-tablet: 'screen' 'max-width' $desktop-small - 1;
 $tablet-only: $tablet $desktop-small - 1;
+$desktop-wide-only : 'screen' 'min-width' $desktop-wide - 1;
 
 //Fix browers
 $browers: 'screen' 'min--moz-device-pixel-ratio' 0;
